@@ -92,7 +92,7 @@ def RunKL2DFG(
 # for windows for now use Visual Studio 2010. 
 # if you upgrade this you will also have to provide
 # boost libs for the corresponding VS version
-os.environ['FABRIC_EXTS_PATH'] += os.pathsep + str(Dir('stage').Dir('Exts').Dir('XBox'))
+os.environ['FABRIC_EXTS_PATH'] += os.pathsep + str(Dir('stage').Dir('Exts'))
 env = Environment(ENV = os.environ, MSVC_VERSION='10.0')
 env.AddMethod(RunKL2EDK)
 env.AddMethod(RunKL2DFG)

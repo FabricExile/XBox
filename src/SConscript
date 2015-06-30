@@ -66,9 +66,9 @@ env.Depends(cppFiles, kl2edkResults)
 env.Depends(kl2dfgResults, kl2edkResults + libraryFiles)
 
 extensionFiles += env.Install(extStageDir, libraryFiles[0])
-extensionFiles = Flatten(extensionFiles)
 extensionFiles += kl2edkResults
 extensionFiles += kl2dfgResults
+extensionFiles = Flatten(extensionFiles)
 
 env.AlwaysBuild(extensionFiles)
 alias = env.Alias(extName, extensionFiles)
