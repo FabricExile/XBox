@@ -3,14 +3,13 @@
  */
 
 #include <FabricEDK.h>
-#include "XBoxController_functions.h"
+#include "XBox.h"
+#include "global.h"
 #include <boost/thread/locks.hpp>
 #include <boost/thread/shared_mutex.hpp>
 
 #define GAMEPAD_EXPORT 1
 #include <gamepad.h>
-
-using namespace Fabric::EDK;
 
 typedef boost::shared_mutex Lock;
 typedef boost::unique_lock< Lock >  WriteLock;
@@ -32,6 +31,8 @@ void ContextCallback(bool opening, void const *contextPtr)
     printf("XBox: Library shutdown.\n");
   }
 }
+
+using namespace Fabric::EDK;
 IMPLEMENT_FABRIC_EDK_ENTRIES_WITH_CONTEXT_CALLBACK( XBox, &ContextCallback )
 
 // Defined at src\XBoxController.kl:82:1

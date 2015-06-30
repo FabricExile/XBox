@@ -2,7 +2,6 @@
   "version": "1.0.0",
   "libs": "Xbox",
   "code": [
-    "XBoxController.kl",
-    "XBoxViewportCallback.kl"
+    "XBoxController.kl"
   ]
 }
