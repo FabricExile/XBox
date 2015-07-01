@@ -1,0 +1,1391 @@
+{
+  "objectType" : "Graph",
+  "metadata" : {
+    "camera_mat44" : "{\n  \"row0\" : {\n    \"x\" : 0.7670229077339172,\n    \"y\" : 0.4281318187713623,\n    \"z\" : -0.4778597056865692,\n    \"t\" : -19.93659591674805\n    },\n  \"row1\" : {\n    \"x\" : 3.904043751390418e-06,\n    \"y\" : 0.7447642087936401,\n    \"z\" : 0.6673034429550171,\n    \"t\" : 24.06632041931152\n    },\n  \"row2\" : {\n    \"x\" : 0.6415956020355225,\n    \"y\" : -0.5118330717086792,\n    \"z\" : 0.5712737441062927,\n    \"t\" : 23.88534355163574\n    },\n  \"row3\" : {\n    \"x\" : 0,\n    \"y\" : 0,\n    \"z\" : 0,\n    \"t\" : 1\n    }\n  }",
+    "timeline_start" : "1",
+    "uiGraphZoom" : "{\"value\": 1.06}",
+    "uiBackDrops" : "uiBackDrop_backdrop_0",
+    "camera_focalDistance" : "40.73263931274414",
+    "timeline_current" : "50",
+    "uiBackDrop_backdrop_0" : "{\"name\": \"backdrop_0\", \"title\": \"XBox controller pull\", \"pos\": {\"x\": -71.123, \"y\": -58.436},\"size\": {\"width\": 898, \"height\": 372},\"color\": {\"r\": 110, \"g\": 230, \"b\": 30, \"a\": 255},\"comment\": \"\", \"commentExpanded\": false}",
+    "timeline_end" : "50",
+    "uiGraphPan" : "{\"x\": 276.123, \"y\": 60.436}"
+    },
+  "title" : "",
+  "ports" : [
+    {
+      "objectType" : "Port",
+      "nodePortType" : "Out",
+      "name" : "value",
+      "execPortType" : "In",
+      "typeSpec" : "String"
+      },
+    {
+      "objectType" : "Port",
+      "nodePortType" : "In",
+      "name" : "this",
+      "execPortType" : "Out",
+      "typeSpec" : "DrawingHandle"
+      },
+    {
+      "objectType" : "Port",
+      "nodePortType" : "Out",
+      "name" : "timeline",
+      "execPortType" : "In",
+      "typeSpec" : "Float32"
+      }
+    ],
+  "extDeps" : {},
+  "nodes" : [
+    {
+      "objectType" : "Inst",
+      "metadata" : {
+        "uiGraphPos" : "{\"x\": 930.17, \"y\": 89.424}"
+        },
+      "name" : "RenderXBoxController",
+      "ports" : [
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "Out",
+          "name" : "handle"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "In",
+          "name" : "value"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "In",
+          "name" : "xLeft"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "In",
+          "name" : "yLeft"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "In",
+          "name" : "xRight"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "In",
+          "name" : "yRight"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "In",
+          "defaultValues" : {
+            "Float32" : 0.3291000127792358
+            },
+          "name" : "strength"
+          }
+        ],
+      "definition" : {
+        "objectType" : "Graph",
+        "metadata" : {
+          "uiGraphZoom" : "{\"value\": 0.8836}",
+          "uiGraphPan" : "{\"x\": 198.029, \"y\": -374.176}"
+          },
+        "title" : "",
+        "ports" : [
+          {
+            "objectType" : "Port",
+            "nodePortType" : "In",
+            "name" : "handle",
+            "execPortType" : "Out"
+            },
+          {
+            "objectType" : "Port",
+            "nodePortType" : "Out",
+            "name" : "value",
+            "execPortType" : "In"
+            },
+          {
+            "objectType" : "Port",
+            "nodePortType" : "Out",
+            "name" : "xLeft",
+            "execPortType" : "In",
+            "typeSpec" : "Scalar"
+            },
+          {
+            "objectType" : "Port",
+            "nodePortType" : "Out",
+            "name" : "yLeft",
+            "execPortType" : "In",
+            "typeSpec" : "Scalar"
+            },
+          {
+            "objectType" : "Port",
+            "nodePortType" : "Out",
+            "name" : "xRight",
+            "execPortType" : "In",
+            "typeSpec" : "Scalar"
+            },
+          {
+            "objectType" : "Port",
+            "nodePortType" : "Out",
+            "name" : "yRight",
+            "execPortType" : "In",
+            "typeSpec" : "Scalar"
+            },
+          {
+            "objectType" : "Port",
+            "nodePortType" : "Out",
+            "name" : "strength",
+            "execPortType" : "In",
+            "typeSpec" : "Scalar"
+            }
+          ],
+        "extDeps" : {},
+        "nodes" : [
+          {
+            "objectType" : "Inst",
+            "metadata" : {
+              "uiGraphPos" : "{\"x\": 1326, \"y\": -100}"
+              },
+            "name" : "EmptyDrawingHandle",
+            "ports" : [
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "Out",
+                "name" : "handle"
+                }
+              ],
+            "executable" : "Fabric.Exts.InlineDrawing.DrawingHandle.EmptyDrawingHandle"
+            },
+          {
+            "objectType" : "Inst",
+            "metadata" : {
+              "uiGraphPos" : "{\"x\": 1549, \"y\": -60}"
+              },
+            "name" : "DrawPolygonMesh",
+            "ports" : [
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "IO",
+                "name" : "this"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "defaultValues" : {
+                  "String" : "body"
+                  },
+                "name" : "name"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "defaultValues" : {
+                  "Color" : {
+                    "r" : 1,
+                    "g" : 1,
+                    "b" : 1,
+                    "a" : 1
+                    }
+                  },
+                "name" : "color"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "name" : "transform"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "name" : "mesh"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "name" : "wireFrame"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "Out",
+                "name" : "dummyResult"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "Out",
+                "name" : "instance"
+                }
+              ],
+            "executable" : "Fabric.Exts.InlineDrawing.DrawingHandle.DrawPolygonMesh"
+            },
+          {
+            "objectType" : "Inst",
+            "metadata" : {
+              "uiGraphPos" : "{\"x\": 1531, \"y\": 198}"
+              },
+            "name" : "DrawPolygonMeshInstances",
+            "ports" : [
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "IO",
+                "name" : "this"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "defaultValues" : {
+                  "String" : "sticks"
+                  },
+                "name" : "name"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "defaultValues" : {
+                  "Color" : {
+                    "r" : 0.3098039329051971,
+                    "g" : 0.3098039329051971,
+                    "b" : 0.3098039329051971,
+                    "a" : 1
+                    }
+                  },
+                "name" : "color"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "name" : "transforms"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "name" : "mesh"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "name" : "wireFrame"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "Out",
+                "name" : "dummyResult"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "Out",
+                "name" : "instance"
+                }
+              ],
+            "executable" : "Fabric.Exts.InlineDrawing.DrawingHandle.DrawPolygonMeshInstances"
+            },
+          {
+            "objectType" : "Inst",
+            "metadata" : {
+              "uiGraphPos" : "{\"x\": 1169, \"y\": 309}"
+              },
+            "name" : "Push",
+            "ports" : [
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "IO",
+                "name" : "array"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "name" : "element"
+                }
+              ],
+            "executable" : "Fabric.Core.Array.Push"
+            },
+          {
+            "objectType" : "Inst",
+            "metadata" : {
+              "uiGraphPos" : "{\"x\": 1335.5, \"y\": 393.5}"
+              },
+            "name" : "Push_2",
+            "ports" : [
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "IO",
+                "name" : "array"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "name" : "element"
+                }
+              ],
+            "executable" : "Fabric.Core.Array.Push"
+            },
+          {
+            "objectType" : "Inst",
+            "metadata" : {
+              "uiGraphPos" : "{\"x\": 777, \"y\": 271}"
+              },
+            "name" : "XfoFromSRT",
+            "ports" : [
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "defaultValues" : {
+                  "Float32" : 4
+                  },
+                "name" : "scX"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "defaultValues" : {
+                  "Float32" : 4
+                  },
+                "name" : "scY"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "defaultValues" : {
+                  "Float32" : 4
+                  },
+                "name" : "scZ"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "name" : "eulerX"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "name" : "eulerY"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "name" : "eulerZ"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "defaultValues" : {
+                  "Float32" : -5.511554718017578
+                  },
+                "name" : "trX"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "defaultValues" : {
+                  "Float32" : 3.822999954223633
+                  },
+                "name" : "trY"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "defaultValues" : {
+                  "Float32" : -1.962000131607056
+                  },
+                "name" : "trZ"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "Out",
+                "name" : "result"
+                }
+              ],
+            "executable" : "Fabric.Exts.Math.Xfo.XfoFromSRT"
+            },
+          {
+            "objectType" : "Inst",
+            "metadata" : {
+              "uiGraphPos" : "{\"x\": 1337, \"y\": -32}"
+              },
+            "name" : "ComposeXfo",
+            "ports" : [
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "name" : "ori"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "defaultValues" : {
+                  "Vec3" : {
+                    "x" : 0,
+                    "y" : 3,
+                    "z" : 0
+                    }
+                  },
+                "name" : "tr"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "defaultValues" : {
+                  "Vec3" : {
+                    "x" : 4,
+                    "y" : 4,
+                    "z" : 4
+                    }
+                  },
+                "name" : "sc"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "Out",
+                "name" : "result"
+                }
+              ],
+            "executable" : "Fabric.Exts.Math.Xfo.ComposeXfo"
+            },
+          {
+            "objectType" : "Inst",
+            "metadata" : {
+              "uiGraphPos" : "{\"x\": 776.5, \"y\": 538.5}"
+              },
+            "name" : "XfoFromSRT_2",
+            "ports" : [
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "defaultValues" : {
+                  "Float32" : 4
+                  },
+                "name" : "scX"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "defaultValues" : {
+                  "Float32" : 4
+                  },
+                "name" : "scY"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "defaultValues" : {
+                  "Float32" : 4
+                  },
+                "name" : "scZ"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "defaultValues" : {
+                  "Float32" : 0
+                  },
+                "name" : "eulerX"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "name" : "eulerY"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "defaultValues" : {
+                  "Float32" : 0
+                  },
+                "name" : "eulerZ"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "defaultValues" : {
+                  "Float32" : 3.10099983215332
+                  },
+                "name" : "trX"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "defaultValues" : {
+                  "Float32" : 3.822999954223633
+                  },
+                "name" : "trY"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "defaultValues" : {
+                  "Float32" : 1.075999736785889
+                  },
+                "name" : "trZ"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "Out",
+                "name" : "result"
+                }
+              ],
+            "executable" : "Fabric.Exts.Math.Xfo.XfoFromSRT"
+            },
+          {
+            "objectType" : "Inst",
+            "metadata" : {
+              "uiGraphPos" : "{\"x\": 1237.89, \"y\": 138.456}"
+              },
+            "name" : "GetMeshesFromAlembic",
+            "ports" : [
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "name" : "filePath"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "Out",
+                "name" : "body"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "Out",
+                "name" : "stick"
+                }
+              ],
+            "definition" : {
+              "objectType" : "Graph",
+              "title" : "",
+              "ports" : [
+                {
+                  "objectType" : "Port",
+                  "nodePortType" : "Out",
+                  "name" : "filePath",
+                  "execPortType" : "In"
+                  },
+                {
+                  "objectType" : "Port",
+                  "nodePortType" : "In",
+                  "name" : "body",
+                  "execPortType" : "Out"
+                  },
+                {
+                  "objectType" : "Port",
+                  "nodePortType" : "In",
+                  "name" : "stick",
+                  "execPortType" : "Out"
+                  }
+                ],
+              "extDeps" : {},
+              "nodes" : [
+                {
+                  "objectType" : "Inst",
+                  "metadata" : {
+                    "uiGraphPos" : "{\"x\": 179, \"y\": 56}"
+                    },
+                  "name" : "FilePath",
+                  "ports" : [
+                    {
+                      "objectType" : "InstPort",
+                      "nodePortType" : "In",
+                      "name" : "value"
+                      },
+                    {
+                      "objectType" : "InstPort",
+                      "nodePortType" : "Out",
+                      "name" : "result"
+                      }
+                    ],
+                  "executable" : "Fabric.Exts.FileIO.FilePath.FilePath"
+                  },
+                {
+                  "objectType" : "Inst",
+                  "metadata" : {
+                    "uiGraphPos" : "{\"x\": 318, \"y\": 55}"
+                    },
+                  "name" : "ExpandEnvVars",
+                  "ports" : [
+                    {
+                      "objectType" : "InstPort",
+                      "nodePortType" : "In",
+                      "name" : "this"
+                      },
+                    {
+                      "objectType" : "InstPort",
+                      "nodePortType" : "Out",
+                      "name" : "result"
+                      }
+                    ],
+                  "executable" : "Fabric.Exts.FileIO.FilePath.ExpandEnvVars"
+                  },
+                {
+                  "objectType" : "Inst",
+                  "metadata" : {
+                    "uiGraphPos" : "{\"x\": 471, \"y\": 52}"
+                    },
+                  "name" : "String",
+                  "ports" : [
+                    {
+                      "objectType" : "InstPort",
+                      "nodePortType" : "In",
+                      "name" : "this"
+                      },
+                    {
+                      "objectType" : "InstPort",
+                      "nodePortType" : "Out",
+                      "name" : "result"
+                      }
+                    ],
+                  "executable" : "Fabric.Exts.FileIO.FilePath.String"
+                  },
+                {
+                  "objectType" : "Inst",
+                  "metadata" : {
+                    "uiGraphPos" : "{\"x\": 602, \"y\": 133}"
+                    },
+                  "name" : "AlembicArchiveReader",
+                  "ports" : [
+                    {
+                      "objectType" : "InstPort",
+                      "nodePortType" : "In",
+                      "name" : "fileName"
+                      },
+                    {
+                      "objectType" : "InstPort",
+                      "nodePortType" : "Out",
+                      "name" : "result"
+                      }
+                    ],
+                  "executable" : "Fabric.Exts.AlembicWrapper.AlembicArchiveReader.AlembicArchiveReader"
+                  },
+                {
+                  "objectType" : "Inst",
+                  "metadata" : {
+                    "uiGraphPos" : "{\"x\": 965, \"y\": 45}"
+                    },
+                  "name" : "GetPolyMesh",
+                  "ports" : [
+                    {
+                      "objectType" : "InstPort",
+                      "nodePortType" : "IO",
+                      "name" : "this"
+                      },
+                    {
+                      "objectType" : "InstPort",
+                      "nodePortType" : "In",
+                      "defaultValues" : {
+                        "String" : "/body/bodyShape"
+                        },
+                      "name" : "path"
+                      },
+                    {
+                      "objectType" : "InstPort",
+                      "nodePortType" : "Out",
+                      "name" : "result"
+                      }
+                    ],
+                  "executable" : "Fabric.Exts.AlembicWrapper.AlembicArchiveReader.GetPolyMesh"
+                  },
+                {
+                  "objectType" : "Inst",
+                  "metadata" : {
+                    "uiGraphPos" : "{\"x\": 972.5, \"y\": 168.5}"
+                    },
+                  "name" : "GetPolyMesh_2",
+                  "ports" : [
+                    {
+                      "objectType" : "InstPort",
+                      "nodePortType" : "IO",
+                      "name" : "this"
+                      },
+                    {
+                      "objectType" : "InstPort",
+                      "nodePortType" : "In",
+                      "defaultValues" : {
+                        "String" : "/body/stick_l/stick_lShape"
+                        },
+                      "name" : "path"
+                      },
+                    {
+                      "objectType" : "InstPort",
+                      "nodePortType" : "Out",
+                      "name" : "result"
+                      }
+                    ],
+                  "executable" : "Fabric.Exts.AlembicWrapper.AlembicArchiveReader.GetPolyMesh"
+                  },
+                {
+                  "objectType" : "Inst",
+                  "metadata" : {
+                    "uiGraphPos" : "{\"x\": 1138, \"y\": 28}"
+                    },
+                  "name" : "ReadSample",
+                  "ports" : [
+                    {
+                      "objectType" : "InstPort",
+                      "nodePortType" : "IO",
+                      "name" : "this"
+                      },
+                    {
+                      "objectType" : "InstPort",
+                      "nodePortType" : "In",
+                      "name" : "time"
+                      },
+                    {
+                      "objectType" : "InstPort",
+                      "nodePortType" : "In",
+                      "defaultValues" : {
+                        "Boolean" : true
+                        },
+                      "name" : "freezeAttributeIndices"
+                      },
+                    {
+                      "objectType" : "InstPort",
+                      "nodePortType" : "IO",
+                      "name" : "mesh"
+                      }
+                    ],
+                  "executable" : "Fabric.Exts.AlembicWrapper.AlembicPolyMeshReader.ReadSample"
+                  },
+                {
+                  "objectType" : "Inst",
+                  "metadata" : {
+                    "uiGraphPos" : "{\"x\": 1140.5, \"y\": 171.5}"
+                    },
+                  "name" : "ReadSample_2",
+                  "ports" : [
+                    {
+                      "objectType" : "InstPort",
+                      "nodePortType" : "IO",
+                      "name" : "this"
+                      },
+                    {
+                      "objectType" : "InstPort",
+                      "nodePortType" : "In",
+                      "name" : "time"
+                      },
+                    {
+                      "objectType" : "InstPort",
+                      "nodePortType" : "In",
+                      "defaultValues" : {
+                        "Boolean" : true
+                        },
+                      "name" : "freezeAttributeIndices"
+                      },
+                    {
+                      "objectType" : "InstPort",
+                      "nodePortType" : "IO",
+                      "name" : "mesh"
+                      }
+                    ],
+                  "executable" : "Fabric.Exts.AlembicWrapper.AlembicPolyMeshReader.ReadSample"
+                  },
+                {
+                  "objectType" : "Inst",
+                  "metadata" : {
+                    "uiGraphPos" : "{\"x\": 1363, \"y\": 50}"
+                    },
+                  "name" : "Cache",
+                  "ports" : [
+                    {
+                      "objectType" : "InstPort",
+                      "nodePortType" : "In",
+                      "name" : "value"
+                      }
+                    ],
+                  "executable" : "Fabric.Core.Data.Cache"
+                  },
+                {
+                  "objectType" : "Inst",
+                  "metadata" : {
+                    "uiGraphPos" : "{\"x\": 1366, \"y\": 164}"
+                    },
+                  "name" : "Cache_2",
+                  "ports" : [
+                    {
+                      "objectType" : "InstPort",
+                      "nodePortType" : "In",
+                      "name" : "value"
+                      }
+                    ],
+                  "executable" : "Fabric.Core.Data.Cache"
+                  }
+                ],
+              "connections" : {
+                "filePath" : [
+                  "FilePath.value"
+                  ],
+                "FilePath.result" : [
+                  "ExpandEnvVars.this"
+                  ],
+                "ExpandEnvVars.result" : [
+                  "String.this"
+                  ],
+                "String.result" : [
+                  "AlembicArchiveReader.fileName"
+                  ],
+                "AlembicArchiveReader.result" : [
+                  "GetPolyMesh.this",
+                  "GetPolyMesh_2.this"
+                  ],
+                "GetPolyMesh.result" : [
+                  "ReadSample.this"
+                  ],
+                "GetPolyMesh_2.result" : [
+                  "ReadSample_2.this"
+                  ],
+                "ReadSample.mesh" : [
+                  "Cache.value"
+                  ],
+                "ReadSample_2.mesh" : [
+                  "Cache_2.value"
+                  ],
+                "Cache.value" : [
+                  "body"
+                  ],
+                "Cache_2.value" : [
+                  "stick"
+                  ]
+                }
+              },
+            "title" : "Get Meshes From Alembic"
+            },
+          {
+            "objectType" : "Inst",
+            "metadata" : {
+              "uiGraphPos" : "{\"x\": 440.25, \"y\": 257.75}"
+              },
+            "name" : "Mul",
+            "ports" : [
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "name" : "lhs"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "name" : "rhs"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "Out",
+                "name" : "result"
+                }
+              ],
+            "executable" : "Fabric.Core.Math.Mul"
+            },
+          {
+            "objectType" : "Inst",
+            "metadata" : {
+              "uiGraphPos" : "{\"x\": 440.116, \"y\": 372.407}"
+              },
+            "name" : "Mul_2",
+            "ports" : [
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "name" : "lhs"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "name" : "rhs"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "Out",
+                "name" : "result"
+                }
+              ],
+            "executable" : "Fabric.Core.Math.Mul"
+            },
+          {
+            "objectType" : "Inst",
+            "metadata" : {
+              "uiGraphPos" : "{\"x\": 429.789, \"y\": 509.242}"
+              },
+            "name" : "Mul2",
+            "ports" : [
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "name" : "lhs"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "name" : "rhs"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "Out",
+                "name" : "result"
+                }
+              ],
+            "executable" : "Fabric.Core.Math.Mul"
+            },
+          {
+            "objectType" : "Inst",
+            "metadata" : {
+              "uiGraphPos" : "{\"x\": 434.318, \"y\": 637.125}"
+              },
+            "name" : "Mul2_2",
+            "ports" : [
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "name" : "lhs"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "name" : "rhs"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "Out",
+                "name" : "result"
+                }
+              ],
+            "executable" : "Fabric.Core.Math.Mul"
+            },
+          {
+            "objectType" : "Inst",
+            "metadata" : {
+              "uiGraphPos" : "{\"x\": 156.151, \"y\": 432.522}"
+              },
+            "name" : "Neg1",
+            "ports" : [
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "name" : "val"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "Out",
+                "name" : "result"
+                }
+              ],
+            "executable" : "Fabric.Core.Math.Neg"
+            }
+          ],
+        "connections" : {
+          "value" : [
+            "GetMeshesFromAlembic.filePath"
+            ],
+          "xLeft" : [
+            "Mul.lhs"
+            ],
+          "yLeft" : [
+            "Mul_2.lhs"
+            ],
+          "xRight" : [
+            "Mul2.lhs"
+            ],
+          "yRight" : [
+            "Mul2_2.lhs"
+            ],
+          "strength" : [
+            "Neg1.val"
+            ],
+          "EmptyDrawingHandle.handle" : [
+            "DrawPolygonMesh.this"
+            ],
+          "DrawPolygonMesh.this" : [
+            "DrawPolygonMeshInstances.this"
+            ],
+          "DrawPolygonMeshInstances.this" : [
+            "handle"
+            ],
+          "Push.array" : [
+            "Push_2.array"
+            ],
+          "Push_2.array" : [
+            "DrawPolygonMeshInstances.transforms"
+            ],
+          "XfoFromSRT.result" : [
+            "Push.element"
+            ],
+          "ComposeXfo.result" : [
+            "DrawPolygonMesh.transform"
+            ],
+          "XfoFromSRT_2.result" : [
+            "Push_2.element"
+            ],
+          "GetMeshesFromAlembic.body" : [
+            "DrawPolygonMesh.mesh"
+            ],
+          "GetMeshesFromAlembic.stick" : [
+            "DrawPolygonMeshInstances.mesh"
+            ],
+          "Mul.result" : [
+            "XfoFromSRT.eulerZ"
+            ],
+          "Mul_2.result" : [
+            "XfoFromSRT.eulerX"
+            ],
+          "Mul2.result" : [
+            "XfoFromSRT_2.eulerZ"
+            ],
+          "Mul2_2.result" : [
+            "XfoFromSRT_2.eulerX"
+            ],
+          "Neg1.result" : [
+            "Mul.rhs",
+            "Mul_2.rhs",
+            "Mul2.rhs",
+            "Mul2_2.rhs"
+            ]
+          }
+        },
+      "title" : "Render XBox Controller"
+      },
+    {
+      "objectType" : "Inst",
+      "metadata" : {
+        "uiGraphPos" : "{\"x\": 154.296, \"y\": 24.6454}"
+        },
+      "name" : "XBoxController",
+      "ports" : [
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "In",
+          "name" : "device"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "Out",
+          "name" : "result"
+          }
+        ],
+      "executable" : "ThirdParty.XBox.XBoxController.XBoxController"
+      },
+    {
+      "objectType" : "Inst",
+      "metadata" : {
+        "uiGraphPos" : "{\"x\": -56.704, \"y\": 27.6454}"
+        },
+      "name" : "XBOXGAMEPAD0",
+      "ports" : [
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "Out",
+          "name" : "value"
+          }
+        ],
+      "executable" : "ThirdParty.XBox.Constants.XBOX_GAMEPAD_0"
+      },
+    {
+      "objectType" : "Inst",
+      "metadata" : {
+        "uiGraphPos" : "{\"x\": 476.296, \"y\": 38.6454}"
+        },
+      "name" : "Update",
+      "ports" : [
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "In",
+          "name" : "this"
+          }
+        ],
+      "executable" : "ThirdParty.XBox.XBoxController.Update"
+      },
+    {
+      "objectType" : "Inst",
+      "metadata" : {
+        "uiGraphPos" : "{\"x\": 682.296, \"y\": 37.6454}"
+        },
+      "name" : "StickNormXY",
+      "ports" : [
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "In",
+          "name" : "this"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "In",
+          "name" : "stick"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "IO",
+          "name" : "outX"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "IO",
+          "name" : "outY"
+          }
+        ],
+      "executable" : "ThirdParty.XBox.XBoxController.StickNormXY"
+      },
+    {
+      "objectType" : "Inst",
+      "metadata" : {
+        "uiGraphPos" : "{\"x\": 457.296, \"y\": 156.645}"
+        },
+      "name" : "XBOXSTICKLEFT",
+      "ports" : [
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "Out",
+          "name" : "value"
+          }
+        ],
+      "executable" : "ThirdParty.XBox.Constants.XBOX_STICK_LEFT"
+      },
+    {
+      "objectType" : "Inst",
+      "metadata" : {
+        "uiGraphPos" : "{\"x\": 461.296, \"y\": 247.645}"
+        },
+      "name" : "XBOXSTICKRIGHT",
+      "ports" : [
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "Out",
+          "name" : "value"
+          }
+        ],
+      "executable" : "ThirdParty.XBox.Constants.XBOX_STICK_RIGHT"
+      },
+    {
+      "objectType" : "Inst",
+      "metadata" : {
+        "uiGraphPos" : "{\"x\": 684.796, \"y\": 179.145}"
+        },
+      "name" : "StickNormXY_2",
+      "ports" : [
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "In",
+          "name" : "this"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "In",
+          "name" : "stick"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "IO",
+          "name" : "outX"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "IO",
+          "name" : "outY"
+          }
+        ],
+      "executable" : "ThirdParty.XBox.XBoxController.StickNormXY"
+      },
+    {
+      "objectType" : "Var",
+      "metadata" : {
+        "uiGraphPos" : "{\"x\": 334.877, \"y\": 34.564}"
+        },
+      "name" : "controller",
+      "ports" : [
+        {
+          "objectType" : "VarPort",
+          "nodePortType" : "IO",
+          "name" : "value"
+          }
+        ],
+      "dataType" : "XBoxController",
+      "extDep" : "XBox:*"
+      }
+    ],
+  "connections" : {
+    "value" : [
+      "RenderXBoxController.value"
+      ],
+    "RenderXBoxController.handle" : [
+      "this"
+      ],
+    "XBoxController.result" : [
+      "controller.value"
+      ],
+    "XBOXGAMEPAD0.value" : [
+      "XBoxController.device"
+      ],
+    "Update.this" : [
+      "StickNormXY.this",
+      "StickNormXY_2.this"
+      ],
+    "StickNormXY.outX" : [
+      "RenderXBoxController.xLeft"
+      ],
+    "StickNormXY.outY" : [
+      "RenderXBoxController.yLeft"
+      ],
+    "XBOXSTICKLEFT.value" : [
+      "StickNormXY.stick"
+      ],
+    "XBOXSTICKRIGHT.value" : [
+      "StickNormXY_2.stick"
+      ],
+    "StickNormXY_2.outX" : [
+      "RenderXBoxController.xRight"
+      ],
+    "StickNormXY_2.outY" : [
+      "RenderXBoxController.yRight"
+      ],
+    "controller.value" : [
+      "Update.this"
+      ]
+    },
+  "requiredPresets" : {
+    "ThirdParty.XBox.XBoxController.XBoxController" : {
+      "objectType" : "Func",
+      "metadata" : {
+        "uiTooltip" : "standard constructor given a device"
+        },
+      "title" : "XBoxController",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "nodePortType" : "Out",
+          "name" : "device",
+          "execPortType" : "In",
+          "typeSpec" : "XBOX_GAMEPAD_DEVICE"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "result",
+          "execPortType" : "Out",
+          "typeSpec" : "XBoxController"
+          }
+        ],
+      "extDeps" : {
+        "XBox" : "*"
+        },
+      "code" : "require XBox;\n\ndfgEntry {\n  result = XBoxController(device);\n}\n"
+      },
+    "ThirdParty.XBox.Constants.XBOX_GAMEPAD_0" : {
+      "objectType" : "Func",
+      "title" : "XBOX_GAMEPAD_0",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "value",
+          "execPortType" : "Out",
+          "typeSpec" : "XBOX_GAMEPAD_DEVICE"
+          }
+        ],
+      "extDeps" : {
+        "XBox" : "*"
+        },
+      "code" : "dfgEntry {\n  value = XBOX_GAMEPAD_0;\n}\n"
+      },
+    "ThirdParty.XBox.XBoxController.Update" : {
+      "objectType" : "Func",
+      "metadata" : {
+        "uiTooltip" : "* Updates the state of the gamepads.\n\n* This must be called (at least) once per game loop.\n"
+        },
+      "title" : "Update",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "nodePortType" : "Out",
+          "name" : "this",
+          "execPortType" : "In",
+          "typeSpec" : "XBoxController"
+          }
+        ],
+      "extDeps" : {
+        "XBox" : "*"
+        },
+      "code" : "require XBox;\n\ndfgEntry {\n  this.update();\n}\n"
+      },
+    "ThirdParty.XBox.XBoxController.StickNormXY" : {
+      "objectType" : "Func",
+      "metadata" : {
+        "uiTooltip" : "* Query the position of an analog stick as normalized values.\n\n* The values retrieved by this function represent the magnitude of the analog\n* stick in each direction.  Note that it shouldn't be possible to get full\n* magnitude in one direction unless the other direction has a magnitude of\n* zero, as the stick has a circular movement range.\n\n* \\param device The device to check.\n* \\param stick The stick to check.\n* \\param outX Pointer to float to store the X magnitude in (-1 to 1).\n* \\param outX Pointer to float to store the Y magnitude in (-1 to 1).\n"
+        },
+      "title" : "StickNormXY",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "nodePortType" : "Out",
+          "name" : "this",
+          "execPortType" : "In",
+          "typeSpec" : "XBoxController"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "Out",
+          "name" : "stick",
+          "execPortType" : "In",
+          "typeSpec" : "XBOX_GAMEPAD_STICK"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "IO",
+          "name" : "outX",
+          "execPortType" : "IO",
+          "typeSpec" : "Float32"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "IO",
+          "name" : "outY",
+          "execPortType" : "IO",
+          "typeSpec" : "Float32"
+          }
+        ],
+      "extDeps" : {
+        "XBox" : "*"
+        },
+      "code" : "require XBox;\n\ndfgEntry {\n  this.stickNormXY(stick, outX, outY);\n}\n"
+      },
+    "ThirdParty.XBox.Constants.XBOX_STICK_LEFT" : {
+      "objectType" : "Func",
+      "title" : "XBOX_STICK_LEFT",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "value",
+          "execPortType" : "Out",
+          "typeSpec" : "XBOX_GAMEPAD_STICK"
+          }
+        ],
+      "extDeps" : {
+        "XBox" : "*"
+        },
+      "code" : "dfgEntry {\n  value = XBOX_STICK_LEFT;\n}\n"
+      },
+    "ThirdParty.XBox.Constants.XBOX_STICK_RIGHT" : {
+      "objectType" : "Func",
+      "title" : "XBOX_STICK_RIGHT",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "value",
+          "execPortType" : "Out",
+          "typeSpec" : "XBOX_GAMEPAD_STICK"
+          }
+        ],
+      "extDeps" : {
+        "XBox" : "*"
+        },
+      "code" : "dfgEntry {\n  value = XBOX_STICK_RIGHT;\n}\n"
+      }
+    },
+  "args" : [
+    {
+      "type" : "String",
+      "value" : "${FABRIC_DIR}/Resources/xbox_ctrl.abc"
+      },
+    {
+      "type" : "DrawingHandle",
+      "value" : null,
+      "ext" : "InlineDrawing"
+      },
+    {
+      "type" : "Float32",
+      "value" : 50
+      }
+    ]
+  }
