@@ -1,12 +1,12 @@
 {
   "objectType" : "Graph",
   "metadata" : {
-    "camera_mat44" : "{\n  \"row0\" : {\n    \"x\" : 0.7670229077339172,\n    \"y\" : 0.4281318187713623,\n    \"z\" : -0.4778597056865692,\n    \"t\" : -19.93659591674805\n    },\n  \"row1\" : {\n    \"x\" : 3.904043751390418e-06,\n    \"y\" : 0.7447642087936401,\n    \"z\" : 0.6673034429550171,\n    \"t\" : 24.06632041931152\n    },\n  \"row2\" : {\n    \"x\" : 0.6415956020355225,\n    \"y\" : -0.5118330717086792,\n    \"z\" : 0.5712737441062927,\n    \"t\" : 23.88534355163574\n    },\n  \"row3\" : {\n    \"x\" : 0,\n    \"y\" : 0,\n    \"z\" : 0,\n    \"t\" : 1\n    }\n  }",
+    "camera_mat44" : "{\n  \"row0\" : {\n    \"x\" : 0.8215746879577637,\n    \"y\" : 0.3761617243289948,\n    \"z\" : -0.4283730387687683,\n    \"t\" : -13.99926090240479\n    },\n  \"row1\" : {\n    \"x\" : 5.051477728557074e-06,\n    \"y\" : 0.7513734102249146,\n    \"z\" : 0.659848153591156,\n    \"t\" : 20.01522636413574\n    },\n  \"row2\" : {\n    \"x\" : 0.5700953602790833,\n    \"y\" : -0.5421000719070435,\n    \"z\" : 0.6173302531242371,\n    \"t\" : 18.91913414001465\n    },\n  \"row3\" : {\n    \"x\" : 0,\n    \"y\" : 0,\n    \"z\" : 0,\n    \"t\" : 1\n    }\n  }",
     "timeline_start" : "1",
-    "uiGraphZoom" : "{\"value\": 1.06}",
+    "uiGraphZoom" : "{\"value\": 0.830584}",
     "uiBackDrops" : "uiBackDrop_backdrop_0",
-    "camera_focalDistance" : "40.73263931274414",
-    "timeline_current" : "50",
+    "camera_focalDistance" : "31.17132949829102",
+    "timeline_current" : "49",
     "uiBackDrop_backdrop_0" : "{\"name\": \"backdrop_0\", \"title\": \"XBox controller pull\", \"pos\": {\"x\": -71.123, \"y\": -58.436},\"size\": {\"width\": 898, \"height\": 372},\"color\": {\"r\": 110, \"g\": 230, \"b\": 30, \"a\": 255},\"comment\": \"\", \"commentExpanded\": false}",
     "timeline_end" : "50",
     "uiGraphPan" : "{\"x\": 276.123, \"y\": 60.436}"
@@ -86,8 +86,8 @@
       "definition" : {
         "objectType" : "Graph",
         "metadata" : {
-          "uiGraphZoom" : "{\"value\": 0.8836}",
-          "uiGraphPan" : "{\"x\": 198.029, \"y\": -374.176}"
+          "uiGraphZoom" : "{\"value\": 0.780749}",
+          "uiGraphPan" : "{\"x\": 378.892, \"y\": -207.623}"
           },
         "title" : "",
         "ports" : [
@@ -376,7 +376,7 @@
                 "objectType" : "InstPort",
                 "nodePortType" : "In",
                 "defaultValues" : {
-                  "Float32" : 3.822999954223633
+                  "Float32" : 3.555000305175781
                   },
                 "name" : "trY"
                 },
@@ -384,7 +384,7 @@
                 "objectType" : "InstPort",
                 "nodePortType" : "In",
                 "defaultValues" : {
-                  "Float32" : -1.962000131607056
+                  "Float32" : -2.021000146865845
                   },
                 "name" : "trZ"
                 },
@@ -399,7 +399,7 @@
           {
             "objectType" : "Inst",
             "metadata" : {
-              "uiGraphPos" : "{\"x\": 1337, \"y\": -32}"
+              "uiGraphPos" : "{\"x\": 1363.01, \"y\": -12.7608}"
               },
             "name" : "ComposeXfo",
             "ports" : [
@@ -504,7 +504,7 @@
                 "objectType" : "InstPort",
                 "nodePortType" : "In",
                 "defaultValues" : {
-                  "Float32" : 3.822999954223633
+                  "Float32" : 3.52500057220459
                   },
                 "name" : "trY"
                 },
@@ -512,7 +512,7 @@
                 "objectType" : "InstPort",
                 "nodePortType" : "In",
                 "defaultValues" : {
-                  "Float32" : 1.075999736785889
+                  "Float32" : 0.9879999160766602
                   },
                 "name" : "trZ"
                 },
@@ -549,6 +549,9 @@
               ],
             "definition" : {
               "objectType" : "Graph",
+              "metadata" : {
+                "uiGraphPan" : "{\"x\": -14, \"y\": -31}"
+                },
               "title" : "",
               "ports" : [
                 {
@@ -575,7 +578,7 @@
                 {
                   "objectType" : "Inst",
                   "metadata" : {
-                    "uiGraphPos" : "{\"x\": 179, \"y\": 56}"
+                    "uiGraphPos" : "{\"x\": -77, \"y\": 38}"
                     },
                   "name" : "FilePath",
                   "ports" : [
@@ -595,7 +598,7 @@
                 {
                   "objectType" : "Inst",
                   "metadata" : {
-                    "uiGraphPos" : "{\"x\": 318, \"y\": 55}"
+                    "uiGraphPos" : "{\"x\": 62, \"y\": 37}"
                     },
                   "name" : "ExpandEnvVars",
                   "ports" : [
@@ -615,7 +618,7 @@
                 {
                   "objectType" : "Inst",
                   "metadata" : {
-                    "uiGraphPos" : "{\"x\": 471, \"y\": 52}"
+                    "uiGraphPos" : "{\"x\": 215, \"y\": 34}"
                     },
                   "name" : "String",
                   "ports" : [
@@ -635,7 +638,7 @@
                 {
                   "objectType" : "Inst",
                   "metadata" : {
-                    "uiGraphPos" : "{\"x\": 602, \"y\": 133}"
+                    "uiGraphPos" : "{\"x\": 346, \"y\": 115}"
                     },
                   "name" : "AlembicArchiveReader",
                   "ports" : [
@@ -803,6 +806,87 @@
                       }
                     ],
                   "executable" : "Fabric.Core.Data.Cache"
+                  },
+                {
+                  "objectType" : "Inst",
+                  "metadata" : {
+                    "uiGraphPos" : "{\"x\": 556, \"y\": 221}"
+                    },
+                  "name" : "GetPathsOfType",
+                  "ports" : [
+                    {
+                      "objectType" : "InstPort",
+                      "nodePortType" : "IO",
+                      "name" : "this"
+                      },
+                    {
+                      "objectType" : "InstPort",
+                      "nodePortType" : "In",
+                      "defaultValues" : {
+                        "String" : "PolyMesh"
+                        },
+                      "name" : "objType"
+                      },
+                    {
+                      "objectType" : "InstPort",
+                      "nodePortType" : "Out",
+                      "name" : "result"
+                      }
+                    ],
+                  "executable" : "Fabric.Exts.AlembicWrapper.AlembicArchiveReader.GetPathsOfType"
+                  },
+                {
+                  "objectType" : "Inst",
+                  "metadata" : {
+                    "uiGraphPos" : "{\"x\": 765, \"y\": 99}"
+                    },
+                  "name" : "Get",
+                  "ports" : [
+                    {
+                      "objectType" : "InstPort",
+                      "nodePortType" : "In",
+                      "name" : "array"
+                      },
+                    {
+                      "objectType" : "InstPort",
+                      "nodePortType" : "In",
+                      "name" : "index"
+                      },
+                    {
+                      "objectType" : "InstPort",
+                      "nodePortType" : "Out",
+                      "name" : "element"
+                      }
+                    ],
+                  "executable" : "Fabric.Core.Array.Get"
+                  },
+                {
+                  "objectType" : "Inst",
+                  "metadata" : {
+                    "uiGraphPos" : "{\"x\": 768.5, \"y\": 207.5}"
+                    },
+                  "name" : "Get_2",
+                  "ports" : [
+                    {
+                      "objectType" : "InstPort",
+                      "nodePortType" : "In",
+                      "name" : "array"
+                      },
+                    {
+                      "objectType" : "InstPort",
+                      "nodePortType" : "In",
+                      "defaultValues" : {
+                        "UInt32" : 1
+                        },
+                      "name" : "index"
+                      },
+                    {
+                      "objectType" : "InstPort",
+                      "nodePortType" : "Out",
+                      "name" : "element"
+                      }
+                    ],
+                  "executable" : "Fabric.Core.Array.Get"
                   }
                 ],
               "connections" : {
@@ -820,7 +904,8 @@
                   ],
                 "AlembicArchiveReader.result" : [
                   "GetPolyMesh.this",
-                  "GetPolyMesh_2.this"
+                  "GetPolyMesh_2.this",
+                  "GetPathsOfType.this"
                   ],
                 "GetPolyMesh.result" : [
                   "ReadSample.this"
@@ -839,6 +924,16 @@
                   ],
                 "Cache_2.value" : [
                   "stick"
+                  ],
+                "GetPathsOfType.result" : [
+                  "Get.array",
+                  "Get_2.array"
+                  ],
+                "Get.element" : [
+                  "GetPolyMesh.path"
+                  ],
+                "Get_2.element" : [
+                  "GetPolyMesh_2.path"
                   ]
                 }
               },
@@ -872,7 +967,7 @@
           {
             "objectType" : "Inst",
             "metadata" : {
-              "uiGraphPos" : "{\"x\": 440.116, \"y\": 372.407}"
+              "uiGraphPos" : "{\"x\": 460.482, \"y\": 384.858}"
               },
             "name" : "Mul_2",
             "ports" : [
@@ -963,6 +1058,177 @@
                 }
               ],
             "executable" : "Fabric.Core.Math.Neg"
+            },
+          {
+            "objectType" : "Inst",
+            "metadata" : {
+              "uiGraphPos" : "{\"x\": 1176.92, \"y\": -145.791}"
+              },
+            "name" : "XfoFromSRT_3",
+            "ports" : [
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "defaultValues" : {
+                  "Float32" : 4
+                  },
+                "name" : "scX"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "defaultValues" : {
+                  "Float32" : 4
+                  },
+                "name" : "scY"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "defaultValues" : {
+                  "Float32" : 4
+                  },
+                "name" : "scZ"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "defaultValues" : {
+                  "Float32" : -1.676760077476502
+                  },
+                "name" : "eulerX"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "name" : "eulerY"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "name" : "eulerZ"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "name" : "trX"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "defaultValues" : {
+                  "Float32" : 3
+                  },
+                "name" : "trY"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "name" : "trZ"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "Out",
+                "name" : "result"
+                }
+              ],
+            "executable" : "Fabric.Exts.Math.Xfo.XfoFromSRT"
+            },
+          {
+            "objectType" : "Inst",
+            "metadata" : {
+              "uiGraphPos" : "{\"x\": 921.199, \"y\": -60.9142}"
+              },
+            "name" : "MathDegToRad",
+            "ports" : [
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "defaultValues" : {
+                  "Float32" : -90
+                  },
+                "name" : "val"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "Out",
+                "name" : "result"
+                }
+              ],
+            "executable" : "Fabric.Exts.Math.Funcs.Math_degToRad"
+            },
+          {
+            "objectType" : "Inst",
+            "metadata" : {
+              "uiGraphPos" : "{\"x\": 401.503, \"y\": 168.591}"
+              },
+            "name" : "MathDegToRad_2",
+            "ports" : [
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "defaultValues" : {
+                  "Float32" : -90
+                  },
+                "name" : "val"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "Out",
+                "name" : "result"
+                }
+              ],
+            "executable" : "Fabric.Exts.Math.Funcs.Math_degToRad"
+            },
+          {
+            "objectType" : "Inst",
+            "metadata" : {
+              "uiGraphPos" : "{\"x\": 641.574, \"y\": 234.379}"
+              },
+            "name" : "Add",
+            "ports" : [
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "name" : "lhs"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "name" : "rhs"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "Out",
+                "name" : "result"
+                }
+              ],
+            "executable" : "Fabric.Core.Math.Add"
+            },
+          {
+            "objectType" : "Inst",
+            "metadata" : {
+              "uiGraphPos" : "{\"x\": 639.158, \"y\": 511.507}"
+              },
+            "name" : "Add_2",
+            "ports" : [
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "name" : "lhs"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "In",
+                "name" : "rhs"
+                },
+              {
+                "objectType" : "InstPort",
+                "nodePortType" : "Out",
+                "name" : "result"
+                }
+              ],
+            "executable" : "Fabric.Core.Math.Add"
             }
           ],
         "connections" : {
@@ -982,7 +1248,9 @@
             "Mul2_2.lhs"
             ],
           "strength" : [
-            "Neg1.val"
+            "Neg1.val",
+            "Mul.rhs",
+            "Mul2.rhs"
             ],
           "EmptyDrawingHandle.handle" : [
             "DrawPolygonMesh.this"
@@ -1002,9 +1270,6 @@
           "XfoFromSRT.result" : [
             "Push.element"
             ],
-          "ComposeXfo.result" : [
-            "DrawPolygonMesh.transform"
-            ],
           "XfoFromSRT_2.result" : [
             "Push_2.element"
             ],
@@ -1015,22 +1280,36 @@
             "DrawPolygonMeshInstances.mesh"
             ],
           "Mul.result" : [
-            "XfoFromSRT.eulerZ"
+            "XfoFromSRT.eulerY"
             ],
           "Mul_2.result" : [
-            "XfoFromSRT.eulerX"
+            "Add.rhs"
             ],
           "Mul2.result" : [
-            "XfoFromSRT_2.eulerZ"
+            "XfoFromSRT_2.eulerY"
             ],
           "Mul2_2.result" : [
-            "XfoFromSRT_2.eulerX"
+            "Add_2.rhs"
             ],
           "Neg1.result" : [
-            "Mul.rhs",
             "Mul_2.rhs",
-            "Mul2.rhs",
             "Mul2_2.rhs"
+            ],
+          "XfoFromSRT_3.result" : [
+            "DrawPolygonMesh.transform"
+            ],
+          "MathDegToRad.result" : [
+            "XfoFromSRT_3.eulerX"
+            ],
+          "MathDegToRad_2.result" : [
+            "Add.lhs",
+            "Add_2.lhs"
+            ],
+          "Add.result" : [
+            "XfoFromSRT.eulerX"
+            ],
+          "Add_2.result" : [
+            "XfoFromSRT_2.eulerX"
             ]
           }
         },
@@ -1385,7 +1664,7 @@
       },
     {
       "type" : "Float32",
-      "value" : 50
+      "value" : 49
       }
     ]
   }
