@@ -80,7 +80,8 @@ def RunKL2DFG(
 
   targetFolder = os.path.split(targets[0].path)[0]
 
-  cmdLine = [[kl2dfg] + [sources[0].srcnode().path] + [targetFolder]]
+  options = ['-genAllArrays']
+  cmdLine = [[kl2dfg] + options + [sources[0].srcnode().path] + [targetFolder]]
   result = env.Command(
     targets,
     sources,
