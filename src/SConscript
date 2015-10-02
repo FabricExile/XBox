@@ -9,7 +9,7 @@ extName = 'XBox'
 env = parentEnv.Clone()
 env.Append(CPPPATH = [env.Dir('.').abspath])
 env.Append(CPPPATH = [env.Dir('thirdparty').abspath])
-env.Append(LIBS = ['libboost_thread-vc100-mt-s-1_55'])
+env.Append(LIBS = ['libboost_thread-vc120-mt-s-1_55'])
 env.Append(CCFLAGS = ['/EHsc'])
 
 if platform.system().lower().startswith('win'):
@@ -60,6 +60,9 @@ kl2dfgLogFile = presetStageDir.File('kl2dfg.log')
 kl2edkResults = env.RunKL2EDK(headers, sources)
 kl2dfgResults = env.RunKL2DFG([kl2dfgLogFile], extensionFiles)
 
+compounds = env.Glob(os.path.join(env.Dir('#').Dir('Presets').abspath, '*.canvas'))
+installedCompounds = env.Install(presetStageDir.Dir('Compounds'), compounds)
+
 extLibFileName = env.File(extName + '-' + extSuffix)
 libraryFiles = Flatten([env.SharedLibrary(extLibFileName, cppFiles)])
 env.Depends(cppFiles, kl2edkResults)
@@ -68,6 +71,7 @@ env.Depends(kl2dfgResults, kl2edkResults + libraryFiles)
 extensionFiles += env.Install(extStageDir, libraryFiles[0])
 extensionFiles += kl2edkResults
 extensionFiles += kl2dfgResults
+extensionFiles += installedCompounds
 extensionFiles = Flatten(extensionFiles)
 
 env.AlwaysBuild(extensionFiles)

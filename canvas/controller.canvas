@@ -1,0 +1,3277 @@
+{
+  "objectType" : "Graph",
+  "metadata" : {
+    "camera_mat44" : "{\n  \"row0\" : {\n    \"x\" : 0.9728610515594482,\n    \"y\" : -0.1069535687565804,\n    \"z\" : 0.2051843553781509,\n    \"t\" : 1.878915786743164\n    },\n  \"row1\" : {\n    \"x\" : -4.47034445016925e-08,\n    \"y\" : 0.8867601156234741,\n    \"z\" : 0.4622295796871185,\n    \"t\" : 4.232800006866455\n    },\n  \"row2\" : {\n    \"x\" : -0.2313862293958664,\n    \"y\" : -0.4496853649616242,\n    \"z\" : 0.8626954555511475,\n    \"t\" : 7.900072574615479\n    },\n  \"row3\" : {\n    \"x\" : 0,\n    \"y\" : 0,\n    \"z\" : 0,\n    \"t\" : 1\n    }\n  }",
+    "timeline_start" : "1",
+    "timeline_loopMode" : "1",
+    "uiGraphZoom" : "{\n  \"value\" : 0.68986976146698\n  }",
+    "timeline_simMode" : "0",
+    "camera_focalDistance" : "9.157422065734863",
+    "timeline_current" : "19",
+    "timeline_end" : "50",
+    "uiGraphPan" : "{\n  \"x\" : 162.6820983886719,\n  \"y\" : 10.63895988464356\n  }"
+    },
+  "title" : "",
+  "ports" : [
+    {
+      "objectType" : "Port",
+      "nodePortType" : "In",
+      "name" : "this",
+      "execPortType" : "Out",
+      "typeSpec" : "DrawingHandle"
+      },
+    {
+      "objectType" : "Port",
+      "nodePortType" : "Out",
+      "name" : "timeline",
+      "execPortType" : "In",
+      "typeSpec" : "Float32"
+      }
+    ],
+  "extDeps" : {},
+  "nodes" : [
+    {
+      "objectType" : "Inst",
+      "metadata" : {
+        "uiGraphPos" : "{\"x\":294.0,\"y\":33.0}"
+        },
+      "name" : "XBox",
+      "ports" : [
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "Out",
+          "name" : "stickL"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "Out",
+          "name" : "stickR"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "Out",
+          "name" : "triggerL"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "Out",
+          "name" : "triggerR"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "Out",
+          "name" : "buttonA"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "Out",
+          "name" : "buttonB"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "Out",
+          "name" : "buttonX"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "Out",
+          "name" : "buttonY"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "Out",
+          "name" : "buttonStart"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "Out",
+          "name" : "buttonBack"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "Out",
+          "name" : "buttonShoulderL"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "Out",
+          "name" : "buttonShoulderR"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "Out",
+          "name" : "buttonThumbL"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "Out",
+          "name" : "buttonThumbR"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "Out",
+          "name" : "buttonPadLeft"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "Out",
+          "name" : "buttonPadRight"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "Out",
+          "name" : "buttonPadUp"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "Out",
+          "name" : "buttonPadDown"
+          }
+        ],
+      "executable" : "ThirdParty.XBox.Compounds.XBox"
+      },
+    {
+      "objectType" : "Inst",
+      "metadata" : {
+        "uiGraphPos" : "{\"x\":942.0,\"y\":66.0}"
+        },
+      "name" : "EmptyDrawingHandle",
+      "ports" : [
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "Out",
+          "name" : "handle"
+          }
+        ],
+      "executable" : "Fabric.Exts.InlineDrawing.DrawingHandle.EmptyDrawingHandle",
+      "presetGUID" : "2440020BA6A1CAB1CEB690A198F99C70"
+      },
+    {
+      "objectType" : "Inst",
+      "metadata" : {
+        "uiGraphPos" : "{\"x\":1353.0,\"y\":234.0}"
+        },
+      "name" : "DrawPolygonMesh",
+      "ports" : [
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "IO",
+          "name" : "this"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "In",
+          "name" : "name"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "In",
+          "name" : "color"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "In",
+          "name" : "specular"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "In",
+          "name" : "specFactor"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "In",
+          "name" : "transform"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "In",
+          "name" : "mesh"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "In",
+          "name" : "wireFrame"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "In",
+          "name" : "doubleSided"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "Out",
+          "name" : "dummyResult"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "Out",
+          "name" : "instance"
+          }
+        ],
+      "executable" : "Fabric.Exts.InlineDrawing.DrawingHandle.DrawPolygonMesh",
+      "presetGUID" : "88D132945A91B3FEB731B90CE41878AF"
+      },
+    {
+      "objectType" : "Inst",
+      "metadata" : {
+        "uiGraphPos" : "{\"x\":746.0,\"y\":584.0}"
+        },
+      "name" : "GetCube",
+      "ports" : [
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "In",
+          "defaultValues" : {
+            "Float32" : 3
+            },
+          "name" : "size"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "Out",
+          "name" : "mesh"
+          }
+        ],
+      "executable" : "Fabric.Compounds.PolygonMesh.Create.GetCube",
+      "presetGUID" : "0E6A12754DCE2F4F12529B6D80236D75"
+      },
+    {
+      "objectType" : "Inst",
+      "metadata" : {
+        "uiGraphPos" : "{\"x\":723.0,\"y\":442.0}"
+        },
+      "name" : "GetTorus",
+      "ports" : [
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "In",
+          "name" : "innerRadius"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "In",
+          "name" : "outerRadius"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "In",
+          "name" : "detail"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "Out",
+          "name" : "mesh"
+          }
+        ],
+      "executable" : "Fabric.Compounds.PolygonMesh.Create.GetTorus",
+      "presetGUID" : "7F80E0AB27C6B066DCC96779963E625B"
+      },
+    {
+      "objectType" : "Inst",
+      "metadata" : {
+        "uiGraphPos" : "{\"x\":990.0,\"y\":494.0}"
+        },
+      "name" : "If",
+      "ports" : [
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "In",
+          "name" : "cond"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "In",
+          "name" : "if_true"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "In",
+          "name" : "if_false"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "Out",
+          "name" : "result"
+          }
+        ],
+      "executable" : "Fabric.Core.Control.If",
+      "presetGUID" : "3182A478A21643455D549E483D35F831"
+      },
+    {
+      "objectType" : "Inst",
+      "metadata" : {
+        "uiGraphPos" : "{\"x\":985.0,\"y\":129.0}",
+        "uiCollapsedState" : "0"
+        },
+      "name" : "If2",
+      "ports" : [
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "In",
+          "name" : "cond"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "In",
+          "defaultValues" : {
+            "Float32" : 2,
+            "Color" : {
+              "r" : 1,
+              "g" : 0,
+              "b" : 0.01568627543747425,
+              "a" : 0
+              }
+            },
+          "name" : "if_true"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "In",
+          "defaultValues" : {
+            "Float32" : 3,
+            "Color" : {
+              "r" : 0,
+              "g" : 0.1803921610116959,
+              "b" : 1,
+              "a" : 0
+              }
+            },
+          "name" : "if_false"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "Out",
+          "name" : "result"
+          }
+        ],
+      "executable" : "Fabric.Core.Control.If",
+      "presetGUID" : "3182A478A21643455D549E483D35F831"
+      },
+    {
+      "objectType" : "Inst",
+      "metadata" : {
+        "uiGraphPos" : "{\"x\":993.0,\"y\":260.0}"
+        },
+      "name" : "If_2",
+      "ports" : [
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "In",
+          "name" : "cond"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "In",
+          "name" : "if_true"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "In",
+          "name" : "if_false"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "Out",
+          "name" : "result"
+          }
+        ],
+      "executable" : "Fabric.Core.Control.If",
+      "presetGUID" : "3182A478A21643455D549E483D35F831"
+      },
+    {
+      "objectType" : "Inst",
+      "metadata" : {
+        "uiGraphPos" : "{\"x\":768.0,\"y\":302.5504455566406}"
+        },
+      "name" : "Xfo_2",
+      "ports" : [
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "In",
+          "name" : "ori"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "In",
+          "name" : "tr"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "In",
+          "defaultValues" : {
+            "Vec3" : {
+              "x" : 3,
+              "y" : 3,
+              "z" : 3
+              }
+            },
+          "name" : "sc"
+          },
+        {
+          "objectType" : "InstPort",
+          "nodePortType" : "Out",
+          "name" : "result"
+          }
+        ],
+      "executable" : "Fabric.Exts.Math.Xfo.Xfo",
+      "presetGUID" : "A0F6CD63A2069530481F214C62A069AA"
+      }
+    ],
+  "connections" : {
+    "XBox.buttonA" : [
+      "If2.cond"
+      ],
+    "XBox.buttonB" : [
+      "If_2.cond"
+      ],
+    "XBox.buttonX" : [
+      "If.cond"
+      ],
+    "XBox.buttonY" : [
+      "DrawPolygonMesh.wireFrame"
+      ],
+    "EmptyDrawingHandle.handle" : [
+      "DrawPolygonMesh.this"
+      ],
+    "DrawPolygonMesh.this" : [
+      "this"
+      ],
+    "GetCube.mesh" : [
+      "If.if_false"
+      ],
+    "GetTorus.mesh" : [
+      "If.if_true"
+      ],
+    "If.result" : [
+      "DrawPolygonMesh.mesh"
+      ],
+    "If2.result" : [
+      "DrawPolygonMesh.color"
+      ],
+    "If_2.result" : [
+      "DrawPolygonMesh.transform"
+      ],
+    "Xfo_2.result" : [
+      "If_2.if_true"
+      ]
+    },
+  "requiredPresets" : {
+    "ThirdParty.XBox.Compounds.XBox" : {
+      "objectType" : "Graph",
+      "metadata" : {
+        "uiGraphZoom" : "{\n  \"value\" : 0.7953417301177979\n  }",
+        "uiGraphPan" : "{\n  \"x\" : 556.9247436523438,\n  \"y\" : -1451.953369140625\n  }"
+        },
+      "title" : "XBox",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "stickL",
+          "execPortType" : "Out",
+          "typeSpec" : "Vec2"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "stickR",
+          "execPortType" : "Out",
+          "typeSpec" : "Vec2"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "triggerL",
+          "execPortType" : "Out",
+          "typeSpec" : "Float32"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "triggerR",
+          "execPortType" : "Out",
+          "typeSpec" : "Float32"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "buttonA",
+          "execPortType" : "Out",
+          "typeSpec" : "Boolean"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "buttonB",
+          "execPortType" : "Out",
+          "typeSpec" : "Boolean"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "buttonX",
+          "execPortType" : "Out",
+          "typeSpec" : "Boolean"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "buttonY",
+          "execPortType" : "Out",
+          "typeSpec" : "Boolean"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "buttonStart",
+          "execPortType" : "Out",
+          "typeSpec" : "Boolean"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "buttonBack",
+          "execPortType" : "Out",
+          "typeSpec" : "Boolean"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "buttonShoulderL",
+          "execPortType" : "Out",
+          "typeSpec" : "Boolean"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "buttonShoulderR",
+          "execPortType" : "Out",
+          "typeSpec" : "Boolean"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "buttonThumbL",
+          "execPortType" : "Out",
+          "typeSpec" : "Boolean"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "buttonThumbR",
+          "execPortType" : "Out",
+          "typeSpec" : "Boolean"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "buttonPadLeft",
+          "execPortType" : "Out",
+          "typeSpec" : "Boolean"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "buttonPadRight",
+          "execPortType" : "Out",
+          "typeSpec" : "Boolean"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "buttonPadUp",
+          "execPortType" : "Out",
+          "typeSpec" : "Boolean"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "buttonPadDown",
+          "execPortType" : "Out",
+          "typeSpec" : "Boolean"
+          }
+        ],
+      "extDeps" : {
+        "XBox" : "*"
+        },
+      "nodes" : [
+        {
+          "objectType" : "Var",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":639.0,\"y\":183.0}"
+            },
+          "name" : "controller",
+          "ports" : [
+            {
+              "objectType" : "VarPort",
+              "nodePortType" : "IO",
+              "name" : "value"
+              }
+            ],
+          "dataType" : "XBoxController",
+          "extDep" : "XBox:*"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":442.0,\"y\":170.0}"
+            },
+          "name" : "XBoxController",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "device"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "result"
+              }
+            ],
+          "executable" : "ThirdParty.XBox.XBoxController.XBoxController",
+          "presetGUID" : "B82201837DD5583E3832D9BD1C44558F"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":192.0,\"y\":180.0}"
+            },
+          "name" : "XBOXGAMEPAD0",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "value"
+              }
+            ],
+          "executable" : "ThirdParty.XBox.Constants.XBOX_GAMEPAD_0",
+          "presetGUID" : "46E32193B5865FF1B4E680942624BC20"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":826.0,\"y\":196.0}"
+            },
+          "name" : "Update",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "this"
+              }
+            ],
+          "executable" : "ThirdParty.XBox.XBoxController.Update",
+          "presetGUID" : "06F3789E7DE2C31F35E8D26147AF839C"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":999.0,\"y\":235.0}"
+            },
+          "name" : "StickNormXY",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "this"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "stick"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "IO",
+              "name" : "outX"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "IO",
+              "name" : "outY"
+              }
+            ],
+          "executable" : "ThirdParty.XBox.XBoxController.StickNormXY",
+          "presetGUID" : "81353CD28414584A7C4D28829E8A3A8A"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":780.0,\"y\":284.0}"
+            },
+          "name" : "XBOXSTICKLEFT",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "value"
+              }
+            ],
+          "executable" : "ThirdParty.XBox.Constants.XBOX_STICK_LEFT",
+          "presetGUID" : "1DF7DFA6BA8C6D63920B9F73C05D97EC"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":1003.0,\"y\":371.0}"
+            },
+          "name" : "StickNormXY_2",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "this"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "stick"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "IO",
+              "name" : "outX"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "IO",
+              "name" : "outY"
+              }
+            ],
+          "executable" : "ThirdParty.XBox.XBoxController.StickNormXY",
+          "presetGUID" : "81353CD28414584A7C4D28829E8A3A8A"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":779.0,\"y\":408.0}"
+            },
+          "name" : "XBOXSTICKRIGHT",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "value"
+              }
+            ],
+          "executable" : "ThirdParty.XBox.Constants.XBOX_STICK_RIGHT",
+          "presetGUID" : "1E09084B829368EAC4B4FF4F190F6EE1"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":1249.0,\"y\":246.0}"
+            },
+          "name" : "Vec2",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "x"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "y"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "result"
+              }
+            ],
+          "executable" : "Fabric.Exts.Math.Vec2.Vec2",
+          "presetGUID" : "316D0782156EA22803516F8602E8B288"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":1253.0,\"y\":380.0}"
+            },
+          "name" : "Vec2_2",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "x"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "y"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "result"
+              }
+            ],
+          "executable" : "Fabric.Exts.Math.Vec2.Vec2",
+          "presetGUID" : "316D0782156EA22803516F8602E8B288"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":999.0,\"y\":518.0}"
+            },
+          "name" : "TriggerLength",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "this"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "trigger"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "result"
+              }
+            ],
+          "executable" : "ThirdParty.XBox.XBoxController.TriggerLength",
+          "presetGUID" : "D8C14C059C89787434C63B6EFF334A52"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":746.0,\"y\":526.0}"
+            },
+          "name" : "XBOXTRIGGERLEFT",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "value"
+              }
+            ],
+          "executable" : "ThirdParty.XBox.Constants.XBOX_TRIGGER_LEFT",
+          "presetGUID" : "B571CB95AF1B4C04E8CD01A7BDEE10D3"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":1003.0,\"y\":645.0}"
+            },
+          "name" : "TriggerLength_2",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "this"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "trigger"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "result"
+              }
+            ],
+          "executable" : "ThirdParty.XBox.XBoxController.TriggerLength",
+          "presetGUID" : "D8C14C059C89787434C63B6EFF334A52"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":731.0,\"y\":652.0}"
+            },
+          "name" : "XBOXTRIGGERRIGHT",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "value"
+              }
+            ],
+          "executable" : "ThirdParty.XBox.Constants.XBOX_TRIGGER_RIGHT",
+          "presetGUID" : "5438650436A11F4BCB04D04112A93045"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":1006.0,\"y\":756.0}"
+            },
+          "name" : "ButtonDown",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "this"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "button"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "result"
+              }
+            ],
+          "executable" : "ThirdParty.XBox.XBoxController.ButtonDown",
+          "presetGUID" : "1D5DAF0E72CE7F86BC293D9662B55AE9"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":762.0,\"y\":790.0}"
+            },
+          "name" : "XBOXBUTTONA",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "value"
+              }
+            ],
+          "executable" : "ThirdParty.XBox.Constants.XBOX_BUTTON_A",
+          "presetGUID" : "46BAEA5DFCEAD7B8F8C5240DC1B9CC42"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":767.0,\"y\":893.0}"
+            },
+          "name" : "XBOXBUTTONB",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "value"
+              }
+            ],
+          "executable" : "ThirdParty.XBox.Constants.XBOX_BUTTON_B",
+          "presetGUID" : "1A78EDE1FB69724466A4892D3D6F680F"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":768.0,\"y\":1014.0}"
+            },
+          "name" : "XBOXBUTTONX",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "value"
+              }
+            ],
+          "executable" : "ThirdParty.XBox.Constants.XBOX_BUTTON_X",
+          "presetGUID" : "DD78688875BD94ABE64088C14BBA7F12"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":779.0,\"y\":1118.0}"
+            },
+          "name" : "XBOXBUTTONY",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "value"
+              }
+            ],
+          "executable" : "ThirdParty.XBox.Constants.XBOX_BUTTON_Y",
+          "presetGUID" : "7B2D1A5984DEE5BC4725FFAAE338A2C5"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":1005.0,\"y\":869.0}"
+            },
+          "name" : "ButtonDown_2",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "this"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "button"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "result"
+              }
+            ],
+          "executable" : "ThirdParty.XBox.XBoxController.ButtonDown",
+          "presetGUID" : "1D5DAF0E72CE7F86BC293D9662B55AE9"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":996.0,\"y\":979.0}"
+            },
+          "name" : "ButtonDown_3",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "this"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "button"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "result"
+              }
+            ],
+          "executable" : "ThirdParty.XBox.XBoxController.ButtonDown",
+          "presetGUID" : "1D5DAF0E72CE7F86BC293D9662B55AE9"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":989.0,\"y\":1092.0}"
+            },
+          "name" : "ButtonDown_4",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "this"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "button"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "result"
+              }
+            ],
+          "executable" : "ThirdParty.XBox.XBoxController.ButtonDown",
+          "presetGUID" : "1D5DAF0E72CE7F86BC293D9662B55AE9"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":988.0,\"y\":1209.0}"
+            },
+          "name" : "ButtonDown4",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "this"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "button"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "result"
+              }
+            ],
+          "executable" : "ThirdParty.XBox.XBoxController.ButtonDown",
+          "presetGUID" : "1D5DAF0E72CE7F86BC293D9662B55AE9"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":740.0,\"y\":1228.0}"
+            },
+          "name" : "XBOXBUTTONSTART",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "value"
+              }
+            ],
+          "executable" : "ThirdParty.XBox.Constants.XBOX_BUTTON_START",
+          "presetGUID" : "59BE8D98CD1D14ABDBE1F4E30AEE2A3F"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":745.0,\"y\":1350.0}"
+            },
+          "name" : "XBOXBUTTONBACK",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "value"
+              }
+            ],
+          "executable" : "ThirdParty.XBox.Constants.XBOX_BUTTON_BACK",
+          "presetGUID" : "9375EADA9229D7435B734ECB2C81149B"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":986.0,\"y\":1328.0}"
+            },
+          "name" : "ButtonDown4_2",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "this"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "button"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "result"
+              }
+            ],
+          "executable" : "ThirdParty.XBox.XBoxController.ButtonDown",
+          "presetGUID" : "1D5DAF0E72CE7F86BC293D9662B55AE9"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":988.0,\"y\":1445.5}"
+            },
+          "name" : "ButtonDown4_3",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "this"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "button"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "result"
+              }
+            ],
+          "executable" : "ThirdParty.XBox.XBoxController.ButtonDown",
+          "presetGUID" : "1D5DAF0E72CE7F86BC293D9662B55AE9"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":990.0,\"y\":1563.5}"
+            },
+          "name" : "ButtonDown42",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "this"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "button"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "result"
+              }
+            ],
+          "executable" : "ThirdParty.XBox.XBoxController.ButtonDown",
+          "presetGUID" : "1D5DAF0E72CE7F86BC293D9662B55AE9"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":699.0,\"y\":1470.0}"
+            },
+          "name" : "XBOXBUTTONLEFTSHOULDER",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "value"
+              }
+            ],
+          "executable" : "ThirdParty.XBox.Constants.XBOX_BUTTON_LEFT_SHOULDER",
+          "presetGUID" : "ED43300AD3A14CDF28765B049E4CD3F1"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":673.0,\"y\":1593.0}"
+            },
+          "name" : "XBOXBUTTONRIGHTSHOULDER",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "value"
+              }
+            ],
+          "executable" : "ThirdParty.XBox.Constants.XBOX_BUTTON_RIGHT_SHOULDER",
+          "presetGUID" : "B34F7BF831BD38DD0B23969EB26B1243"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":981.0,\"y\":1690.0}"
+            },
+          "name" : "ButtonDown43",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "this"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "button"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "result"
+              }
+            ],
+          "executable" : "ThirdParty.XBox.XBoxController.ButtonDown",
+          "presetGUID" : "1D5DAF0E72CE7F86BC293D9662B55AE9"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":990.0,\"y\":1822.0}"
+            },
+          "name" : "ButtonDown42_2",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "this"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "button"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "result"
+              }
+            ],
+          "executable" : "ThirdParty.XBox.XBoxController.ButtonDown",
+          "presetGUID" : "1D5DAF0E72CE7F86BC293D9662B55AE9"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":690.0,\"y\":1699.0}"
+            },
+          "name" : "XBOXBUTTONLEFTTHUMB",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "value"
+              }
+            ],
+          "executable" : "ThirdParty.XBox.Constants.XBOX_BUTTON_LEFT_THUMB",
+          "presetGUID" : "D42C7B668D1DF7F2903A5B9C070A4D5A"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":683.0,\"y\":1846.0}"
+            },
+          "name" : "XBOXBUTTONRIGHTTHUMB",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "value"
+              }
+            ],
+          "executable" : "ThirdParty.XBox.Constants.XBOX_BUTTON_RIGHT_THUMB",
+          "presetGUID" : "EEF1F36D4B8AD37812C73DEE4370DB1A"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":986.5,\"y\":1959.0}"
+            },
+          "name" : "ButtonDown43_2",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "this"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "button"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "result"
+              }
+            ],
+          "executable" : "ThirdParty.XBox.XBoxController.ButtonDown",
+          "presetGUID" : "1D5DAF0E72CE7F86BC293D9662B55AE9"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":1000.5,\"y\":2089.0}"
+            },
+          "name" : "ButtonDown422",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "this"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "button"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "result"
+              }
+            ],
+          "executable" : "ThirdParty.XBox.XBoxController.ButtonDown",
+          "presetGUID" : "1D5DAF0E72CE7F86BC293D9662B55AE9"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":986.0,\"y\":2202.0}"
+            },
+          "name" : "ButtonDown432",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "this"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "button"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "result"
+              }
+            ],
+          "executable" : "ThirdParty.XBox.XBoxController.ButtonDown",
+          "presetGUID" : "1D5DAF0E72CE7F86BC293D9662B55AE9"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":1000.0,\"y\":2332.0}"
+            },
+          "name" : "ButtonDown422_2",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "this"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "button"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "result"
+              }
+            ],
+          "executable" : "ThirdParty.XBox.XBoxController.ButtonDown",
+          "presetGUID" : "1D5DAF0E72CE7F86BC293D9662B55AE9"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":721.0,\"y\":1977.0}"
+            },
+          "name" : "XBOXBUTTONDPADLEFT",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "value"
+              }
+            ],
+          "executable" : "ThirdParty.XBox.Constants.XBOX_BUTTON_DPAD_LEFT",
+          "presetGUID" : "A0D7EC0593B13AA2E52CC61F969926B7"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":733.0,\"y\":2118.0}"
+            },
+          "name" : "XBOXBUTTONDPADRIGHT",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "value"
+              }
+            ],
+          "executable" : "ThirdParty.XBox.Constants.XBOX_BUTTON_DPAD_RIGHT",
+          "presetGUID" : "15F5DD55303771D96E9FC07A2EE31666"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":725.0,\"y\":2216.0}"
+            },
+          "name" : "XBOXBUTTONDPADUP",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "value"
+              }
+            ],
+          "executable" : "ThirdParty.XBox.Constants.XBOX_BUTTON_DPAD_UP",
+          "presetGUID" : "34E623D0F4E6E0A10B98D48853B6D1B7"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":696.0,\"y\":2352.0}"
+            },
+          "name" : "XBOXBUTTONDPADDOWN",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "value"
+              }
+            ],
+          "executable" : "ThirdParty.XBox.Constants.XBOX_BUTTON_DPAD_DOWN",
+          "presetGUID" : "9B06F63D3D39B6F7C5046E2268BD17BF"
+          }
+        ],
+      "connections" : {
+        "controller.value" : [
+          "Update.this"
+          ],
+        "XBoxController.result" : [
+          "controller.value"
+          ],
+        "XBOXGAMEPAD0.value" : [
+          "XBoxController.device"
+          ],
+        "Update.this" : [
+          "StickNormXY.this"
+          ],
+        "StickNormXY.this" : [
+          "StickNormXY_2.this"
+          ],
+        "StickNormXY.outX" : [
+          "Vec2.x"
+          ],
+        "StickNormXY.outY" : [
+          "Vec2.y"
+          ],
+        "XBOXSTICKLEFT.value" : [
+          "StickNormXY.stick"
+          ],
+        "StickNormXY_2.this" : [
+          "TriggerLength.this"
+          ],
+        "StickNormXY_2.outX" : [
+          "Vec2_2.x"
+          ],
+        "StickNormXY_2.outY" : [
+          "Vec2_2.y"
+          ],
+        "XBOXSTICKRIGHT.value" : [
+          "StickNormXY_2.stick"
+          ],
+        "Vec2.result" : [
+          "stickL"
+          ],
+        "Vec2_2.result" : [
+          "stickR"
+          ],
+        "TriggerLength.this" : [
+          "TriggerLength_2.this"
+          ],
+        "TriggerLength.result" : [
+          "triggerL"
+          ],
+        "XBOXTRIGGERLEFT.value" : [
+          "TriggerLength.trigger"
+          ],
+        "TriggerLength_2.this" : [
+          "ButtonDown.this"
+          ],
+        "TriggerLength_2.result" : [
+          "triggerR"
+          ],
+        "XBOXTRIGGERRIGHT.value" : [
+          "TriggerLength_2.trigger"
+          ],
+        "ButtonDown.this" : [
+          "ButtonDown_2.this"
+          ],
+        "ButtonDown.result" : [
+          "buttonA"
+          ],
+        "XBOXBUTTONA.value" : [
+          "ButtonDown.button"
+          ],
+        "XBOXBUTTONB.value" : [
+          "ButtonDown_2.button"
+          ],
+        "XBOXBUTTONX.value" : [
+          "ButtonDown_3.button"
+          ],
+        "XBOXBUTTONY.value" : [
+          "ButtonDown_4.button"
+          ],
+        "ButtonDown_2.this" : [
+          "ButtonDown_3.this"
+          ],
+        "ButtonDown_2.result" : [
+          "buttonB"
+          ],
+        "ButtonDown_3.this" : [
+          "ButtonDown_4.this"
+          ],
+        "ButtonDown_3.result" : [
+          "buttonX"
+          ],
+        "ButtonDown_4.this" : [
+          "ButtonDown4.this"
+          ],
+        "ButtonDown_4.result" : [
+          "buttonY"
+          ],
+        "ButtonDown4.this" : [
+          "ButtonDown4_2.this"
+          ],
+        "ButtonDown4.result" : [
+          "buttonStart"
+          ],
+        "XBOXBUTTONSTART.value" : [
+          "ButtonDown4.button"
+          ],
+        "XBOXBUTTONBACK.value" : [
+          "ButtonDown4_2.button"
+          ],
+        "ButtonDown4_2.this" : [
+          "ButtonDown4_3.this"
+          ],
+        "ButtonDown4_2.result" : [
+          "buttonBack"
+          ],
+        "ButtonDown4_3.this" : [
+          "ButtonDown42.this"
+          ],
+        "ButtonDown4_3.result" : [
+          "buttonShoulderL"
+          ],
+        "ButtonDown42.this" : [
+          "ButtonDown43.this"
+          ],
+        "ButtonDown42.result" : [
+          "buttonShoulderR"
+          ],
+        "XBOXBUTTONLEFTSHOULDER.value" : [
+          "ButtonDown4_3.button"
+          ],
+        "XBOXBUTTONRIGHTSHOULDER.value" : [
+          "ButtonDown42.button"
+          ],
+        "ButtonDown43.this" : [
+          "ButtonDown42_2.this"
+          ],
+        "ButtonDown43.result" : [
+          "buttonThumbL"
+          ],
+        "ButtonDown42_2.this" : [
+          "ButtonDown43_2.this"
+          ],
+        "ButtonDown42_2.result" : [
+          "buttonThumbR"
+          ],
+        "XBOXBUTTONLEFTTHUMB.value" : [
+          "ButtonDown43.button"
+          ],
+        "XBOXBUTTONRIGHTTHUMB.value" : [
+          "ButtonDown42_2.button"
+          ],
+        "ButtonDown43_2.this" : [
+          "ButtonDown422.this"
+          ],
+        "ButtonDown43_2.result" : [
+          "buttonPadLeft"
+          ],
+        "ButtonDown422.this" : [
+          "ButtonDown432.this"
+          ],
+        "ButtonDown422.result" : [
+          "buttonPadRight"
+          ],
+        "ButtonDown432.this" : [
+          "ButtonDown422_2.this"
+          ],
+        "ButtonDown432.result" : [
+          "buttonPadUp"
+          ],
+        "ButtonDown422_2.result" : [
+          "buttonPadDown"
+          ],
+        "XBOXBUTTONDPADLEFT.value" : [
+          "ButtonDown43_2.button"
+          ],
+        "XBOXBUTTONDPADRIGHT.value" : [
+          "ButtonDown422.button"
+          ],
+        "XBOXBUTTONDPADUP.value" : [
+          "ButtonDown432.button"
+          ],
+        "XBOXBUTTONDPADDOWN.value" : [
+          "ButtonDown422_2.button"
+          ]
+        }
+      },
+    "ThirdParty.XBox.XBoxController.XBoxController" : {
+      "objectType" : "Func",
+      "metadata" : {
+        "uiTooltip" : "standard constructor given a device\n\n Supported by XBoxController"
+        },
+      "title" : "XBoxController",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "nodePortType" : "Out",
+          "name" : "device",
+          "execPortType" : "In",
+          "typeSpec" : "XBOX_GAMEPAD_DEVICE"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "result",
+          "execPortType" : "Out",
+          "typeSpec" : "XBoxController"
+          }
+        ],
+      "extDeps" : {
+        "XBox" : "*"
+        },
+      "presetGUID" : "B82201837DD5583E3832D9BD1C44558F",
+      "code" : "require XBox;\n\ndfgEntry {\n  result = XBoxController(device);\n}\n"
+      },
+    "ThirdParty.XBox.Constants.XBOX_GAMEPAD_0" : {
+      "objectType" : "Func",
+      "title" : "XBOX_GAMEPAD_0",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "value",
+          "execPortType" : "Out",
+          "typeSpec" : "XBOX_GAMEPAD_DEVICE"
+          }
+        ],
+      "extDeps" : {
+        "XBox" : "*"
+        },
+      "presetGUID" : "46E32193B5865FF1B4E680942624BC20",
+      "code" : "require XBox;\n\ndfgEntry {\n  value = XBOX_GAMEPAD_0;\n}\n"
+      },
+    "ThirdParty.XBox.XBoxController.Update" : {
+      "objectType" : "Func",
+      "metadata" : {
+        "uiTooltip" : "* Updates the state of the gamepads.\n\n* This must be called (at least) once per game loop.\n\n\n Supported by XBoxController"
+        },
+      "title" : "Update",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "nodePortType" : "Out",
+          "name" : "this",
+          "execPortType" : "In",
+          "typeSpec" : "XBoxController"
+          }
+        ],
+      "extDeps" : {
+        "XBox" : "*"
+        },
+      "presetGUID" : "06F3789E7DE2C31F35E8D26147AF839C",
+      "code" : "require XBox;\n\ndfgEntry {\n  this.update();\n}\n"
+      },
+    "ThirdParty.XBox.XBoxController.StickNormXY" : {
+      "objectType" : "Func",
+      "metadata" : {
+        "uiTooltip" : "* Query the position of an analog stick as normalized values.\n\n* The values retrieved by this function represent the magnitude of the analog\n* stick in each direction.  Note that it shouldn't be possible to get full\n* magnitude in one direction unless the other direction has a magnitude of\n* zero, as the stick has a circular movement range.\n\n* \\param device The device to check.\n* \\param stick The stick to check.\n* \\param outX Pointer to float to store the X magnitude in (-1 to 1).\n* \\param outX Pointer to float to store the Y magnitude in (-1 to 1).\n\n\n Supported by XBoxController"
+        },
+      "title" : "StickNormXY",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "nodePortType" : "Out",
+          "name" : "this",
+          "execPortType" : "In",
+          "typeSpec" : "XBoxController"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "Out",
+          "name" : "stick",
+          "execPortType" : "In",
+          "typeSpec" : "XBOX_GAMEPAD_STICK"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "IO",
+          "name" : "outX",
+          "execPortType" : "IO",
+          "typeSpec" : "Float32"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "IO",
+          "name" : "outY",
+          "execPortType" : "IO",
+          "typeSpec" : "Float32"
+          }
+        ],
+      "extDeps" : {
+        "XBox" : "*"
+        },
+      "presetGUID" : "81353CD28414584A7C4D28829E8A3A8A",
+      "code" : "require XBox;\n\ndfgEntry {\n  this.stickNormXY(stick, outX, outY);\n}\n"
+      },
+    "ThirdParty.XBox.Constants.XBOX_STICK_LEFT" : {
+      "objectType" : "Func",
+      "title" : "XBOX_STICK_LEFT",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "value",
+          "execPortType" : "Out",
+          "typeSpec" : "XBOX_GAMEPAD_STICK"
+          }
+        ],
+      "extDeps" : {
+        "XBox" : "*"
+        },
+      "presetGUID" : "1DF7DFA6BA8C6D63920B9F73C05D97EC",
+      "code" : "require XBox;\n\ndfgEntry {\n  value = XBOX_STICK_LEFT;\n}\n"
+      },
+    "ThirdParty.XBox.Constants.XBOX_STICK_RIGHT" : {
+      "objectType" : "Func",
+      "title" : "XBOX_STICK_RIGHT",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "value",
+          "execPortType" : "Out",
+          "typeSpec" : "XBOX_GAMEPAD_STICK"
+          }
+        ],
+      "extDeps" : {
+        "XBox" : "*"
+        },
+      "presetGUID" : "1E09084B829368EAC4B4FF4F190F6EE1",
+      "code" : "require XBox;\n\ndfgEntry {\n  value = XBOX_STICK_RIGHT;\n}\n"
+      },
+    "Fabric.Exts.Math.Vec2.Vec2" : {
+      "objectType" : "Func",
+      "metadata" : {
+        "uiNodeColor" : "{\n  \"r\" : 99,\n  \"g\" : 129,\n  \"b\" : 92\n  }",
+        "uiDocUrl" : "http://docs.fabric-engine.com/FabricEngine/2.0.0/HTML/KLExtensionsGuide/Math/Vec2.html",
+        "uiTooltip" : "Constructor from scalar components\n\n Supported by Vec2"
+        },
+      "title" : "Vec2",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "nodePortType" : "Out",
+          "name" : "x",
+          "execPortType" : "In",
+          "typeSpec" : "Scalar"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "Out",
+          "name" : "y",
+          "execPortType" : "In",
+          "typeSpec" : "Scalar"
+          },
+        {
+          "objectType" : "Port",
+          "metadata" : {
+            "uiColor" : "{\n  \"r\" : 255,\n  \"g\" : 242,\n  \"b\" : 0\n  }"
+            },
+          "nodePortType" : "In",
+          "name" : "result",
+          "execPortType" : "Out",
+          "typeSpec" : "Vec2"
+          }
+        ],
+      "extDeps" : {
+        "Math" : "*"
+        },
+      "presetGUID" : "316D0782156EA22803516F8602E8B288",
+      "code" : "require Math;\n\ndfgEntry {\n  result = Vec2(x, y);\n}\n"
+      },
+    "ThirdParty.XBox.XBoxController.TriggerLength" : {
+      "objectType" : "Func",
+      "metadata" : {
+        "uiTooltip" : "* Get the trigger value (depression magnitude) in normalized form.\n\n* \\param device The device to check.\n* \\param trigger The trigger to check.\n* \\returns Trigger depression magnitude (0 to 1).\n\n\n Supported by XBoxController"
+        },
+      "title" : "TriggerLength",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "nodePortType" : "Out",
+          "name" : "this",
+          "execPortType" : "In",
+          "typeSpec" : "XBoxController"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "Out",
+          "name" : "trigger",
+          "execPortType" : "In",
+          "typeSpec" : "XBOX_GAMEPAD_TRIGGER"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "result",
+          "execPortType" : "Out",
+          "typeSpec" : "Float32"
+          }
+        ],
+      "extDeps" : {
+        "XBox" : "*"
+        },
+      "presetGUID" : "D8C14C059C89787434C63B6EFF334A52",
+      "code" : "require XBox;\n\ndfgEntry {\n  result = this.triggerLength(trigger);\n}\n"
+      },
+    "ThirdParty.XBox.Constants.XBOX_TRIGGER_LEFT" : {
+      "objectType" : "Func",
+      "title" : "XBOX_TRIGGER_LEFT",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "value",
+          "execPortType" : "Out",
+          "typeSpec" : "XBOX_GAMEPAD_TRIGGER"
+          }
+        ],
+      "extDeps" : {
+        "XBox" : "*"
+        },
+      "presetGUID" : "B571CB95AF1B4C04E8CD01A7BDEE10D3",
+      "code" : "require XBox;\n\ndfgEntry {\n  value = XBOX_TRIGGER_LEFT;\n}\n"
+      },
+    "ThirdParty.XBox.Constants.XBOX_TRIGGER_RIGHT" : {
+      "objectType" : "Func",
+      "title" : "XBOX_TRIGGER_RIGHT",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "value",
+          "execPortType" : "Out",
+          "typeSpec" : "XBOX_GAMEPAD_TRIGGER"
+          }
+        ],
+      "extDeps" : {
+        "XBox" : "*"
+        },
+      "presetGUID" : "5438650436A11F4BCB04D04112A93045",
+      "code" : "require XBox;\n\ndfgEntry {\n  value = XBOX_TRIGGER_RIGHT;\n}\n"
+      },
+    "ThirdParty.XBox.XBoxController.ButtonDown" : {
+      "objectType" : "Func",
+      "metadata" : {
+        "uiTooltip" : "* Test if a particular button is being pressed.\n\n* \\param device The device to check.\n* \\param button The button to check.\n* \\returns GAMEPAD_TRUE if the button is down, GAMEPAD_FALSE if it is not.\n\n\n Supported by XBoxController"
+        },
+      "title" : "ButtonDown",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "nodePortType" : "Out",
+          "name" : "this",
+          "execPortType" : "In",
+          "typeSpec" : "XBoxController"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "Out",
+          "name" : "button",
+          "execPortType" : "In",
+          "typeSpec" : "XBOX_GAMEPAD_BUTTON"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "result",
+          "execPortType" : "Out",
+          "typeSpec" : "Boolean"
+          }
+        ],
+      "extDeps" : {
+        "XBox" : "*"
+        },
+      "presetGUID" : "1D5DAF0E72CE7F86BC293D9662B55AE9",
+      "code" : "require XBox;\n\ndfgEntry {\n  result = this.buttonDown(button);\n}\n"
+      },
+    "ThirdParty.XBox.Constants.XBOX_BUTTON_A" : {
+      "objectType" : "Func",
+      "title" : "XBOX_BUTTON_A",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "value",
+          "execPortType" : "Out",
+          "typeSpec" : "XBOX_GAMEPAD_BUTTON"
+          }
+        ],
+      "extDeps" : {
+        "XBox" : "*"
+        },
+      "presetGUID" : "46BAEA5DFCEAD7B8F8C5240DC1B9CC42",
+      "code" : "require XBox;\n\ndfgEntry {\n  value = XBOX_BUTTON_A;\n}\n"
+      },
+    "ThirdParty.XBox.Constants.XBOX_BUTTON_B" : {
+      "objectType" : "Func",
+      "title" : "XBOX_BUTTON_B",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "value",
+          "execPortType" : "Out",
+          "typeSpec" : "XBOX_GAMEPAD_BUTTON"
+          }
+        ],
+      "extDeps" : {
+        "XBox" : "*"
+        },
+      "presetGUID" : "1A78EDE1FB69724466A4892D3D6F680F",
+      "code" : "require XBox;\n\ndfgEntry {\n  value = XBOX_BUTTON_B;\n}\n"
+      },
+    "ThirdParty.XBox.Constants.XBOX_BUTTON_X" : {
+      "objectType" : "Func",
+      "title" : "XBOX_BUTTON_X",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "value",
+          "execPortType" : "Out",
+          "typeSpec" : "XBOX_GAMEPAD_BUTTON"
+          }
+        ],
+      "extDeps" : {
+        "XBox" : "*"
+        },
+      "presetGUID" : "DD78688875BD94ABE64088C14BBA7F12",
+      "code" : "require XBox;\n\ndfgEntry {\n  value = XBOX_BUTTON_X;\n}\n"
+      },
+    "ThirdParty.XBox.Constants.XBOX_BUTTON_Y" : {
+      "objectType" : "Func",
+      "title" : "XBOX_BUTTON_Y",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "value",
+          "execPortType" : "Out",
+          "typeSpec" : "XBOX_GAMEPAD_BUTTON"
+          }
+        ],
+      "extDeps" : {
+        "XBox" : "*"
+        },
+      "presetGUID" : "7B2D1A5984DEE5BC4725FFAAE338A2C5",
+      "code" : "require XBox;\n\ndfgEntry {\n  value = XBOX_BUTTON_Y;\n}\n"
+      },
+    "ThirdParty.XBox.Constants.XBOX_BUTTON_START" : {
+      "objectType" : "Func",
+      "title" : "XBOX_BUTTON_START",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "value",
+          "execPortType" : "Out",
+          "typeSpec" : "XBOX_GAMEPAD_BUTTON"
+          }
+        ],
+      "extDeps" : {
+        "XBox" : "*"
+        },
+      "presetGUID" : "59BE8D98CD1D14ABDBE1F4E30AEE2A3F",
+      "code" : "require XBox;\n\ndfgEntry {\n  value = XBOX_BUTTON_START;\n}\n"
+      },
+    "ThirdParty.XBox.Constants.XBOX_BUTTON_BACK" : {
+      "objectType" : "Func",
+      "title" : "XBOX_BUTTON_BACK",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "value",
+          "execPortType" : "Out",
+          "typeSpec" : "XBOX_GAMEPAD_BUTTON"
+          }
+        ],
+      "extDeps" : {
+        "XBox" : "*"
+        },
+      "presetGUID" : "9375EADA9229D7435B734ECB2C81149B",
+      "code" : "require XBox;\n\ndfgEntry {\n  value = XBOX_BUTTON_BACK;\n}\n"
+      },
+    "ThirdParty.XBox.Constants.XBOX_BUTTON_LEFT_SHOULDER" : {
+      "objectType" : "Func",
+      "title" : "XBOX_BUTTON_LEFT_SHOULDER",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "value",
+          "execPortType" : "Out",
+          "typeSpec" : "XBOX_GAMEPAD_BUTTON"
+          }
+        ],
+      "extDeps" : {
+        "XBox" : "*"
+        },
+      "presetGUID" : "ED43300AD3A14CDF28765B049E4CD3F1",
+      "code" : "require XBox;\n\ndfgEntry {\n  value = XBOX_BUTTON_LEFT_SHOULDER;\n}\n"
+      },
+    "ThirdParty.XBox.Constants.XBOX_BUTTON_RIGHT_SHOULDER" : {
+      "objectType" : "Func",
+      "title" : "XBOX_BUTTON_RIGHT_SHOULDER",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "value",
+          "execPortType" : "Out",
+          "typeSpec" : "XBOX_GAMEPAD_BUTTON"
+          }
+        ],
+      "extDeps" : {
+        "XBox" : "*"
+        },
+      "presetGUID" : "B34F7BF831BD38DD0B23969EB26B1243",
+      "code" : "require XBox;\n\ndfgEntry {\n  value = XBOX_BUTTON_RIGHT_SHOULDER;\n}\n"
+      },
+    "ThirdParty.XBox.Constants.XBOX_BUTTON_LEFT_THUMB" : {
+      "objectType" : "Func",
+      "title" : "XBOX_BUTTON_LEFT_THUMB",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "value",
+          "execPortType" : "Out",
+          "typeSpec" : "XBOX_GAMEPAD_BUTTON"
+          }
+        ],
+      "extDeps" : {
+        "XBox" : "*"
+        },
+      "presetGUID" : "D42C7B668D1DF7F2903A5B9C070A4D5A",
+      "code" : "require XBox;\n\ndfgEntry {\n  value = XBOX_BUTTON_LEFT_THUMB;\n}\n"
+      },
+    "ThirdParty.XBox.Constants.XBOX_BUTTON_RIGHT_THUMB" : {
+      "objectType" : "Func",
+      "title" : "XBOX_BUTTON_RIGHT_THUMB",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "value",
+          "execPortType" : "Out",
+          "typeSpec" : "XBOX_GAMEPAD_BUTTON"
+          }
+        ],
+      "extDeps" : {
+        "XBox" : "*"
+        },
+      "presetGUID" : "EEF1F36D4B8AD37812C73DEE4370DB1A",
+      "code" : "require XBox;\n\ndfgEntry {\n  value = XBOX_BUTTON_RIGHT_THUMB;\n}\n"
+      },
+    "ThirdParty.XBox.Constants.XBOX_BUTTON_DPAD_LEFT" : {
+      "objectType" : "Func",
+      "title" : "XBOX_BUTTON_DPAD_LEFT",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "value",
+          "execPortType" : "Out",
+          "typeSpec" : "XBOX_GAMEPAD_BUTTON"
+          }
+        ],
+      "extDeps" : {
+        "XBox" : "*"
+        },
+      "presetGUID" : "A0D7EC0593B13AA2E52CC61F969926B7",
+      "code" : "require XBox;\n\ndfgEntry {\n  value = XBOX_BUTTON_DPAD_LEFT;\n}\n"
+      },
+    "ThirdParty.XBox.Constants.XBOX_BUTTON_DPAD_RIGHT" : {
+      "objectType" : "Func",
+      "title" : "XBOX_BUTTON_DPAD_RIGHT",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "value",
+          "execPortType" : "Out",
+          "typeSpec" : "XBOX_GAMEPAD_BUTTON"
+          }
+        ],
+      "extDeps" : {
+        "XBox" : "*"
+        },
+      "presetGUID" : "15F5DD55303771D96E9FC07A2EE31666",
+      "code" : "require XBox;\n\ndfgEntry {\n  value = XBOX_BUTTON_DPAD_RIGHT;\n}\n"
+      },
+    "ThirdParty.XBox.Constants.XBOX_BUTTON_DPAD_UP" : {
+      "objectType" : "Func",
+      "title" : "XBOX_BUTTON_DPAD_UP",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "value",
+          "execPortType" : "Out",
+          "typeSpec" : "XBOX_GAMEPAD_BUTTON"
+          }
+        ],
+      "extDeps" : {
+        "XBox" : "*"
+        },
+      "presetGUID" : "34E623D0F4E6E0A10B98D48853B6D1B7",
+      "code" : "require XBox;\n\ndfgEntry {\n  value = XBOX_BUTTON_DPAD_UP;\n}\n"
+      },
+    "ThirdParty.XBox.Constants.XBOX_BUTTON_DPAD_DOWN" : {
+      "objectType" : "Func",
+      "title" : "XBOX_BUTTON_DPAD_DOWN",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "value",
+          "execPortType" : "Out",
+          "typeSpec" : "XBOX_GAMEPAD_BUTTON"
+          }
+        ],
+      "extDeps" : {
+        "XBox" : "*"
+        },
+      "presetGUID" : "9B06F63D3D39B6F7C5046E2268BD17BF",
+      "code" : "require XBox;\n\ndfgEntry {\n  value = XBOX_BUTTON_DPAD_DOWN;\n}\n"
+      },
+    "Fabric.Exts.InlineDrawing.DrawingHandle.EmptyDrawingHandle" : {
+      "objectType" : "Graph",
+      "title" : "EmptyDrawingHandle",
+      "cacheRule" : "never",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "handle",
+          "execPortType" : "Out",
+          "typeSpec" : "DrawingHandle"
+          }
+        ],
+      "extDeps" : {},
+      "presetGUID" : "2440020BA6A1CAB1CEB690A198F99C70",
+      "nodes" : [
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\": 894, \"y\": 100}"
+            },
+          "name" : "Clear",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "IO",
+              "name" : "this"
+              }
+            ],
+          "executable" : "Fabric.Exts.InlineDrawing.DrawingHandle.Clear",
+          "presetGUID" : "39E8D81FA7C7C4A825877F16EFE3564F",
+          "cacheRule" : "never"
+          },
+        {
+          "objectType" : "Var",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":567.0,\"y\":56.0}",
+            "uiCollapsedState" : "0"
+            },
+          "name" : "handleVar",
+          "ports" : [
+            {
+              "objectType" : "VarPort",
+              "nodePortType" : "IO",
+              "name" : "value"
+              }
+            ],
+          "dataType" : "DrawingHandle",
+          "extDep" : "InlineDrawing:*"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":287.0,\"y\":56.0}"
+            },
+          "name" : "CreateDrawingHandle",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "handle"
+              }
+            ],
+          "definition" : {
+            "objectType" : "Func",
+            "title" : "Create DrawingHandle",
+            "ports" : [
+              {
+                "objectType" : "Port",
+                "nodePortType" : "In",
+                "name" : "handle",
+                "execPortType" : "Out",
+                "typeSpec" : "DrawingHandle"
+                }
+              ],
+            "extDeps" : {
+              "InlineDrawing" : "*"
+              },
+            "code" : "dfgEntry {\n  handle = DrawingHandle();\n}\n"
+            }
+          }
+        ],
+      "connections" : {
+        "Clear.this" : [
+          "handle"
+          ],
+        "handleVar.value" : [
+          "Clear.this"
+          ],
+        "CreateDrawingHandle.handle" : [
+          "handleVar.value"
+          ]
+        }
+      },
+    "Fabric.Exts.InlineDrawing.DrawingHandle.Clear" : {
+      "objectType" : "Func",
+      "metadata" : {
+        "uiDocUrl" : "http://docs.fabric-engine.com/FabricEngine/2.0.0/HTML/KLExtensionsGuide/InlineDrawing/DrawingHandle.html",
+        "uiTooltip" : "removes all contents from the DrawingHandle\n\n Supported by DrawingHandle"
+        },
+      "title" : "Clear",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "nodePortType" : "IO",
+          "name" : "this",
+          "execPortType" : "IO",
+          "typeSpec" : "DrawingHandle"
+          }
+        ],
+      "extDeps" : {
+        "InlineDrawing" : "*"
+        },
+      "presetGUID" : "39E8D81FA7C7C4A825877F16EFE3564F",
+      "code" : "require InlineDrawing;\n\ndfgEntry {\n  this.clear();\n}\n"
+      },
+    "Fabric.Exts.InlineDrawing.DrawingHandle.DrawPolygonMesh" : {
+      "objectType" : "Func",
+      "metadata" : {
+        "uiDocUrl" : "http://docs.fabric-engine.com/FabricEngine/2.0.0/HTML/KLExtensionsGuide/InlineDrawing/DrawingHandle.html",
+        "uiTooltip" : "helper function to draw a mesh given a color + a single transform\n\n Supported by DrawingHandle"
+        },
+      "title" : "DrawPolygonMesh",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "nodePortType" : "IO",
+          "name" : "this",
+          "execPortType" : "IO",
+          "typeSpec" : "DrawingHandle"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "Out",
+          "name" : "name",
+          "execPortType" : "In",
+          "typeSpec" : "String"
+          },
+        {
+          "objectType" : "Port",
+          "metadata" : {
+            "uiColor" : "{\n  \"r\" : 255,\n  \"g\" : 0,\n  \"b\" : 0\n  }"
+            },
+          "nodePortType" : "Out",
+          "defaultValues" : {
+            "Color" : {
+              "r" : 0,
+              "g" : 1,
+              "b" : 0,
+              "a" : 1
+              }
+            },
+          "name" : "color",
+          "execPortType" : "In",
+          "typeSpec" : "Color"
+          },
+        {
+          "objectType" : "Port",
+          "metadata" : {
+            "uiColor" : "{\n  \"r\" : 255,\n  \"g\" : 0,\n  \"b\" : 0\n  }"
+            },
+          "nodePortType" : "Out",
+          "defaultValues" : {
+            "Color" : {
+              "r" : 0.2000000029802322,
+              "g" : 0.2000000029802322,
+              "b" : 0.2000000029802322,
+              "a" : 1
+              }
+            },
+          "name" : "specular",
+          "execPortType" : "In",
+          "typeSpec" : "Color"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "Out",
+          "defaultValues" : {
+            "Float32" : 16
+            },
+          "name" : "specFactor",
+          "execPortType" : "In",
+          "typeSpec" : "Float32"
+          },
+        {
+          "objectType" : "Port",
+          "metadata" : {
+            "uiColor" : "{\n  \"r\" : 249,\n  \"g\" : 157,\n  \"b\" : 28\n  }"
+            },
+          "nodePortType" : "Out",
+          "name" : "transform",
+          "execPortType" : "In",
+          "typeSpec" : "Xfo"
+          },
+        {
+          "objectType" : "Port",
+          "metadata" : {
+            "uiColor" : "{\n  \"r\" : 51,\n  \"g\" : 1,\n  \"b\" : 106\n  }"
+            },
+          "nodePortType" : "Out",
+          "name" : "mesh",
+          "execPortType" : "In",
+          "typeSpec" : "PolygonMesh"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "Out",
+          "name" : "wireFrame",
+          "execPortType" : "In",
+          "typeSpec" : "Boolean"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "Out",
+          "name" : "doubleSided",
+          "execPortType" : "In",
+          "typeSpec" : "Boolean"
+          },
+        {
+          "objectType" : "Port",
+          "metadata" : {
+            "uiColor" : "{\n  \"r\" : 255,\n  \"g\" : 242,\n  \"b\" : 0\n  }"
+            },
+          "nodePortType" : "In",
+          "name" : "dummyResult",
+          "execPortType" : "Out",
+          "typeSpec" : "Vec3"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "instance",
+          "execPortType" : "Out",
+          "typeSpec" : "InlineInstance"
+          }
+        ],
+      "extDeps" : {
+        "InlineDrawing" : "*"
+        },
+      "presetGUID" : "88D132945A91B3FEB731B90CE41878AF",
+      "code" : "require InlineDrawing;\n\ndfgEntry {\n  this.drawPolygonMesh(name, color, specular, specFactor, transform, mesh, wireFrame, doubleSided, dummyResult, instance);\n}\n"
+      },
+    "Fabric.Compounds.PolygonMesh.Create.GetCube" : {
+      "objectType" : "Graph",
+      "metadata" : {
+        "uiNodeColor" : "{\n  \"r\" : 120,\n  \"g\" : 130,\n  \"b\" : 144\n  }",
+        "uiHeaderColor" : "{\n  \"r\" : 88,\n  \"g\" : 92,\n  \"b\" : 110\n  }",
+        "uiTooltip" : "Generates a polygon mesh cube."
+        },
+      "title" : "GetCube",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "metadata" : {
+            "uiRange" : "(0, 5)"
+            },
+          "nodePortType" : "Out",
+          "defaultValues" : {
+            "Float32" : 2
+            },
+          "name" : "size",
+          "execPortType" : "In",
+          "typeSpec" : "Scalar"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "mesh",
+          "execPortType" : "Out",
+          "typeSpec" : "PolygonMesh"
+          }
+        ],
+      "extDeps" : {},
+      "presetGUID" : "0E6A12754DCE2F4F12529B6D80236D75",
+      "nodes" : [
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\": 1010.5, \"y\": 384}"
+            },
+          "name" : "Cache",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "value"
+              }
+            ],
+          "executable" : "Fabric.Core.Data.Cache",
+          "presetGUID" : "D903AFD981FE9214C69943F542D5FD60"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\": 761.5, \"y\": 358}"
+            },
+          "name" : "RecomputePointNormals",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "IO",
+              "name" : "this"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "defaultValues" : {
+                "Float32" : 0
+                },
+              "name" : "hardAngleRadians"
+              }
+            ],
+          "executable" : "Fabric.Exts.Geometry.PolygonMesh.RecomputePointNormals",
+          "presetGUID" : "82B0904C5BAB58BDA9ED038FB18E0629"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\": 412.5, \"y\": 315}"
+            },
+          "name" : "EmptyPolygonMesh",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "mesh"
+              }
+            ],
+          "executable" : "Fabric.Exts.Geometry.PolygonMesh.EmptyPolygonMesh",
+          "presetGUID" : "EE0894325519F66F17D265A042545FEB"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\": 604, \"y\": 357}"
+            },
+          "name" : "AddCuboid",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "IO",
+              "name" : "this"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "xfo"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "x"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "y"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "z"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "setNormals"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "setUVs"
+              }
+            ],
+          "executable" : "Fabric.Exts.Geometry.PolygonMesh.AddCuboid",
+          "presetGUID" : "158D097D640404E84CB79186BF0DF9DF"
+          }
+        ],
+      "connections" : {
+        "size" : [
+          "AddCuboid.x",
+          "AddCuboid.y",
+          "AddCuboid.z"
+          ],
+        "Cache.value" : [
+          "mesh"
+          ],
+        "RecomputePointNormals.this" : [
+          "Cache.value"
+          ],
+        "EmptyPolygonMesh.mesh" : [
+          "AddCuboid.this"
+          ],
+        "AddCuboid.this" : [
+          "RecomputePointNormals.this"
+          ]
+        }
+      },
+    "Fabric.Core.Data.Cache" : {
+      "objectType" : "Func",
+      "metadata" : {
+        "uiNodeColor" : "{\n  \"r\" : 214,\n  \"g\" : 191,\n  \"b\" : 103\n  }",
+        "uiAlwaysShowDaisyChainPorts" : "true",
+        "uiHeaderColor" : "{\n  \"r\" : 188,\n  \"g\" : 129,\n  \"b\" : 83\n  }"
+        },
+      "title" : "Cache",
+      "cacheRule" : "always",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "nodePortType" : "Out",
+          "name" : "value",
+          "execPortType" : "In",
+          "typeSpec" : "$TYPE$"
+          }
+        ],
+      "extDeps" : {},
+      "presetGUID" : "D903AFD981FE9214C69943F542D5FD60",
+      "code" : "dfgEntry {\n}\n"
+      },
+    "Fabric.Exts.Geometry.PolygonMesh.RecomputePointNormals" : {
+      "objectType" : "Func",
+      "metadata" : {
+        "uiDocUrl" : "http://docs.fabric-engine.com/FabricEngine/2.0.0/HTML/KLExtensionsGuide/Geometry/PolygonMesh.html",
+        "uiTooltip" : "Recomputes all point normals and introduces normal splits if adjacent polygons' normals differ by more than `hardAngleRadians` radians.\nAll previously stored point normals will be overwritten.\nThe computed normal value is the average of neighbor polygons' :kl-ref:`PolygonMesh.generatePolygonNormal` (or a subset of these if there is a split).\n\n Supported by PolygonMesh"
+        },
+      "title" : "RecomputePointNormals",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "metadata" : {
+            "uiColor" : "{\n  \"r\" : 51,\n  \"g\" : 1,\n  \"b\" : 106\n  }"
+            },
+          "nodePortType" : "IO",
+          "name" : "this",
+          "execPortType" : "IO",
+          "typeSpec" : "PolygonMesh"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "Out",
+          "name" : "hardAngleRadians",
+          "execPortType" : "In",
+          "typeSpec" : "Scalar"
+          }
+        ],
+      "extDeps" : {
+        "Geometry" : "*"
+        },
+      "presetGUID" : "82B0904C5BAB58BDA9ED038FB18E0629",
+      "code" : "require Geometry;\n\ndfgEntry {\n  this.recomputePointNormals(hardAngleRadians);\n}\n"
+      },
+    "Fabric.Exts.Geometry.PolygonMesh.EmptyPolygonMesh" : {
+      "objectType" : "Graph",
+      "title" : "EmptyPolygonMesh",
+      "cacheRule" : "never",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "mesh",
+          "execPortType" : "Out",
+          "typeSpec" : "PolygonMesh"
+          }
+        ],
+      "extDeps" : {},
+      "presetGUID" : "EE0894325519F66F17D265A042545FEB",
+      "nodes" : [
+        {
+          "objectType" : "Inst",
+          "name" : "PolygonMesh",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "debugName"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "float64Positions"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "result"
+              }
+            ],
+          "executable" : "Fabric.Exts.Geometry.PolygonMesh.PolygonMesh",
+          "presetGUID" : "18F3A38BE7497D6BFC18A148A520B66D"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\": 951, \"y\": 145}"
+            },
+          "name" : "Clear",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "IO",
+              "name" : "this"
+              }
+            ],
+          "executable" : "Fabric.Exts.Geometry.Func.Clear",
+          "presetGUID" : "96D1EC86835296FFDC60533717804EE7",
+          "cacheRule" : "never"
+          },
+        {
+          "objectType" : "Var",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\": 744, \"y\": 122}"
+            },
+          "name" : "meshVar",
+          "ports" : [
+            {
+              "objectType" : "VarPort",
+              "nodePortType" : "IO",
+              "name" : "value"
+              }
+            ],
+          "dataType" : "PolygonMesh",
+          "extDep" : "Geometry:*"
+          }
+        ],
+      "connections" : {
+        "PolygonMesh.result" : [
+          "meshVar.value"
+          ],
+        "Clear.this" : [
+          "mesh"
+          ],
+        "meshVar.value" : [
+          "Clear.this"
+          ]
+        }
+      },
+    "Fabric.Exts.Geometry.PolygonMesh.PolygonMesh" : {
+      "objectType" : "Func",
+      "metadata" : {
+        "uiDocUrl" : "http://docs.fabric-engine.com/FabricEngine/2.0.0/HTML/KLExtensionsGuide/Geometry/PolygonMesh.html",
+        "uiTooltip" : "Constructor.\n\n Supported by PolygonMesh"
+        },
+      "title" : "PolygonMesh",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "nodePortType" : "Out",
+          "name" : "debugName",
+          "execPortType" : "In",
+          "typeSpec" : "String"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "Out",
+          "name" : "float64Positions",
+          "execPortType" : "In",
+          "typeSpec" : "Boolean"
+          },
+        {
+          "objectType" : "Port",
+          "metadata" : {
+            "uiColor" : "{\n  \"r\" : 51,\n  \"g\" : 1,\n  \"b\" : 106\n  }"
+            },
+          "nodePortType" : "In",
+          "name" : "result",
+          "execPortType" : "Out",
+          "typeSpec" : "PolygonMesh"
+          }
+        ],
+      "extDeps" : {
+        "Geometry" : "*"
+        },
+      "presetGUID" : "18F3A38BE7497D6BFC18A148A520B66D",
+      "code" : "require Geometry;\n\ndfgEntry {\n  result = PolygonMesh(debugName, float64Positions);\n}\n"
+      },
+    "Fabric.Exts.Geometry.Func.Clear" : {
+      "objectType" : "Func",
+      "metadata" : {
+        "uiDocUrl" : "http://docs.fabric-engine.com/FabricEngine/2.0.0/HTML/KLExtensionsGuide/Geometry/GeometryAttributes.html",
+        "uiTooltip" : "Removes all attributes, and resets attribute value array sizes to 0.\n\n Supported by GeometryAttributes,BaseGeometry,Points,Lines,PolygonMesh"
+        },
+      "title" : "Clear",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "nodePortType" : "IO",
+          "name" : "this",
+          "execPortType" : "IO",
+          "typeSpec" : "$TYPE$"
+          }
+        ],
+      "extDeps" : {
+        "Geometry" : "*"
+        },
+      "presetGUID" : "96D1EC86835296FFDC60533717804EE7",
+      "code" : "require Geometry;\n\ndfgEntry {\n  this.clear();\n}\n"
+      },
+    "Fabric.Exts.Geometry.PolygonMesh.AddCuboid" : {
+      "objectType" : "Func",
+      "metadata" : {
+        "uiDocUrl" : "http://docs.fabric-engine.com/FabricEngine/2.0.0/HTML/KLExtensionsGuide/Geometry/PolygonMesh.html",
+        "uiTooltip" : "Appends a transformed cuboid (cube with specified size) to this mesh.\nBefore applying the transformation, the cuboid is centered at the origin,\nand has a range of [-x/2 .. x/2, -y/2 .. y/2, -z/2 .. z/2].\n\n\nSet Points Normals\nFace 0 (+Z)\nFace 1 (-Z)\nFace 2 (+Y)\nFace 3 (-Y)\nFace 4 (+X)\nFace 5 (-X)\nSet Uvs\nFace 0 (+Z)\nFace 1 (-Z)\nFace 2 (+Y)\nFace 3 (-Y)\nFace 4 (+X)\nFace 5 (-X)\n\n Supported by PolygonMesh"
+        },
+      "title" : "AddCuboid",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "metadata" : {
+            "uiColor" : "{\n  \"r\" : 51,\n  \"g\" : 1,\n  \"b\" : 106\n  }"
+            },
+          "nodePortType" : "IO",
+          "name" : "this",
+          "execPortType" : "IO",
+          "typeSpec" : "PolygonMesh"
+          },
+        {
+          "objectType" : "Port",
+          "metadata" : {
+            "uiColor" : "{\n  \"r\" : 249,\n  \"g\" : 157,\n  \"b\" : 28\n  }"
+            },
+          "nodePortType" : "Out",
+          "name" : "xfo",
+          "execPortType" : "In",
+          "typeSpec" : "Xfo"
+          },
+        {
+          "objectType" : "Port",
+          "metadata" : {
+            "uiRange" : "(0.0, 8.0)"
+            },
+          "nodePortType" : "Out",
+          "defaultValues" : {
+            "Scalar" : 2
+            },
+          "name" : "x",
+          "execPortType" : "In",
+          "typeSpec" : "Scalar"
+          },
+        {
+          "objectType" : "Port",
+          "metadata" : {
+            "uiRange" : "(0.0, 8.0)"
+            },
+          "nodePortType" : "Out",
+          "defaultValues" : {
+            "Scalar" : 2
+            },
+          "name" : "y",
+          "execPortType" : "In",
+          "typeSpec" : "Scalar"
+          },
+        {
+          "objectType" : "Port",
+          "metadata" : {
+            "uiRange" : "(0.0, 8.0)"
+            },
+          "nodePortType" : "Out",
+          "defaultValues" : {
+            "Scalar" : 2
+            },
+          "name" : "z",
+          "execPortType" : "In",
+          "typeSpec" : "Scalar"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "Out",
+          "defaultValues" : {
+            "Boolean" : true
+            },
+          "name" : "setNormals",
+          "execPortType" : "In",
+          "typeSpec" : "Boolean"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "Out",
+          "defaultValues" : {
+            "Boolean" : true
+            },
+          "name" : "setUVs",
+          "execPortType" : "In",
+          "typeSpec" : "Boolean"
+          }
+        ],
+      "extDeps" : {
+        "Geometry" : "*"
+        },
+      "presetGUID" : "158D097D640404E84CB79186BF0DF9DF",
+      "code" : "require Geometry;\n\ndfgEntry {\n  this.addCuboid(xfo, x, y, z, setNormals, setUVs);\n}\n"
+      },
+    "Fabric.Compounds.PolygonMesh.Create.GetTorus" : {
+      "objectType" : "Graph",
+      "metadata" : {
+        "uiNodeColor" : "{\n  \"r\" : 120,\n  \"g\" : 130,\n  \"b\" : 144\n  }",
+        "uiHeaderColor" : "{\n  \"r\" : 88,\n  \"g\" : 92,\n  \"b\" : 110\n  }",
+        "uiTooltip" : "Generates a polygon mesh torus.",
+        "uiGraphPan" : "{\n  \"x\" : 44.0,\n  \"y\" : -40.0\n  }"
+        },
+      "title" : "GetTorus",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "metadata" : {
+            "uiRange" : "(0, 5)"
+            },
+          "nodePortType" : "Out",
+          "defaultValues" : {
+            "Float32" : 0.5
+            },
+          "name" : "innerRadius",
+          "execPortType" : "In",
+          "typeSpec" : "Scalar"
+          },
+        {
+          "objectType" : "Port",
+          "metadata" : {
+            "uiRange" : "(0, 5)"
+            },
+          "nodePortType" : "Out",
+          "defaultValues" : {
+            "Float32" : 2
+            },
+          "name" : "outerRadius",
+          "execPortType" : "In",
+          "typeSpec" : "Scalar"
+          },
+        {
+          "objectType" : "Port",
+          "metadata" : {
+            "uiRange" : "(0, 32)"
+            },
+          "nodePortType" : "Out",
+          "defaultValues" : {
+            "UInt32" : 16
+            },
+          "name" : "detail",
+          "execPortType" : "In",
+          "typeSpec" : "Size"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "mesh",
+          "execPortType" : "Out",
+          "typeSpec" : "PolygonMesh"
+          }
+        ],
+      "extDeps" : {
+        "Geometry" : "*"
+        },
+      "presetGUID" : "7F80E0AB27C6B066DCC96779963E625B",
+      "origPresetGUID" : "7F80E0AB27C6B066DCC96779963E625B",
+      "nodes" : [
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\": 312, \"y\": 129}"
+            },
+          "name" : "AddTorus",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "IO",
+              "name" : "this"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "xfo"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "innerRadius"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "outerRadius"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "detail"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "setNormals"
+              },
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "setUVs"
+              }
+            ],
+          "executable" : "Fabric.Exts.Geometry.PolygonMesh.AddTorus",
+          "presetGUID" : "5E67372A43161EBD29EA3CF445E0F891"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\":570.0,\"y\":146.0}"
+            },
+          "name" : "Cache",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "In",
+              "name" : "value"
+              }
+            ],
+          "executable" : "Fabric.Core.Data.Cache",
+          "presetGUID" : "D903AFD981FE9214C69943F542D5FD60"
+          },
+        {
+          "objectType" : "Inst",
+          "metadata" : {
+            "uiGraphPos" : "{\"x\": 122, \"y\": 76}"
+            },
+          "name" : "EmptyPolygonMesh",
+          "ports" : [
+            {
+              "objectType" : "InstPort",
+              "nodePortType" : "Out",
+              "name" : "mesh"
+              }
+            ],
+          "executable" : "Fabric.Exts.Geometry.PolygonMesh.EmptyPolygonMesh",
+          "presetGUID" : "EE0894325519F66F17D265A042545FEB"
+          }
+        ],
+      "connections" : {
+        "innerRadius" : [
+          "AddTorus.innerRadius"
+          ],
+        "outerRadius" : [
+          "AddTorus.outerRadius"
+          ],
+        "detail" : [
+          "AddTorus.detail"
+          ],
+        "AddTorus.this" : [
+          "Cache.value"
+          ],
+        "Cache.value" : [
+          "mesh"
+          ],
+        "EmptyPolygonMesh.mesh" : [
+          "AddTorus.this"
+          ]
+        }
+      },
+    "Fabric.Exts.Geometry.PolygonMesh.AddTorus" : {
+      "objectType" : "Func",
+      "metadata" : {
+        "uiDocUrl" : "http://docs.fabric-engine.com/FabricEngine/2.0.0/HTML/KLExtensionsGuide/Geometry/PolygonMesh.html",
+        "uiTooltip" : "Appends a transformed torus to this mesh.\nBefore applying the transformation, it will be in the XZ plane, centered at the origin.\n\n\n\n Supported by PolygonMesh"
+        },
+      "title" : "AddTorus",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "metadata" : {
+            "uiColor" : "{\n  \"r\" : 51,\n  \"g\" : 1,\n  \"b\" : 106\n  }"
+            },
+          "nodePortType" : "IO",
+          "name" : "this",
+          "execPortType" : "IO",
+          "typeSpec" : "PolygonMesh"
+          },
+        {
+          "objectType" : "Port",
+          "metadata" : {
+            "uiColor" : "{\n  \"r\" : 249,\n  \"g\" : 157,\n  \"b\" : 28\n  }"
+            },
+          "nodePortType" : "Out",
+          "name" : "xfo",
+          "execPortType" : "In",
+          "typeSpec" : "Xfo"
+          },
+        {
+          "objectType" : "Port",
+          "metadata" : {
+            "uiRange" : "(0.0, 8.0)"
+            },
+          "nodePortType" : "Out",
+          "defaultValues" : {
+            "Scalar" : 1
+            },
+          "name" : "innerRadius",
+          "execPortType" : "In",
+          "typeSpec" : "Scalar"
+          },
+        {
+          "objectType" : "Port",
+          "metadata" : {
+            "uiRange" : "(0.0, 12.0)"
+            },
+          "nodePortType" : "Out",
+          "defaultValues" : {
+            "Scalar" : 4
+            },
+          "name" : "outerRadius",
+          "execPortType" : "In",
+          "typeSpec" : "Scalar"
+          },
+        {
+          "objectType" : "Port",
+          "metadata" : {
+            "uiRange" : "(2, 12)"
+            },
+          "nodePortType" : "Out",
+          "defaultValues" : {
+            "Size" : 4
+            },
+          "name" : "detail",
+          "execPortType" : "In",
+          "typeSpec" : "Size"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "Out",
+          "defaultValues" : {
+            "Boolean" : true
+            },
+          "name" : "setNormals",
+          "execPortType" : "In",
+          "typeSpec" : "Boolean"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "Out",
+          "defaultValues" : {
+            "Boolean" : true
+            },
+          "name" : "setUVs",
+          "execPortType" : "In",
+          "typeSpec" : "Boolean"
+          }
+        ],
+      "extDeps" : {
+        "Geometry" : "*"
+        },
+      "presetGUID" : "5E67372A43161EBD29EA3CF445E0F891",
+      "code" : "require Geometry;\n\ndfgEntry {\n  this.addTorus(xfo, innerRadius, outerRadius, detail, setNormals, setUVs);\n}\n"
+      },
+    "Fabric.Core.Control.If" : {
+      "objectType" : "Func",
+      "title" : "If",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "nodePortType" : "Out",
+          "name" : "cond",
+          "execPortType" : "In",
+          "typeSpec" : "Boolean"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "Out",
+          "name" : "if_true",
+          "execPortType" : "In",
+          "typeSpec" : "$TYPE$"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "Out",
+          "name" : "if_false",
+          "execPortType" : "In",
+          "typeSpec" : "$TYPE$"
+          },
+        {
+          "objectType" : "Port",
+          "nodePortType" : "In",
+          "name" : "result",
+          "execPortType" : "Out",
+          "typeSpec" : "$TYPE$"
+          }
+        ],
+      "extDeps" : {},
+      "presetGUID" : "3182A478A21643455D549E483D35F831",
+      "code" : "\ndfgEntry {\n\tresult = cond ? if_true : if_false;\n}\n"
+      },
+    "Fabric.Exts.Math.Xfo.Xfo" : {
+      "objectType" : "Func",
+      "metadata" : {
+        "uiNodeColor" : "{\n  \"r\" : 99,\n  \"g\" : 129,\n  \"b\" : 92\n  }",
+        "uiDocUrl" : "http://docs.fabric-engine.com/FabricEngine/2.0.0/HTML/KLExtensionsGuide/Math/Xfo.html",
+        "uiTooltip" : "Constructor from the orientation, translation and scaling\n\n Supported by Xfo"
+        },
+      "title" : "Xfo",
+      "ports" : [
+        {
+          "objectType" : "Port",
+          "metadata" : {
+            "uiColor" : "{\n  \"r\" : 0,\n  \"g\" : 191,\n  \"b\" : 232\n  }"
+            },
+          "nodePortType" : "Out",
+          "name" : "ori",
+          "execPortType" : "In",
+          "typeSpec" : "Quat"
+          },
+        {
+          "objectType" : "Port",
+          "metadata" : {
+            "uiColor" : "{\n  \"r\" : 255,\n  \"g\" : 242,\n  \"b\" : 0\n  }"
+            },
+          "nodePortType" : "Out",
+          "name" : "tr",
+          "execPortType" : "In",
+          "typeSpec" : "Vec3"
+          },
+        {
+          "objectType" : "Port",
+          "metadata" : {
+            "uiColor" : "{\n  \"r\" : 255,\n  \"g\" : 242,\n  \"b\" : 0\n  }"
+            },
+          "nodePortType" : "Out",
+          "defaultValues" : {
+            "Vec3" : {
+              "x" : 1,
+              "y" : 1,
+              "z" : 1
+              }
+            },
+          "name" : "sc",
+          "execPortType" : "In",
+          "typeSpec" : "Vec3"
+          },
+        {
+          "objectType" : "Port",
+          "metadata" : {
+            "uiColor" : "{\n  \"r\" : 249,\n  \"g\" : 157,\n  \"b\" : 28\n  }"
+            },
+          "nodePortType" : "In",
+          "name" : "result",
+          "execPortType" : "Out",
+          "typeSpec" : "Xfo"
+          }
+        ],
+      "extDeps" : {
+        "Math" : "*"
+        },
+      "presetGUID" : "A0F6CD63A2069530481F214C62A069AA",
+      "code" : "require Math;\n\ndfgEntry {\n  result = Xfo(ori, tr, sc);\n}\n"
+      }
+    },
+  "args" : [
+    {
+      "type" : "DrawingHandle",
+      "value" : null,
+      "ext" : "InlineDrawing"
+      },
+    {
+      "type" : "Float32",
+      "value" : null
+      }
+    ]
+  }

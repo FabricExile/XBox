@@ -1,8 +1,0 @@
-require XBox;
-
-operator entry() {
-  XBoxController pad(XBOX_GAMEPAD_0);
-  pad.update();
-  report(pad.isConnected());
-  report('completed!'); 
-}
