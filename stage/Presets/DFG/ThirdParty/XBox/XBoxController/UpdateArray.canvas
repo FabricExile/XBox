@@ -1,0 +1,22 @@
+// Created by kl2dfg (processFunction)
+{
+  "objectType" : "Func",
+  "metadata" : {
+    "uiTooltip" : "* Updates the state of the gamepads.\n\n* This must be called (at least) once per game loop.\n\n\n Supported by XBoxController"
+    },
+  "title" : "Update[]",
+  "ports" : [
+    {
+      "objectType" : "Port",
+      "nodePortType" : "Out",
+      "name" : "this",
+      "execPortType" : "In",
+      "typeSpec" : "XBoxController[]"
+      }
+    ],
+  "extDeps" : {
+    "XBox" : "*"
+    },
+  "presetGUID" : "06F3789E7DE2C31F35E8D26147AF839C",
+  "code" : "require XBox;\n\noperator XBox_XBoxController_update_task<<<index>>>(\n  in XBoxController[] this\n) {\n  this[index < this.size() ? index : this.size() - 1].update();\n}\n\ndfgEntry {\n  if( this.size() == 0) return;\n  Size task_size = this.size();\n  if(task_size < 10000 /* pex margin */) {\n    for(Size index = 0; index < task_size; index++) {\n      XBox_XBoxController_update_task(index, this);\n    }\n  } else {\n    XBox_XBoxController_update_task<<<task_size>>>(this);\n  }\n}\n"
+  }

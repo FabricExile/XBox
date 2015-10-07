@@ -1,0 +1,36 @@
+// Created by kl2dfg (processFunction)
+{
+  "objectType" : "Func",
+  "metadata" : {
+    "uiTooltip" : "* Get the trigger value (depression magnitude) in its raw form.\n\n* \\param device The device to check.\n* \\param trigger The trigger to check.\n* \\returns Trigger depression magnitude (0 to 32767).\n\n\n Supported by XBoxController"
+    },
+  "title" : "TriggerValue",
+  "ports" : [
+    {
+      "objectType" : "Port",
+      "nodePortType" : "Out",
+      "name" : "this",
+      "execPortType" : "In",
+      "typeSpec" : "XBoxController"
+      },
+    {
+      "objectType" : "Port",
+      "nodePortType" : "Out",
+      "name" : "trigger",
+      "execPortType" : "In",
+      "typeSpec" : "XBOX_GAMEPAD_TRIGGER"
+      },
+    {
+      "objectType" : "Port",
+      "nodePortType" : "In",
+      "name" : "result",
+      "execPortType" : "Out",
+      "typeSpec" : "SInt32"
+      }
+    ],
+  "extDeps" : {
+    "XBox" : "*"
+    },
+  "presetGUID" : "7FD9282C48E33FF0E48ED896C735BC73",
+  "code" : "require XBox;\n\ndfgEntry {\n  result = this.triggerValue(trigger);\n}\n"
+  }

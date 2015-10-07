@@ -1,0 +1,36 @@
+// Created by kl2dfg (processFunction)
+{
+  "objectType" : "Func",
+  "metadata" : {
+    "uiTooltip" : "* Query the direction of a stick (in radians).\n\n* This returns the direction of the stick.  This value is in radians, not\n* degrees.  Zero is to the right, and the angle increases in a\n* counter-clockwise direction.\n\n* \\param device The device to check.\n* \\param stick The stick to check.\n* \\returns The angle of the stick (0 to 2*PI).\n\n\n Supported by XBoxController"
+    },
+  "title" : "StickAngle",
+  "ports" : [
+    {
+      "objectType" : "Port",
+      "nodePortType" : "Out",
+      "name" : "this",
+      "execPortType" : "In",
+      "typeSpec" : "XBoxController"
+      },
+    {
+      "objectType" : "Port",
+      "nodePortType" : "Out",
+      "name" : "stick",
+      "execPortType" : "In",
+      "typeSpec" : "XBOX_GAMEPAD_STICK"
+      },
+    {
+      "objectType" : "Port",
+      "nodePortType" : "In",
+      "name" : "result",
+      "execPortType" : "Out",
+      "typeSpec" : "Float32"
+      }
+    ],
+  "extDeps" : {
+    "XBox" : "*"
+    },
+  "presetGUID" : "3217C324A4804C4A1CACE59D1193B6A7",
+  "code" : "require XBox;\n\ndfgEntry {\n  result = this.stickAngle(stick);\n}\n"
+  }

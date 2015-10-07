@@ -1,0 +1,34 @@
+// Created by kl2dfg (processFunction)
+{
+  "objectType" : "Func",
+  "metadata" : {
+    "uiTooltip" : "internal\n\n Supported by XBoxController"
+    },
+  "title" : "Construct[]",
+  "ports" : [
+    {
+      "objectType" : "Port",
+      "nodePortType" : "IO",
+      "name" : "this",
+      "execPortType" : "IO",
+      "typeSpec" : "XBoxController[]"
+      },
+    {
+      "objectType" : "Port",
+      "nodePortType" : "Out",
+      "defaultValues" : {
+        "XBOX_GAMEPAD_DEVICE[]" : [
+          0
+          ]
+        },
+      "name" : "device",
+      "execPortType" : "In",
+      "typeSpec" : "XBOX_GAMEPAD_DEVICE[]"
+      }
+    ],
+  "extDeps" : {
+    "XBox" : "*"
+    },
+  "presetGUID" : "EF33800E4499E2ACD5A9C0B15C368723",
+  "code" : "require XBox;\n\noperator XBox_XBoxController_construct_task<<<index>>>(\n  io XBoxController[] this\n, in XBOX_GAMEPAD_DEVICE[] device\n) {\n  this[index < this.size() ? index : this.size() - 1].construct(device[index < device.size() ? index : device.size() - 1]);\n}\n\ndfgEntry {\n  if( this.size() == 0) return;\n  if( device.size() == 0) return;\n  Size task_size = this.size();\n  if(task_size < device.size()) task_size = device.size();\n  if(task_size < 10000 /* pex margin */) {\n    for(Size index = 0; index < task_size; index++) {\n      XBox_XBoxController_construct_task(index, this, device);\n    }\n  } else {\n    XBox_XBoxController_construct_task<<<task_size>>>(this, device);\n  }\n}\n"
+  }

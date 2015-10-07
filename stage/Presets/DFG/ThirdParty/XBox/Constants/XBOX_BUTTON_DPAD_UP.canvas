@@ -1,0 +1,19 @@
+// Created by kl2dfg (processConstant)
+{
+  "objectType" : "Func",
+  "title" : "XBOX_BUTTON_DPAD_UP",
+  "ports" : [
+    {
+      "objectType" : "Port",
+      "nodePortType" : "In",
+      "name" : "value",
+      "execPortType" : "Out",
+      "typeSpec" : "XBOX_GAMEPAD_BUTTON"
+      }
+    ],
+  "extDeps" : {
+    "XBox" : "*"
+    },
+  "presetGUID" : "34E623D0F4E6E0A10B98D48853B6D1B7",
+  "code" : "require XBox;\n\ndfgEntry {\n  value = XBOX_BUTTON_DPAD_UP;\n}\n"
+  }

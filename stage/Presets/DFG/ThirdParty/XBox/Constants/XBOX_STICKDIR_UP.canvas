@@ -1,0 +1,19 @@
+// Created by kl2dfg (processConstant)
+{
+  "objectType" : "Func",
+  "title" : "XBOX_STICKDIR_UP",
+  "ports" : [
+    {
+      "objectType" : "Port",
+      "nodePortType" : "In",
+      "name" : "value",
+      "execPortType" : "Out",
+      "typeSpec" : "XBOX_GAMEPAD_STICKDIR"
+      }
+    ],
+  "extDeps" : {
+    "XBox" : "*"
+    },
+  "presetGUID" : "DCB75C323B1308D36087E34426A82A95",
+  "code" : "require XBox;\n\ndfgEntry {\n  value = XBOX_STICKDIR_UP;\n}\n"
+  }

@@ -1,0 +1,41 @@
+// Created by kl2dfg (processFunction)
+{
+  "objectType" : "Func",
+  "metadata" : {
+    "uiTooltip" : "* Get the trigger value (depression magnitude) in its raw form.\n\n* \\param device The device to check.\n* \\param trigger The trigger to check.\n* \\returns Trigger depression magnitude (0 to 32767).\n\n\n Supported by XBoxController"
+    },
+  "title" : "TriggerValue[]",
+  "ports" : [
+    {
+      "objectType" : "Port",
+      "nodePortType" : "Out",
+      "name" : "this",
+      "execPortType" : "In",
+      "typeSpec" : "XBoxController[]"
+      },
+    {
+      "objectType" : "Port",
+      "nodePortType" : "Out",
+      "defaultValues" : {
+        "XBOX_GAMEPAD_TRIGGER[]" : [
+          0
+          ]
+        },
+      "name" : "trigger",
+      "execPortType" : "In",
+      "typeSpec" : "XBOX_GAMEPAD_TRIGGER[]"
+      },
+    {
+      "objectType" : "Port",
+      "nodePortType" : "In",
+      "name" : "result",
+      "execPortType" : "Out",
+      "typeSpec" : "SInt32[]"
+      }
+    ],
+  "extDeps" : {
+    "XBox" : "*"
+    },
+  "presetGUID" : "7FD9282C48E33FF0E48ED896C735BC73",
+  "code" : "require XBox;\n\noperator XBox_XBoxController_triggerValue_task<<<index>>>(\n  io SInt32[] result\n, in XBoxController[] this\n, in XBOX_GAMEPAD_TRIGGER[] trigger\n) {\n  result[index] = this[index < this.size() ? index : this.size() - 1].triggerValue(trigger[index < trigger.size() ? index : trigger.size() - 1]);\n}\n\ndfgEntry {\n  if( this.size() == 0) return;\n  if( trigger.size() == 0) return;\n  Size task_size = this.size();\n  if(task_size < trigger.size()) task_size = trigger.size();\n  result.resize(task_size);\n  if(task_size < 10000 /* pex margin */) {\n    for(Size index = 0; index < task_size; index++) {\n      XBox_XBoxController_triggerValue_task(index, result, this, trigger);\n    }\n  } else {\n    XBox_XBoxController_triggerValue_task<<<task_size>>>(result, this, trigger);\n  }\n}\n"
+  }

@@ -1,0 +1,19 @@
+// Created by kl2dfg (processConstant)
+{
+  "objectType" : "Func",
+  "title" : "XBOX_BUTTON_DPAD_DOWN",
+  "ports" : [
+    {
+      "objectType" : "Port",
+      "nodePortType" : "In",
+      "name" : "value",
+      "execPortType" : "Out",
+      "typeSpec" : "XBOX_GAMEPAD_BUTTON"
+      }
+    ],
+  "extDeps" : {
+    "XBox" : "*"
+    },
+  "presetGUID" : "9B06F63D3D39B6F7C5046E2268BD17BF",
+  "code" : "require XBox;\n\ndfgEntry {\n  value = XBOX_BUTTON_DPAD_DOWN;\n}\n"
+  }

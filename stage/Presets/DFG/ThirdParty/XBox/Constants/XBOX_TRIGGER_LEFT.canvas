@@ -1,0 +1,19 @@
+// Created by kl2dfg (processConstant)
+{
+  "objectType" : "Func",
+  "title" : "XBOX_TRIGGER_LEFT",
+  "ports" : [
+    {
+      "objectType" : "Port",
+      "nodePortType" : "In",
+      "name" : "value",
+      "execPortType" : "Out",
+      "typeSpec" : "XBOX_GAMEPAD_TRIGGER"
+      }
+    ],
+  "extDeps" : {
+    "XBox" : "*"
+    },
+  "presetGUID" : "B571CB95AF1B4C04E8CD01A7BDEE10D3",
+  "code" : "require XBox;\n\ndfgEntry {\n  value = XBOX_TRIGGER_LEFT;\n}\n"
+  }

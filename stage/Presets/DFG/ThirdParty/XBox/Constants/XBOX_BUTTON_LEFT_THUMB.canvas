@@ -1,0 +1,19 @@
+// Created by kl2dfg (processConstant)
+{
+  "objectType" : "Func",
+  "title" : "XBOX_BUTTON_LEFT_THUMB",
+  "ports" : [
+    {
+      "objectType" : "Port",
+      "nodePortType" : "In",
+      "name" : "value",
+      "execPortType" : "Out",
+      "typeSpec" : "XBOX_GAMEPAD_BUTTON"
+      }
+    ],
+  "extDeps" : {
+    "XBox" : "*"
+    },
+  "presetGUID" : "D42C7B668D1DF7F2903A5B9C070A4D5A",
+  "code" : "require XBox;\n\ndfgEntry {\n  value = XBOX_BUTTON_LEFT_THUMB;\n}\n"
+  }

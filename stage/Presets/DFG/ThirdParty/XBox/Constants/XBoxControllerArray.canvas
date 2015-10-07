@@ -1,0 +1,36 @@
+// Created by kl2dfg (processStructConstant)
+{
+  "objectType" : "Func",
+  "title" : "XBoxController[]",
+  "ports" : [
+    {
+      "objectType" : "Port",
+      "nodePortType" : "Out",
+      "name" : "element",
+      "execPortType" : "In",
+      "typeSpec" : "XBoxController"
+      },
+    {
+      "objectType" : "Port",
+      "nodePortType" : "Out",
+      "defaultValues" : {
+        "SInt32" : 1
+        },
+      "name" : "count",
+      "execPortType" : "In",
+      "typeSpec" : "SInt32"
+      },
+    {
+      "objectType" : "Port",
+      "nodePortType" : "In",
+      "name" : "array",
+      "execPortType" : "Out",
+      "typeSpec" : "XBoxController[]"
+      }
+    ],
+  "extDeps" : {
+    "XBox" : "*"
+    },
+  "presetGUID" : "32821E85D8ADB99CAFD71057A9BDD624",
+  "code" : "dfgEntry {\n  array.resize(count);\n  for(Size i=0;i<count;i++)\n    array[i] = element;\n}\n"
+  }

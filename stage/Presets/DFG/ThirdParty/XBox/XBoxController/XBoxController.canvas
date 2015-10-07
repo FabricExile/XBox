@@ -1,0 +1,29 @@
+// Created by kl2dfg (processFunction)
+{
+  "objectType" : "Func",
+  "metadata" : {
+    "uiTooltip" : "standard constructor given a device\n\n Supported by XBoxController"
+    },
+  "title" : "XBoxController",
+  "ports" : [
+    {
+      "objectType" : "Port",
+      "nodePortType" : "Out",
+      "name" : "device",
+      "execPortType" : "In",
+      "typeSpec" : "XBOX_GAMEPAD_DEVICE"
+      },
+    {
+      "objectType" : "Port",
+      "nodePortType" : "In",
+      "name" : "result",
+      "execPortType" : "Out",
+      "typeSpec" : "XBoxController"
+      }
+    ],
+  "extDeps" : {
+    "XBox" : "*"
+    },
+  "presetGUID" : "B82201837DD5583E3832D9BD1C44558F",
+  "code" : "require XBox;\n\ndfgEntry {\n  result = XBoxController(device);\n}\n"
+  }

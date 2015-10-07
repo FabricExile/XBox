@@ -1,0 +1,19 @@
+// Created by kl2dfg (processConstant)
+{
+  "objectType" : "Func",
+  "title" : "XBOX_BUTTON_B",
+  "ports" : [
+    {
+      "objectType" : "Port",
+      "nodePortType" : "In",
+      "name" : "value",
+      "execPortType" : "Out",
+      "typeSpec" : "XBOX_GAMEPAD_BUTTON"
+      }
+    ],
+  "extDeps" : {
+    "XBox" : "*"
+    },
+  "presetGUID" : "1A78EDE1FB69724466A4892D3D6F680F",
+  "code" : "require XBox;\n\ndfgEntry {\n  value = XBOX_BUTTON_B;\n}\n"
+  }

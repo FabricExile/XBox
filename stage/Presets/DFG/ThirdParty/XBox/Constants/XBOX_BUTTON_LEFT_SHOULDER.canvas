@@ -1,0 +1,19 @@
+// Created by kl2dfg (processConstant)
+{
+  "objectType" : "Func",
+  "title" : "XBOX_BUTTON_LEFT_SHOULDER",
+  "ports" : [
+    {
+      "objectType" : "Port",
+      "nodePortType" : "In",
+      "name" : "value",
+      "execPortType" : "Out",
+      "typeSpec" : "XBOX_GAMEPAD_BUTTON"
+      }
+    ],
+  "extDeps" : {
+    "XBox" : "*"
+    },
+  "presetGUID" : "ED43300AD3A14CDF28765B049E4CD3F1",
+  "code" : "require XBox;\n\ndfgEntry {\n  value = XBOX_BUTTON_LEFT_SHOULDER;\n}\n"
+  }

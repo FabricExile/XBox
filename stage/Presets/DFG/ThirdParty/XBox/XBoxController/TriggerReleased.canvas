@@ -1,0 +1,36 @@
+// Created by kl2dfg (processFunction)
+{
+  "objectType" : "Func",
+  "metadata" : {
+    "uiTooltip" : "* Test if a trigger is depressed\n\n* \\param device The device to check.\n* \\param trigger The trigger to check.\n* \\returns GAMEPAD_TRUE if released, GAMEPAD_FALSE otherwise.\n\n\n Supported by XBoxController"
+    },
+  "title" : "TriggerReleased",
+  "ports" : [
+    {
+      "objectType" : "Port",
+      "nodePortType" : "Out",
+      "name" : "this",
+      "execPortType" : "In",
+      "typeSpec" : "XBoxController"
+      },
+    {
+      "objectType" : "Port",
+      "nodePortType" : "Out",
+      "name" : "trigger",
+      "execPortType" : "In",
+      "typeSpec" : "XBOX_GAMEPAD_TRIGGER"
+      },
+    {
+      "objectType" : "Port",
+      "nodePortType" : "In",
+      "name" : "result",
+      "execPortType" : "Out",
+      "typeSpec" : "Boolean"
+      }
+    ],
+  "extDeps" : {
+    "XBox" : "*"
+    },
+  "presetGUID" : "11DD56DB561D9AF23243927334193BEA",
+  "code" : "require XBox;\n\ndfgEntry {\n  result = this.triggerReleased(trigger);\n}\n"
+  }

@@ -1,0 +1,36 @@
+// Created by kl2dfg (processFunction)
+{
+  "objectType" : "Func",
+  "metadata" : {
+    "uiTooltip" : "* Get the direction the stick is pushed in (if any).\n\n* This is a useful utility function for when the stick should be treated as a simple\n* directional pad, such as for menu UIs.\n\n* \\param device The device to check.\n* \\param stick The trigger to check.\n* \\returns The stick's current direction.\n\n\n Supported by XBoxController"
+    },
+  "title" : "StickDir",
+  "ports" : [
+    {
+      "objectType" : "Port",
+      "nodePortType" : "Out",
+      "name" : "this",
+      "execPortType" : "In",
+      "typeSpec" : "XBoxController"
+      },
+    {
+      "objectType" : "Port",
+      "nodePortType" : "Out",
+      "name" : "stick",
+      "execPortType" : "In",
+      "typeSpec" : "XBOX_GAMEPAD_STICK"
+      },
+    {
+      "objectType" : "Port",
+      "nodePortType" : "In",
+      "name" : "result",
+      "execPortType" : "Out",
+      "typeSpec" : "XBOX_GAMEPAD_STICKDIR"
+      }
+    ],
+  "extDeps" : {
+    "XBox" : "*"
+    },
+  "presetGUID" : "7B9BD7487C2A4FA2B9C67C3A5B7CE367",
+  "code" : "require XBox;\n\ndfgEntry {\n  result = this.stickDir(stick);\n}\n"
+  }

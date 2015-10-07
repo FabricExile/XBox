@@ -1,0 +1,43 @@
+// Created by kl2dfg (processFunction)
+{
+  "objectType" : "Func",
+  "metadata" : {
+    "uiTooltip" : "* Query the position of an analog stick as raw values.\n\n* The values retrieved by this function represent the magnitude of the analog\n* stick in each direction.  Note that it shouldn't be possible to get full\n* magnitude in one direction unless the other direction has a magnitude of\n* zero, as the stick has a circular movement range.\n\n* \\param device The device to check.\n* \\param stick The stick to check.\n* \\param outX Pointer to integer to store the X magnitude in (-32767 to 32767).\n* \\param outX Pointer to integer to store the Y magnitude in (-32767 to 32767).\n\n\n Supported by XBoxController"
+    },
+  "title" : "StickXY",
+  "ports" : [
+    {
+      "objectType" : "Port",
+      "nodePortType" : "Out",
+      "name" : "this",
+      "execPortType" : "In",
+      "typeSpec" : "XBoxController"
+      },
+    {
+      "objectType" : "Port",
+      "nodePortType" : "Out",
+      "name" : "stick",
+      "execPortType" : "In",
+      "typeSpec" : "XBOX_GAMEPAD_STICK"
+      },
+    {
+      "objectType" : "Port",
+      "nodePortType" : "IO",
+      "name" : "outX",
+      "execPortType" : "IO",
+      "typeSpec" : "SInt32"
+      },
+    {
+      "objectType" : "Port",
+      "nodePortType" : "IO",
+      "name" : "outY",
+      "execPortType" : "IO",
+      "typeSpec" : "SInt32"
+      }
+    ],
+  "extDeps" : {
+    "XBox" : "*"
+    },
+  "presetGUID" : "23EE1FEB2F4C07FBAEF3AD0A286DDEB4",
+  "code" : "require XBox;\n\ndfgEntry {\n  this.stickXY(stick, outX, outY);\n}\n"
+  }

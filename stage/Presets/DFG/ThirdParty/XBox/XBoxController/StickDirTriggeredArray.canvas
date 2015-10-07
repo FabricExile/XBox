@@ -1,0 +1,53 @@
+// Created by kl2dfg (processFunction)
+{
+  "objectType" : "Func",
+  "metadata" : {
+    "uiTooltip" : "* Test whether a stick has been pressed in a particular direction since the last update.\n\n* This only returns true if the stick was centered last frame.\n\n* This is a useful utility function for when the stick should be treated as a simple\n* directional pad, such as for menu UIs.\n\n* \\param device The device to check.\n* \\param stick The trigger to check.\n* \\param stickdir The direction to check for.\n* \\returns GAMEPAD_TRUE if the stick is pressed in the specified direction, GAMEPAD_FALSE otherwise.\n\n\n Supported by XBoxController"
+    },
+  "title" : "StickDirTriggered[]",
+  "ports" : [
+    {
+      "objectType" : "Port",
+      "nodePortType" : "Out",
+      "name" : "this",
+      "execPortType" : "In",
+      "typeSpec" : "XBoxController[]"
+      },
+    {
+      "objectType" : "Port",
+      "nodePortType" : "Out",
+      "defaultValues" : {
+        "XBOX_GAMEPAD_STICK[]" : [
+          0
+          ]
+        },
+      "name" : "stick",
+      "execPortType" : "In",
+      "typeSpec" : "XBOX_GAMEPAD_STICK[]"
+      },
+    {
+      "objectType" : "Port",
+      "nodePortType" : "Out",
+      "defaultValues" : {
+        "XBOX_GAMEPAD_STICKDIR[]" : [
+          0
+          ]
+        },
+      "name" : "dir",
+      "execPortType" : "In",
+      "typeSpec" : "XBOX_GAMEPAD_STICKDIR[]"
+      },
+    {
+      "objectType" : "Port",
+      "nodePortType" : "In",
+      "name" : "result",
+      "execPortType" : "Out",
+      "typeSpec" : "Boolean[]"
+      }
+    ],
+  "extDeps" : {
+    "XBox" : "*"
+    },
+  "presetGUID" : "CECC6CC8D413F0212630DFAA4C986269",
+  "code" : "require XBox;\n\noperator XBox_XBoxController_stickDirTriggered_task<<<index>>>(\n  io Boolean[] result\n, in XBoxController[] this\n, in XBOX_GAMEPAD_STICK[] stick\n, in XBOX_GAMEPAD_STICKDIR[] dir\n) {\n  result[index] = this[index < this.size() ? index : this.size() - 1].stickDirTriggered(stick[index < stick.size() ? index : stick.size() - 1], dir[index < dir.size() ? index : dir.size() - 1]);\n}\n\ndfgEntry {\n  if( this.size() == 0) return;\n  if( stick.size() == 0) return;\n  if( dir.size() == 0) return;\n  Size task_size = this.size();\n  if(task_size < stick.size()) task_size = stick.size();\n  if(task_size < dir.size()) task_size = dir.size();\n  result.resize(task_size);\n  if(task_size < 10000 /* pex margin */) {\n    for(Size index = 0; index < task_size; index++) {\n      XBox_XBoxController_stickDirTriggered_task(index, result, this, stick, dir);\n    }\n  } else {\n    XBox_XBoxController_stickDirTriggered_task<<<task_size>>>(result, this, stick, dir);\n  }\n}\n"
+  }

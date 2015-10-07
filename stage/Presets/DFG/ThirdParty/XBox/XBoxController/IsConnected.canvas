@@ -1,0 +1,29 @@
+// Created by kl2dfg (processFunction)
+{
+  "objectType" : "Func",
+  "metadata" : {
+    "uiTooltip" : "* Test if a particular gamepad is connected.\n\n* \\param device The device to check.\n* \\returns GAMEPAD_TRUE if the device is connected, GAMEPAD_FALSE if it is not.\n\n\n Supported by XBoxController"
+    },
+  "title" : "IsConnected",
+  "ports" : [
+    {
+      "objectType" : "Port",
+      "nodePortType" : "Out",
+      "name" : "this",
+      "execPortType" : "In",
+      "typeSpec" : "XBoxController"
+      },
+    {
+      "objectType" : "Port",
+      "nodePortType" : "In",
+      "name" : "result",
+      "execPortType" : "Out",
+      "typeSpec" : "Boolean"
+      }
+    ],
+  "extDeps" : {
+    "XBox" : "*"
+    },
+  "presetGUID" : "CAEE377E5EDC6C98545D656C8C2C2358",
+  "code" : "require XBox;\n\ndfgEntry {\n  result = this.isConnected();\n}\n"
+  }

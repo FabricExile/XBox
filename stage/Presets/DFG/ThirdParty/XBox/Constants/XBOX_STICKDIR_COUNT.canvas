@@ -1,0 +1,19 @@
+// Created by kl2dfg (processConstant)
+{
+  "objectType" : "Func",
+  "title" : "XBOX_STICKDIR_COUNT",
+  "ports" : [
+    {
+      "objectType" : "Port",
+      "nodePortType" : "In",
+      "name" : "value",
+      "execPortType" : "Out",
+      "typeSpec" : "XBOX_GAMEPAD_STICKDIR"
+      }
+    ],
+  "extDeps" : {
+    "XBox" : "*"
+    },
+  "presetGUID" : "59816C1B14729EB8AE38500DABB8273F",
+  "code" : "require XBox;\n\ndfgEntry {\n  value = XBOX_STICKDIR_COUNT;\n}\n"
+  }

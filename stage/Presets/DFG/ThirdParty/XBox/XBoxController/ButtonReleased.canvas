@@ -1,0 +1,36 @@
+// Created by kl2dfg (processFunction)
+{
+  "objectType" : "Func",
+  "metadata" : {
+    "uiTooltip" : "* Test if a particular button has been released since the previous call to GamepadUpdate.\n\n* \\param device The device to check.\n* \\param button The button to check.\n* \\returns GAMEPAD_TRUE if the button has been released, GAMEPAD_FALSE if it is down or if it was not down the previous frame.\n\n\n Supported by XBoxController"
+    },
+  "title" : "ButtonReleased",
+  "ports" : [
+    {
+      "objectType" : "Port",
+      "nodePortType" : "Out",
+      "name" : "this",
+      "execPortType" : "In",
+      "typeSpec" : "XBoxController"
+      },
+    {
+      "objectType" : "Port",
+      "nodePortType" : "Out",
+      "name" : "button",
+      "execPortType" : "In",
+      "typeSpec" : "XBOX_GAMEPAD_BUTTON"
+      },
+    {
+      "objectType" : "Port",
+      "nodePortType" : "In",
+      "name" : "result",
+      "execPortType" : "Out",
+      "typeSpec" : "Boolean"
+      }
+    ],
+  "extDeps" : {
+    "XBox" : "*"
+    },
+  "presetGUID" : "2EA1C08B457481B631DBBA28945A550F",
+  "code" : "require XBox;\n\ndfgEntry {\n  result = this.buttonReleased(button);\n}\n"
+  }

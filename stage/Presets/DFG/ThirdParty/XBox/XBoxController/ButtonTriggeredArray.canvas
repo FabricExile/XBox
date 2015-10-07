@@ -1,0 +1,41 @@
+// Created by kl2dfg (processFunction)
+{
+  "objectType" : "Func",
+  "metadata" : {
+    "uiTooltip" : "* Test if a particular button has been depressed since the previous call to GamepadUpdate.\n\n* \\param device The device to check.\n* \\param button The button to check.\n* \\returns GAMEPAD_TRUE if the button has been pressed, GAMEPAD_FALSE if it is not or if it was depressed the previous frame.\n\n\n Supported by XBoxController"
+    },
+  "title" : "ButtonTriggered[]",
+  "ports" : [
+    {
+      "objectType" : "Port",
+      "nodePortType" : "Out",
+      "name" : "this",
+      "execPortType" : "In",
+      "typeSpec" : "XBoxController[]"
+      },
+    {
+      "objectType" : "Port",
+      "nodePortType" : "Out",
+      "defaultValues" : {
+        "XBOX_GAMEPAD_BUTTON[]" : [
+          0
+          ]
+        },
+      "name" : "button",
+      "execPortType" : "In",
+      "typeSpec" : "XBOX_GAMEPAD_BUTTON[]"
+      },
+    {
+      "objectType" : "Port",
+      "nodePortType" : "In",
+      "name" : "result",
+      "execPortType" : "Out",
+      "typeSpec" : "Boolean[]"
+      }
+    ],
+  "extDeps" : {
+    "XBox" : "*"
+    },
+  "presetGUID" : "CB5BA2696928514935DF53EBDCCC8DBC",
+  "code" : "require XBox;\n\noperator XBox_XBoxController_buttonTriggered_task<<<index>>>(\n  io Boolean[] result\n, in XBoxController[] this\n, in XBOX_GAMEPAD_BUTTON[] button\n) {\n  result[index] = this[index < this.size() ? index : this.size() - 1].buttonTriggered(button[index < button.size() ? index : button.size() - 1]);\n}\n\ndfgEntry {\n  if( this.size() == 0) return;\n  if( button.size() == 0) return;\n  Size task_size = this.size();\n  if(task_size < button.size()) task_size = button.size();\n  result.resize(task_size);\n  if(task_size < 10000 /* pex margin */) {\n    for(Size index = 0; index < task_size; index++) {\n      XBox_XBoxController_buttonTriggered_task(index, result, this, button);\n    }\n  } else {\n    XBox_XBoxController_buttonTriggered_task<<<task_size>>>(result, this, button);\n  }\n}\n"
+  }

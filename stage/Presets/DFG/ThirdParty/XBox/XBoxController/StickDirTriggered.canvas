@@ -1,0 +1,43 @@
+// Created by kl2dfg (processFunction)
+{
+  "objectType" : "Func",
+  "metadata" : {
+    "uiTooltip" : "* Test whether a stick has been pressed in a particular direction since the last update.\n\n* This only returns true if the stick was centered last frame.\n\n* This is a useful utility function for when the stick should be treated as a simple\n* directional pad, such as for menu UIs.\n\n* \\param device The device to check.\n* \\param stick The trigger to check.\n* \\param stickdir The direction to check for.\n* \\returns GAMEPAD_TRUE if the stick is pressed in the specified direction, GAMEPAD_FALSE otherwise.\n\n\n Supported by XBoxController"
+    },
+  "title" : "StickDirTriggered",
+  "ports" : [
+    {
+      "objectType" : "Port",
+      "nodePortType" : "Out",
+      "name" : "this",
+      "execPortType" : "In",
+      "typeSpec" : "XBoxController"
+      },
+    {
+      "objectType" : "Port",
+      "nodePortType" : "Out",
+      "name" : "stick",
+      "execPortType" : "In",
+      "typeSpec" : "XBOX_GAMEPAD_STICK"
+      },
+    {
+      "objectType" : "Port",
+      "nodePortType" : "Out",
+      "name" : "dir",
+      "execPortType" : "In",
+      "typeSpec" : "XBOX_GAMEPAD_STICKDIR"
+      },
+    {
+      "objectType" : "Port",
+      "nodePortType" : "In",
+      "name" : "result",
+      "execPortType" : "Out",
+      "typeSpec" : "Boolean"
+      }
+    ],
+  "extDeps" : {
+    "XBox" : "*"
+    },
+  "presetGUID" : "CECC6CC8D413F0212630DFAA4C986269",
+  "code" : "require XBox;\n\ndfgEntry {\n  result = this.stickDirTriggered(stick, dir);\n}\n"
+  }

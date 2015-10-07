@@ -1,0 +1,19 @@
+// Created by kl2dfg (processConstant)
+{
+  "objectType" : "Func",
+  "title" : "XBOX_GAMEPAD_0",
+  "ports" : [
+    {
+      "objectType" : "Port",
+      "nodePortType" : "In",
+      "name" : "value",
+      "execPortType" : "Out",
+      "typeSpec" : "XBOX_GAMEPAD_DEVICE"
+      }
+    ],
+  "extDeps" : {
+    "XBox" : "*"
+    },
+  "presetGUID" : "46E32193B5865FF1B4E680942624BC20",
+  "code" : "require XBox;\n\ndfgEntry {\n  value = XBOX_GAMEPAD_0;\n}\n"
+  }

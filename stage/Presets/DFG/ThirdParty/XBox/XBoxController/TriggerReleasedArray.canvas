@@ -1,0 +1,41 @@
+// Created by kl2dfg (processFunction)
+{
+  "objectType" : "Func",
+  "metadata" : {
+    "uiTooltip" : "* Test if a trigger is depressed\n\n* \\param device The device to check.\n* \\param trigger The trigger to check.\n* \\returns GAMEPAD_TRUE if released, GAMEPAD_FALSE otherwise.\n\n\n Supported by XBoxController"
+    },
+  "title" : "TriggerReleased[]",
+  "ports" : [
+    {
+      "objectType" : "Port",
+      "nodePortType" : "Out",
+      "name" : "this",
+      "execPortType" : "In",
+      "typeSpec" : "XBoxController[]"
+      },
+    {
+      "objectType" : "Port",
+      "nodePortType" : "Out",
+      "defaultValues" : {
+        "XBOX_GAMEPAD_TRIGGER[]" : [
+          0
+          ]
+        },
+      "name" : "trigger",
+      "execPortType" : "In",
+      "typeSpec" : "XBOX_GAMEPAD_TRIGGER[]"
+      },
+    {
+      "objectType" : "Port",
+      "nodePortType" : "In",
+      "name" : "result",
+      "execPortType" : "Out",
+      "typeSpec" : "Boolean[]"
+      }
+    ],
+  "extDeps" : {
+    "XBox" : "*"
+    },
+  "presetGUID" : "11DD56DB561D9AF23243927334193BEA",
+  "code" : "require XBox;\n\noperator XBox_XBoxController_triggerReleased_task<<<index>>>(\n  io Boolean[] result\n, in XBoxController[] this\n, in XBOX_GAMEPAD_TRIGGER[] trigger\n) {\n  result[index] = this[index < this.size() ? index : this.size() - 1].triggerReleased(trigger[index < trigger.size() ? index : trigger.size() - 1]);\n}\n\ndfgEntry {\n  if( this.size() == 0) return;\n  if( trigger.size() == 0) return;\n  Size task_size = this.size();\n  if(task_size < trigger.size()) task_size = trigger.size();\n  result.resize(task_size);\n  if(task_size < 10000 /* pex margin */) {\n    for(Size index = 0; index < task_size; index++) {\n      XBox_XBoxController_triggerReleased_task(index, result, this, trigger);\n    }\n  } else {\n    XBox_XBoxController_triggerReleased_task<<<task_size>>>(result, this, trigger);\n  }\n}\n"
+  }

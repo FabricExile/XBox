@@ -1,0 +1,41 @@
+// Created by kl2dfg (processFunction)
+{
+  "objectType" : "Func",
+  "metadata" : {
+    "uiTooltip" : "* Query the magnitude of an analog stick.\n\n* This returns the normalized value of the magnitude of the stick.  That is,\n* if the stick is pushed all the way in any direction, it returns 1.0.\n\n* \\param device The device to check.\n* \\param stick The stick to check.\n* \\returns The magnitude of the stick (0 to 1).\n\n\n Supported by XBoxController"
+    },
+  "title" : "StickLength[]",
+  "ports" : [
+    {
+      "objectType" : "Port",
+      "nodePortType" : "Out",
+      "name" : "this",
+      "execPortType" : "In",
+      "typeSpec" : "XBoxController[]"
+      },
+    {
+      "objectType" : "Port",
+      "nodePortType" : "Out",
+      "defaultValues" : {
+        "XBOX_GAMEPAD_STICK[]" : [
+          0
+          ]
+        },
+      "name" : "stick",
+      "execPortType" : "In",
+      "typeSpec" : "XBOX_GAMEPAD_STICK[]"
+      },
+    {
+      "objectType" : "Port",
+      "nodePortType" : "In",
+      "name" : "result",
+      "execPortType" : "Out",
+      "typeSpec" : "Float32[]"
+      }
+    ],
+  "extDeps" : {
+    "XBox" : "*"
+    },
+  "presetGUID" : "F6B2D54D6E6CAAC5AC6C8C7DDBE5A94F",
+  "code" : "require XBox;\n\noperator XBox_XBoxController_stickLength_task<<<index>>>(\n  io Float32[] result\n, in XBoxController[] this\n, in XBOX_GAMEPAD_STICK[] stick\n) {\n  result[index] = this[index < this.size() ? index : this.size() - 1].stickLength(stick[index < stick.size() ? index : stick.size() - 1]);\n}\n\ndfgEntry {\n  if( this.size() == 0) return;\n  if( stick.size() == 0) return;\n  Size task_size = this.size();\n  if(task_size < stick.size()) task_size = stick.size();\n  result.resize(task_size);\n  if(task_size < 10000 /* pex margin */) {\n    for(Size index = 0; index < task_size; index++) {\n      XBox_XBoxController_stickLength_task(index, result, this, stick);\n    }\n  } else {\n    XBox_XBoxController_stickLength_task<<<task_size>>>(result, this, stick);\n  }\n}\n"
+  }

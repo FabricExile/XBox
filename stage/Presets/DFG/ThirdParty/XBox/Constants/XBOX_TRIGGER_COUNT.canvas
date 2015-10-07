@@ -1,0 +1,19 @@
+// Created by kl2dfg (processConstant)
+{
+  "objectType" : "Func",
+  "title" : "XBOX_TRIGGER_COUNT",
+  "ports" : [
+    {
+      "objectType" : "Port",
+      "nodePortType" : "In",
+      "name" : "value",
+      "execPortType" : "Out",
+      "typeSpec" : "XBOX_GAMEPAD_TRIGGER"
+      }
+    ],
+  "extDeps" : {
+    "XBox" : "*"
+    },
+  "presetGUID" : "811EE37B333F174C3989EFE301C04633",
+  "code" : "require XBox;\n\ndfgEntry {\n  value = XBOX_TRIGGER_COUNT;\n}\n"
+  }
