@@ -9,8 +9,6 @@ if not platform.system().lower().startswith('win'):
 
 thirdpartyDirs = {
   'FABRIC_DIR': "Should point to Fabric Engine's installation folder.",
-  'BOOST_INCLUDE_DIR': "Should point to Boost include folder.",
-  'BOOST_LIBRARY_DIR': "Should point to Boost library folder."
 }
 
 # help debug print
@@ -92,7 +90,6 @@ def RunKL2DFG(
 
 # for windows for now use Visual Studio 2013. 
 # if you upgrade this you will also have to provide
-# boost libs for the corresponding VS version
 os.environ['FABRIC_EXTS_PATH'] += os.pathsep + str(Dir('stage').Dir('Exts'))
 env = Environment(ENV = os.environ, MSVC_VERSION='12.0')
 env.AddMethod(RunKL2EDK)
@@ -104,8 +101,6 @@ for thirdpartyDir in thirdpartyDirs:
     raise Exception(thirdpartyDir+' env variable not defined. '+thirdpartyDirs[thirdpartyDir])
 
 env.Append(CPPPATH = [os.path.join(os.environ['FABRIC_DIR'], 'include')])
-env.Append(CPPPATH = [os.environ['BOOST_INCLUDE_DIR']])
-env.Append(LIBPATH = [os.environ['BOOST_LIBRARY_DIR']])
 
 alias = SConscript('src/SConscript', variant_dir = 'build', exports = {'parentEnv': env, 'STAGE_DIR': env.Dir('stage')}, duplicate=0)
 

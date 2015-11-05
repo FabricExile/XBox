@@ -9,7 +9,6 @@ extName = 'XBox'
 env = parentEnv.Clone()
 env.Append(CPPPATH = [env.Dir('.').abspath])
 env.Append(CPPPATH = [env.Dir('thirdparty').abspath])
-env.Append(LIBS = ['libboost_thread-vc120-mt-s-1_55'])
 env.Append(CCFLAGS = ['/EHsc'])
 
 if platform.system().lower().startswith('win'):
