@@ -32,5 +32,10 @@
     "XBox" : "*"
     },
   "presetGUID" : "1D5DAF0E72CE7F86BC293D9662B55AE9",
-  "code" : "require XBox;\n\ndfgEntry {\n  result = this.buttonDown(button);\n}\n"
+  "code" : "require XBox;
+
+dfgEntry {
+  result = this.buttonDown(button);
+}
+"
   }

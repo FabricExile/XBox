@@ -32,5 +32,10 @@
     "XBox" : "*"
     },
   "presetGUID" : "32821E85D8ADB99CAFD71057A9BDD624",
-  "code" : "dfgEntry {\n  array.resize(count);\n  for(Size i=0;i<count;i++)\n    array[i] = element;\n}\n"
+  "code" : "dfgEntry {
+  array.resize(count);
+  for(Size i=0;i<count;i++)
+    array[i] = element;
+}
+"
   }

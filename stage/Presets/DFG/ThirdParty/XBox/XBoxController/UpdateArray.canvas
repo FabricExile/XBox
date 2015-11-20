@@ -18,5 +18,24 @@
     "XBox" : "*"
     },
   "presetGUID" : "06F3789E7DE2C31F35E8D26147AF839C",
-  "code" : "require XBox;\n\noperator XBox_XBoxController_update_task<<<index>>>(\n  in XBoxController[] this\n) {\n  this[index < this.size() ? index : this.size() - 1].update();\n}\n\ndfgEntry {\n  if( this.size() == 0) return;\n  Size task_size = this.size();\n  if(task_size < 10000 /* pex margin */) {\n    for(Size index = 0; index < task_size; index++) {\n      XBox_XBoxController_update_task(index, this);\n    }\n  } else {\n    XBox_XBoxController_update_task<<<task_size>>>(this);\n  }\n}\n"
+  "code" : "require XBox;
+
+operator XBox_XBoxController_update_task<<<index>>>(
+  in XBoxController[] this
+) {
+  this[index < this.size() ? index : this.size() - 1].update();
+}
+
+dfgEntry {
+  if( this.size() == 0) return;
+  Size task_size = this.size();
+  if(task_size < 10000 /* pex margin */) {
+    for(Size index = 0; index < task_size; index++) {
+      XBox_XBoxController_update_task(index, this);
+    }
+  } else {
+    XBox_XBoxController_update_task<<<task_size>>>(this);
+  }
+}
+"
   }

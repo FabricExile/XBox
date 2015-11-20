@@ -15,5 +15,10 @@
     "XBox" : "*"
     },
   "presetGUID" : "7B2D1A5984DEE5BC4725FFAAE338A2C5",
-  "code" : "require XBox;\n\ndfgEntry {\n  value = XBOX_BUTTON_Y;\n}\n"
+  "code" : "require XBox;
+
+dfgEntry {
+  value = XBOX_BUTTON_Y;
+}
+"
   }

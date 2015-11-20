@@ -15,5 +15,10 @@
     "XBox" : "*"
     },
   "presetGUID" : "4AADCF39CFC5631A6461BB55E5E37D8D",
-  "code" : "require XBox;\n\ndfgEntry {\n  value = XBOX_STICK_COUNT;\n}\n"
+  "code" : "require XBox;
+
+dfgEntry {
+  value = XBOX_STICK_COUNT;
+}
+"
   }

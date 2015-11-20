@@ -15,5 +15,10 @@
     "XBox" : "*"
     },
   "presetGUID" : "46E32193B5865FF1B4E680942624BC20",
-  "code" : "require XBox;\n\ndfgEntry {\n  value = XBOX_GAMEPAD_0;\n}\n"
+  "code" : "require XBox;
+
+dfgEntry {
+  value = XBOX_GAMEPAD_0;
+}
+"
   }

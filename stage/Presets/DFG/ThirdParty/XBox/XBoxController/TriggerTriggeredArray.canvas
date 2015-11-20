@@ -37,5 +37,29 @@
     "XBox" : "*"
     },
   "presetGUID" : "1A83EDE50F8FAE3FB98442C318470155",
-  "code" : "require XBox;\n\noperator XBox_XBoxController_triggerTriggered_task<<<index>>>(\n  io Boolean[] result\n, in XBoxController[] this\n, in XBOX_GAMEPAD_TRIGGER[] trigger\n) {\n  result[index] = this[index < this.size() ? index : this.size() - 1].triggerTriggered(trigger[index < trigger.size() ? index : trigger.size() - 1]);\n}\n\ndfgEntry {\n  if( this.size() == 0) return;\n  if( trigger.size() == 0) return;\n  Size task_size = this.size();\n  if(task_size < trigger.size()) task_size = trigger.size();\n  result.resize(task_size);\n  if(task_size < 10000 /* pex margin */) {\n    for(Size index = 0; index < task_size; index++) {\n      XBox_XBoxController_triggerTriggered_task(index, result, this, trigger);\n    }\n  } else {\n    XBox_XBoxController_triggerTriggered_task<<<task_size>>>(result, this, trigger);\n  }\n}\n"
+  "code" : "require XBox;
+
+operator XBox_XBoxController_triggerTriggered_task<<<index>>>(
+  io Boolean[] result
+, in XBoxController[] this
+, in XBOX_GAMEPAD_TRIGGER[] trigger
+) {
+  result[index] = this[index < this.size() ? index : this.size() - 1].triggerTriggered(trigger[index < trigger.size() ? index : trigger.size() - 1]);
+}
+
+dfgEntry {
+  if( this.size() == 0) return;
+  if( trigger.size() == 0) return;
+  Size task_size = this.size();
+  if(task_size < trigger.size()) task_size = trigger.size();
+  result.resize(task_size);
+  if(task_size < 10000 /* pex margin */) {
+    for(Size index = 0; index < task_size; index++) {
+      XBox_XBoxController_triggerTriggered_task(index, result, this, trigger);
+    }
+  } else {
+    XBox_XBoxController_triggerTriggered_task<<<task_size>>>(result, this, trigger);
+  }
+}
+"
   }

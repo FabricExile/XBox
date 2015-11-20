@@ -32,5 +32,10 @@
     "XBox" : "*"
     },
   "presetGUID" : "338A363484E131AE6076333185544CAA",
-  "code" : "require XBox;\n\ndfgEntry {\n  this.setRumble(left, right);\n}\n"
+  "code" : "require XBox;
+
+dfgEntry {
+  this.setRumble(left, right);
+}
+"
   }

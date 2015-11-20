@@ -15,5 +15,10 @@
     "XBox" : "*"
     },
   "presetGUID" : "B571CB95AF1B4C04E8CD01A7BDEE10D3",
-  "code" : "require XBox;\n\ndfgEntry {\n  value = XBOX_TRIGGER_LEFT;\n}\n"
+  "code" : "require XBox;
+
+dfgEntry {
+  value = XBOX_TRIGGER_LEFT;
+}
+"
   }

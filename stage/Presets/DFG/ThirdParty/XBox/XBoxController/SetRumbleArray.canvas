@@ -42,5 +42,30 @@
     "XBox" : "*"
     },
   "presetGUID" : "338A363484E131AE6076333185544CAA",
-  "code" : "require XBox;\n\noperator XBox_XBoxController_setRumble_task<<<index>>>(\n  in XBoxController[] this\n, in Float32[] left\n, in Float32[] right\n) {\n  this[index < this.size() ? index : this.size() - 1].setRumble(left[index < left.size() ? index : left.size() - 1], right[index < right.size() ? index : right.size() - 1]);\n}\n\ndfgEntry {\n  if( this.size() == 0) return;\n  if( left.size() == 0) return;\n  if( right.size() == 0) return;\n  Size task_size = this.size();\n  if(task_size < left.size()) task_size = left.size();\n  if(task_size < right.size()) task_size = right.size();\n  if(task_size < 10000 /* pex margin */) {\n    for(Size index = 0; index < task_size; index++) {\n      XBox_XBoxController_setRumble_task(index, this, left, right);\n    }\n  } else {\n    XBox_XBoxController_setRumble_task<<<task_size>>>(this, left, right);\n  }\n}\n"
+  "code" : "require XBox;
+
+operator XBox_XBoxController_setRumble_task<<<index>>>(
+  in XBoxController[] this
+, in Float32[] left
+, in Float32[] right
+) {
+  this[index < this.size() ? index : this.size() - 1].setRumble(left[index < left.size() ? index : left.size() - 1], right[index < right.size() ? index : right.size() - 1]);
+}
+
+dfgEntry {
+  if( this.size() == 0) return;
+  if( left.size() == 0) return;
+  if( right.size() == 0) return;
+  Size task_size = this.size();
+  if(task_size < left.size()) task_size = left.size();
+  if(task_size < right.size()) task_size = right.size();
+  if(task_size < 10000 /* pex margin */) {
+    for(Size index = 0; index < task_size; index++) {
+      XBox_XBoxController_setRumble_task(index, this, left, right);
+    }
+  } else {
+    XBox_XBoxController_setRumble_task<<<task_size>>>(this, left, right);
+  }
+}
+"
   }

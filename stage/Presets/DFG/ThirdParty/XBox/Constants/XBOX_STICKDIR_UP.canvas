@@ -15,5 +15,10 @@
     "XBox" : "*"
     },
   "presetGUID" : "DCB75C323B1308D36087E34426A82A95",
-  "code" : "require XBox;\n\ndfgEntry {\n  value = XBOX_STICKDIR_UP;\n}\n"
+  "code" : "require XBox;
+
+dfgEntry {
+  value = XBOX_STICKDIR_UP;
+}
+"
   }

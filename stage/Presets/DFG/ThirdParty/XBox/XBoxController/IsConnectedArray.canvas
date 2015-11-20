@@ -25,5 +25,26 @@
     "XBox" : "*"
     },
   "presetGUID" : "CAEE377E5EDC6C98545D656C8C2C2358",
-  "code" : "require XBox;\n\noperator XBox_XBoxController_isConnected_task<<<index>>>(\n  io Boolean[] result\n, in XBoxController[] this\n) {\n  result[index] = this[index < this.size() ? index : this.size() - 1].isConnected();\n}\n\ndfgEntry {\n  if( this.size() == 0) return;\n  Size task_size = this.size();\n  result.resize(task_size);\n  if(task_size < 10000 /* pex margin */) {\n    for(Size index = 0; index < task_size; index++) {\n      XBox_XBoxController_isConnected_task(index, result, this);\n    }\n  } else {\n    XBox_XBoxController_isConnected_task<<<task_size>>>(result, this);\n  }\n}\n"
+  "code" : "require XBox;
+
+operator XBox_XBoxController_isConnected_task<<<index>>>(
+  io Boolean[] result
+, in XBoxController[] this
+) {
+  result[index] = this[index < this.size() ? index : this.size() - 1].isConnected();
+}
+
+dfgEntry {
+  if( this.size() == 0) return;
+  Size task_size = this.size();
+  result.resize(task_size);
+  if(task_size < 10000 /* pex margin */) {
+    for(Size index = 0; index < task_size; index++) {
+      XBox_XBoxController_isConnected_task(index, result, this);
+    }
+  } else {
+    XBox_XBoxController_isConnected_task<<<task_size>>>(result, this);
+  }
+}
+"
   }

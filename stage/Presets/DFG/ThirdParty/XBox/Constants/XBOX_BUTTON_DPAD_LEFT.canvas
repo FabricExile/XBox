@@ -15,5 +15,10 @@
     "XBox" : "*"
     },
   "presetGUID" : "A0D7EC0593B13AA2E52CC61F969926B7",
-  "code" : "require XBox;\n\ndfgEntry {\n  value = XBOX_BUTTON_DPAD_LEFT;\n}\n"
+  "code" : "require XBox;
+
+dfgEntry {
+  value = XBOX_BUTTON_DPAD_LEFT;
+}
+"
   }

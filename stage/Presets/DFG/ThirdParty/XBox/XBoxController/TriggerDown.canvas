@@ -32,5 +32,10 @@
     "XBox" : "*"
     },
   "presetGUID" : "BEC2568857BC5388869DEFC079402117",
-  "code" : "require XBox;\n\ndfgEntry {\n  result = this.triggerDown(trigger);\n}\n"
+  "code" : "require XBox;
+
+dfgEntry {
+  result = this.triggerDown(trigger);
+}
+"
   }

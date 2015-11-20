@@ -25,5 +25,10 @@
     "XBox" : "*"
     },
   "presetGUID" : "CAEE377E5EDC6C98545D656C8C2C2358",
-  "code" : "require XBox;\n\ndfgEntry {\n  result = this.isConnected();\n}\n"
+  "code" : "require XBox;
+
+dfgEntry {
+  result = this.isConnected();
+}
+"
   }

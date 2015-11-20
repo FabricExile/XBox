@@ -44,5 +44,33 @@
     "XBox" : "*"
     },
   "presetGUID" : "23EE1FEB2F4C07FBAEF3AD0A286DDEB4",
-  "code" : "require XBox;\n\noperator XBox_XBoxController_stickXY_task<<<index>>>(\n  in XBoxController[] this\n, in XBOX_GAMEPAD_STICK[] stick\n, io SInt32[] outX\n, io SInt32[] outY\n) {\n  this[index < this.size() ? index : this.size() - 1].stickXY(stick[index < stick.size() ? index : stick.size() - 1], outX[index < outX.size() ? index : outX.size() - 1], outY[index < outY.size() ? index : outY.size() - 1]);\n}\n\ndfgEntry {\n  if( this.size() == 0) return;\n  if( stick.size() == 0) return;\n  if( outX.size() == 0) return;\n  if( outY.size() == 0) return;\n  Size task_size = this.size();\n  if(task_size < stick.size()) task_size = stick.size();\n  outX.resize(task_size);\n  outY.resize(task_size);\n  if(task_size < 10000 /* pex margin */) {\n    for(Size index = 0; index < task_size; index++) {\n      XBox_XBoxController_stickXY_task(index, this, stick, outX, outY);\n    }\n  } else {\n    XBox_XBoxController_stickXY_task<<<task_size>>>(this, stick, outX, outY);\n  }\n}\n"
+  "code" : "require XBox;
+
+operator XBox_XBoxController_stickXY_task<<<index>>>(
+  in XBoxController[] this
+, in XBOX_GAMEPAD_STICK[] stick
+, io SInt32[] outX
+, io SInt32[] outY
+) {
+  this[index < this.size() ? index : this.size() - 1].stickXY(stick[index < stick.size() ? index : stick.size() - 1], outX[index < outX.size() ? index : outX.size() - 1], outY[index < outY.size() ? index : outY.size() - 1]);
+}
+
+dfgEntry {
+  if( this.size() == 0) return;
+  if( stick.size() == 0) return;
+  if( outX.size() == 0) return;
+  if( outY.size() == 0) return;
+  Size task_size = this.size();
+  if(task_size < stick.size()) task_size = stick.size();
+  outX.resize(task_size);
+  outY.resize(task_size);
+  if(task_size < 10000 /* pex margin */) {
+    for(Size index = 0; index < task_size; index++) {
+      XBox_XBoxController_stickXY_task(index, this, stick, outX, outY);
+    }
+  } else {
+    XBox_XBoxController_stickXY_task<<<task_size>>>(this, stick, outX, outY);
+  }
+}
+"
   }

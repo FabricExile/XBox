@@ -30,5 +30,27 @@
     "XBox" : "*"
     },
   "presetGUID" : "B82201837DD5583E3832D9BD1C44558F",
-  "code" : "require XBox;\n\noperator XBox_XBoxController_XBoxController_task<<<index>>>(\n  io XBoxController[] result\n, in XBOX_GAMEPAD_DEVICE[] device\n) {\n  result[index] = XBoxController(device[index < device.size() ? index : device.size() - 1]);\n}\n\ndfgEntry {\n  if( device.size() == 0) return;\n  Size task_size = 0;\n  if(task_size < device.size()) task_size = device.size();\n  result.resize(task_size);\n  if(task_size < 10000 /* pex margin */) {\n    for(Size index = 0; index < task_size; index++) {\n      XBox_XBoxController_XBoxController_task(index, result, device);\n    }\n  } else {\n    XBox_XBoxController_XBoxController_task<<<task_size>>>(result, device);\n  }\n}\n"
+  "code" : "require XBox;
+
+operator XBox_XBoxController_XBoxController_task<<<index>>>(
+  io XBoxController[] result
+, in XBOX_GAMEPAD_DEVICE[] device
+) {
+  result[index] = XBoxController(device[index < device.size() ? index : device.size() - 1]);
+}
+
+dfgEntry {
+  if( device.size() == 0) return;
+  Size task_size = 0;
+  if(task_size < device.size()) task_size = device.size();
+  result.resize(task_size);
+  if(task_size < 10000 /* pex margin */) {
+    for(Size index = 0; index < task_size; index++) {
+      XBox_XBoxController_XBoxController_task(index, result, device);
+    }
+  } else {
+    XBox_XBoxController_XBoxController_task<<<task_size>>>(result, device);
+  }
+}
+"
   }

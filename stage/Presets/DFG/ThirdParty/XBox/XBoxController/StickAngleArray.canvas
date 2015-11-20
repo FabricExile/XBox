@@ -37,5 +37,29 @@
     "XBox" : "*"
     },
   "presetGUID" : "3217C324A4804C4A1CACE59D1193B6A7",
-  "code" : "require XBox;\n\noperator XBox_XBoxController_stickAngle_task<<<index>>>(\n  io Float32[] result\n, in XBoxController[] this\n, in XBOX_GAMEPAD_STICK[] stick\n) {\n  result[index] = this[index < this.size() ? index : this.size() - 1].stickAngle(stick[index < stick.size() ? index : stick.size() - 1]);\n}\n\ndfgEntry {\n  if( this.size() == 0) return;\n  if( stick.size() == 0) return;\n  Size task_size = this.size();\n  if(task_size < stick.size()) task_size = stick.size();\n  result.resize(task_size);\n  if(task_size < 10000 /* pex margin */) {\n    for(Size index = 0; index < task_size; index++) {\n      XBox_XBoxController_stickAngle_task(index, result, this, stick);\n    }\n  } else {\n    XBox_XBoxController_stickAngle_task<<<task_size>>>(result, this, stick);\n  }\n}\n"
+  "code" : "require XBox;
+
+operator XBox_XBoxController_stickAngle_task<<<index>>>(
+  io Float32[] result
+, in XBoxController[] this
+, in XBOX_GAMEPAD_STICK[] stick
+) {
+  result[index] = this[index < this.size() ? index : this.size() - 1].stickAngle(stick[index < stick.size() ? index : stick.size() - 1]);
+}
+
+dfgEntry {
+  if( this.size() == 0) return;
+  if( stick.size() == 0) return;
+  Size task_size = this.size();
+  if(task_size < stick.size()) task_size = stick.size();
+  result.resize(task_size);
+  if(task_size < 10000 /* pex margin */) {
+    for(Size index = 0; index < task_size; index++) {
+      XBox_XBoxController_stickAngle_task(index, result, this, stick);
+    }
+  } else {
+    XBox_XBoxController_stickAngle_task<<<task_size>>>(result, this, stick);
+  }
+}
+"
   }

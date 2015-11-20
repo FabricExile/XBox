@@ -30,5 +30,27 @@
     "XBox" : "*"
     },
   "presetGUID" : "EF33800E4499E2ACD5A9C0B15C368723",
-  "code" : "require XBox;\n\noperator XBox_XBoxController_construct_task<<<index>>>(\n  io XBoxController[] this\n, in XBOX_GAMEPAD_DEVICE[] device\n) {\n  this[index < this.size() ? index : this.size() - 1].construct(device[index < device.size() ? index : device.size() - 1]);\n}\n\ndfgEntry {\n  if( this.size() == 0) return;\n  if( device.size() == 0) return;\n  Size task_size = this.size();\n  if(task_size < device.size()) task_size = device.size();\n  if(task_size < 10000 /* pex margin */) {\n    for(Size index = 0; index < task_size; index++) {\n      XBox_XBoxController_construct_task(index, this, device);\n    }\n  } else {\n    XBox_XBoxController_construct_task<<<task_size>>>(this, device);\n  }\n}\n"
+  "code" : "require XBox;
+
+operator XBox_XBoxController_construct_task<<<index>>>(
+  io XBoxController[] this
+, in XBOX_GAMEPAD_DEVICE[] device
+) {
+  this[index < this.size() ? index : this.size() - 1].construct(device[index < device.size() ? index : device.size() - 1]);
+}
+
+dfgEntry {
+  if( this.size() == 0) return;
+  if( device.size() == 0) return;
+  Size task_size = this.size();
+  if(task_size < device.size()) task_size = device.size();
+  if(task_size < 10000 /* pex margin */) {
+    for(Size index = 0; index < task_size; index++) {
+      XBox_XBoxController_construct_task(index, this, device);
+    }
+  } else {
+    XBox_XBoxController_construct_task<<<task_size>>>(this, device);
+  }
+}
+"
   }

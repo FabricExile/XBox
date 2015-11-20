@@ -15,5 +15,10 @@
     "XBox" : "*"
     },
   "presetGUID" : "34E623D0F4E6E0A10B98D48853B6D1B7",
-  "code" : "require XBox;\n\ndfgEntry {\n  value = XBOX_BUTTON_DPAD_UP;\n}\n"
+  "code" : "require XBox;
+
+dfgEntry {
+  value = XBOX_BUTTON_DPAD_UP;
+}
+"
   }

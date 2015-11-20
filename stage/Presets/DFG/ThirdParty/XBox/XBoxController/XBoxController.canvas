@@ -25,5 +25,10 @@
     "XBox" : "*"
     },
   "presetGUID" : "B82201837DD5583E3832D9BD1C44558F",
-  "code" : "require XBox;\n\ndfgEntry {\n  result = XBoxController(device);\n}\n"
+  "code" : "require XBox;
+
+dfgEntry {
+  result = XBoxController(device);
+}
+"
   }

@@ -15,5 +15,10 @@
     "XBox" : "*"
     },
   "presetGUID" : "1DF7DFA6BA8C6D63920B9F73C05D97EC",
-  "code" : "require XBox;\n\ndfgEntry {\n  value = XBOX_STICK_LEFT;\n}\n"
+  "code" : "require XBox;
+
+dfgEntry {
+  value = XBOX_STICK_LEFT;
+}
+"
   }

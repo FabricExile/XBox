@@ -32,5 +32,10 @@
     "XBox" : "*"
     },
   "presetGUID" : "7B9BD7487C2A4FA2B9C67C3A5B7CE367",
-  "code" : "require XBox;\n\ndfgEntry {\n  result = this.stickDir(stick);\n}\n"
+  "code" : "require XBox;
+
+dfgEntry {
+  result = this.stickDir(stick);
+}
+"
   }
