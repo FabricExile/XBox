@@ -2,7 +2,7 @@
 {
   "objectType" : "Func",
   "metadata" : {
-    "uiTooltip" : "* Test if a trigger is depressed\n\n* \\param device The device to check.\n* \\param trigger The trigger to check.\n* \\returns GAMEPAD_TRUE if released, GAMEPAD_FALSE otherwise.\n\n\n Supported by XBoxController"
+    "uiTooltip" : "* Test if a trigger is depressed\n\n* \\param device The device to check.\n* \\param trigger The trigger to check.\n* \\returns GAMEPAD_TRUE if released, GAMEPAD_FALSE otherwise.\n\nSupported types:\n  this: XBoxController\n  trigger: XBOX_GAMEPAD_TRIGGER\n  result: Boolean\n"
     },
   "title" : "TriggerReleased[]",
   "ports" : [

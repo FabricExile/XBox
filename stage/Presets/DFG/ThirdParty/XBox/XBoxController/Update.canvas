@@ -2,7 +2,7 @@
 {
   "objectType" : "Func",
   "metadata" : {
-    "uiTooltip" : "* Updates the state of the gamepads.\n\n* This must be called (at least) once per game loop.\n\n\n Supported by XBoxController"
+    "uiTooltip" : "* Updates the state of the gamepads.\n\n* This must be called (at least) once per game loop.\n\nSupported types:\n  this: XBoxController\n"
     },
   "title" : "Update",
   "ports" : [

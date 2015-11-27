@@ -2,7 +2,7 @@
 {
   "objectType" : "Func",
   "metadata" : {
-    "uiTooltip" : "* Get the direction the stick is pushed in (if any).\n\n* This is a useful utility function for when the stick should be treated as a simple\n* directional pad, such as for menu UIs.\n\n* \\param device The device to check.\n* \\param stick The trigger to check.\n* \\returns The stick's current direction.\n\n\n Supported by XBoxController"
+    "uiTooltip" : "* Get the direction the stick is pushed in (if any).\n\n* This is a useful utility function for when the stick should be treated as a simple\n* directional pad, such as for menu UIs.\n\n* \\param device The device to check.\n* \\param stick The trigger to check.\n* \\returns The stick's current direction.\n\nSupported types:\n  this: XBoxController\n  stick: XBOX_GAMEPAD_STICK\n  result: XBOX_GAMEPAD_STICKDIR\n"
     },
   "title" : "StickDir[]",
   "ports" : [

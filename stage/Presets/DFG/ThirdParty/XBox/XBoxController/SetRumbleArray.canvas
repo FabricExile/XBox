@@ -2,7 +2,7 @@
 {
   "objectType" : "Func",
   "metadata" : {
-    "uiTooltip" : "* Set the rumble motors on/off.\n\n* To turn off the rumble effect, set values to 0 for both motors.\n\n* The left motor is the low-frequency/strong motor, and the right motor is the high-frequency/weak motor.\n\n* \\param device The device to update.\n* \\param left Left motor strengh (0 to 1).\n* \\param right Right motor strengh (0 to 1).\n\n\n Supported by XBoxController"
+    "uiTooltip" : "* Set the rumble motors on/off.\n\n* To turn off the rumble effect, set values to 0 for both motors.\n\n* The left motor is the low-frequency/strong motor, and the right motor is the high-frequency/weak motor.\n\n* \\param device The device to update.\n* \\param left Left motor strengh (0 to 1).\n* \\param right Right motor strengh (0 to 1).\n\nSupported types:\n  this: XBoxController\n  left: Float32\n  right: Float32\n"
     },
   "title" : "SetRumble[]",
   "ports" : [

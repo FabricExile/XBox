@@ -2,7 +2,7 @@
 {
   "objectType" : "Func",
   "metadata" : {
-    "uiTooltip" : "* Get the trigger value (depression magnitude) in its raw form.\n\n* \\param device The device to check.\n* \\param trigger The trigger to check.\n* \\returns Trigger depression magnitude (0 to 32767).\n\n\n Supported by XBoxController"
+    "uiTooltip" : "* Get the trigger value (depression magnitude) in its raw form.\n\n* \\param device The device to check.\n* \\param trigger The trigger to check.\n* \\returns Trigger depression magnitude (0 to 32767).\n\nSupported types:\n  this: XBoxController\n  trigger: XBOX_GAMEPAD_TRIGGER\n  result: SInt32\n"
     },
   "title" : "TriggerValue",
   "ports" : [

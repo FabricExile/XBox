@@ -2,7 +2,7 @@
 {
   "objectType" : "Func",
   "metadata" : {
-    "uiTooltip" : "internal\n\n Supported by XBoxController"
+    "uiTooltip" : "internal\n\nSupported types:\n  this: XBoxController\n  device: XBOX_GAMEPAD_DEVICE\n"
     },
   "title" : "Construct[]",
   "ports" : [

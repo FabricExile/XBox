@@ -2,7 +2,7 @@
 {
   "objectType" : "Func",
   "metadata" : {
-    "uiTooltip" : "* Query the position of an analog stick as normalized values.\n\n* The values retrieved by this function represent the magnitude of the analog\n* stick in each direction.  Note that it shouldn't be possible to get full\n* magnitude in one direction unless the other direction has a magnitude of\n* zero, as the stick has a circular movement range.\n\n* \\param device The device to check.\n* \\param stick The stick to check.\n* \\param outX Pointer to float to store the X magnitude in (-1 to 1).\n* \\param outX Pointer to float to store the Y magnitude in (-1 to 1).\n\n\n Supported by XBoxController"
+    "uiTooltip" : "* Query the position of an analog stick as normalized values.\n\n* The values retrieved by this function represent the magnitude of the analog\n* stick in each direction.  Note that it shouldn't be possible to get full\n* magnitude in one direction unless the other direction has a magnitude of\n* zero, as the stick has a circular movement range.\n\n* \\param device The device to check.\n* \\param stick The stick to check.\n* \\param outX Pointer to float to store the X magnitude in (-1 to 1).\n* \\param outX Pointer to float to store the Y magnitude in (-1 to 1).\n\nSupported types:\n  this: XBoxController\n  stick: XBOX_GAMEPAD_STICK\n  outX: Float32\n  outY: Float32\n"
     },
   "title" : "StickNormXY[]",
   "ports" : [

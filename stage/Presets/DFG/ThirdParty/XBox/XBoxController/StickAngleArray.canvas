@@ -2,7 +2,7 @@
 {
   "objectType" : "Func",
   "metadata" : {
-    "uiTooltip" : "* Query the direction of a stick (in radians).\n\n* This returns the direction of the stick.  This value is in radians, not\n* degrees.  Zero is to the right, and the angle increases in a\n* counter-clockwise direction.\n\n* \\param device The device to check.\n* \\param stick The stick to check.\n* \\returns The angle of the stick (0 to 2*PI).\n\n\n Supported by XBoxController"
+    "uiTooltip" : "* Query the direction of a stick (in radians).\n\n* This returns the direction of the stick.  This value is in radians, not\n* degrees.  Zero is to the right, and the angle increases in a\n* counter-clockwise direction.\n\n* \\param device The device to check.\n* \\param stick The stick to check.\n* \\returns The angle of the stick (0 to 2*PI).\n\nSupported types:\n  this: XBoxController\n  stick: XBOX_GAMEPAD_STICK\n  result: Float32\n"
     },
   "title" : "StickAngle[]",
   "ports" : [

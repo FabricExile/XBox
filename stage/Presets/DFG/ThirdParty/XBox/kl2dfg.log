@@ -1,82 +1,165 @@
-[FABRIC:MT] Fabric Engine version 2.1.0-alpha3
+[FABRIC:MT] Fabric Engine version 2.0.1
 [FABRIC:MT] Loading DFG presets from e:\zeuxis\stage\Windows\x86_64\Release\Presets\DFG
+[FABRIC:MT] Loading DFG presets from e:\zeuxis\Test\Canvas\Presets
 [FABRIC:MT] Loading DFG presets from c:\Users\helge\Fabric\Presets
 [FABRIC:MT] Loading DFG presets from e:\exts\Midi\stage\Presets\DFG
 [FABRIC:MT] Loading DFG presets from e:\exts\RazerHydra\stage\Presets\DFG
 [FABRIC:MT] Loading DFG presets from e:\exts\Xbox\stage\Presets\DFG
+[FABRIC:MT] Loading DFG presets from e:\exts\LeapMotion\stage\Presets\DFG
 [FABRIC:MT] Loading DFG presets from e:\exts\Oculus\stage\Presets\DFG
 [FABRIC:MT] Loading DFG presets from e:\exts\OculusRTR\stage\Presets\DFG
-[FABRIC:MT] Loading DFG presets from e:\exts\Xsens\stage\Presets\DFG
-[FABRIC:MT] [AlembicWrapper] Error registering extension: unable to open directory 'e:\zeuxis\stage\Windows\x86_64\Release\Exts\Builtin\AlembicWrapper\DFG': The system cannot find the path specified. (code 3 [0x3])
-[FABRIC:MT] [AlembicWrapper] Error(s) encountered, extension disabled
-[FABRIC:MT] [AlembicWrapper] Extension manifest is 'e:\zeuxis\stage\Windows\x86_64\Release\Exts\Builtin\AlembicWrapper\AlembicWrapper.fpm.json'
-[FABRIC:MT] [Animation] Error registering extension: unable to open directory 'e:\zeuxis\stage\Windows\x86_64\Release\Exts\Builtin\Animation\DFG': The system cannot find the path specified. (code 3 [0x3])
-[FABRIC:MT] [Animation] Error(s) encountered, extension disabled
-[FABRIC:MT] [Animation] Extension manifest is 'e:\zeuxis\stage\Windows\x86_64\Release\Exts\Builtin\Animation\Animation.fpm.json'
-[FABRIC:MT] [Characters] Error registering extension: unable to open directory 'e:\zeuxis\stage\Windows\x86_64\Release\Exts\Builtin\Characters\DFG': The system cannot find the path specified. (code 3 [0x3])
-[FABRIC:MT] [Characters] Error(s) encountered, extension disabled
-[FABRIC:MT] [Characters] Extension manifest is 'e:\zeuxis\stage\Windows\x86_64\Release\Exts\Builtin\Characters\Characters.fpm.json'
-[FABRIC:MT] [Containers] Error registering extension: unable to open directory 'e:\zeuxis\stage\Windows\x86_64\Release\Exts\Builtin\Containers\DFG': The system cannot find the path specified. (code 3 [0x3])
-[FABRIC:MT] [Containers] Error(s) encountered, extension disabled
-[FABRIC:MT] [Containers] Extension manifest is 'e:\zeuxis\stage\Windows\x86_64\Release\Exts\Builtin\Containers\Containers.fpm.json'
-[FABRIC:MT] [FbxWrapper] Error registering extension: unable to open directory 'e:\zeuxis\stage\Windows\x86_64\Release\Exts\Builtin\FbxWrapper\DFG': The system cannot find the path specified. (code 3 [0x3])
-[FABRIC:MT] [FbxWrapper] Error(s) encountered, extension disabled
-[FABRIC:MT] [FbxWrapper] Extension manifest is 'e:\zeuxis\stage\Windows\x86_64\Release\Exts\Builtin\FbxWrapper\FbxWrapper.fpm.json'
-[FABRIC:MT] [FileIO] Error registering extension: unable to open directory 'e:\zeuxis\stage\Windows\x86_64\Release\Exts\Builtin\FileIO\DFG': The system cannot find the path specified. (code 3 [0x3])
-[FABRIC:MT] [FileIO] Error(s) encountered, extension disabled
-[FABRIC:MT] [FileIO] Extension manifest is 'e:\zeuxis\stage\Windows\x86_64\Release\Exts\Builtin\FileIO\FileIO.fpm.json'
-[FABRIC:MT] [Images] Error registering extension: unable to open directory 'e:\zeuxis\stage\Windows\x86_64\Release\Exts\Builtin\Images\DFG': The system cannot find the path specified. (code 3 [0x3])
-[FABRIC:MT] [Images] Error(s) encountered, extension disabled
-[FABRIC:MT] [Images] Extension manifest is 'e:\zeuxis\stage\Windows\x86_64\Release\Exts\Builtin\Images\Images.fpm.json'
-[FABRIC:MT] [JSON] Error registering extension: unable to open directory 'e:\zeuxis\stage\Windows\x86_64\Release\Exts\Builtin\JSON\DFG': The system cannot find the path specified. (code 3 [0x3])
-[FABRIC:MT] [JSON] Error(s) encountered, extension disabled
-[FABRIC:MT] [JSON] Extension manifest is 'e:\zeuxis\stage\Windows\x86_64\Release\Exts\Builtin\JSON\JSON.fpm.json'
-[FABRIC:MT] [Math] Error registering extension: unable to open directory 'e:\zeuxis\stage\Windows\x86_64\Release\Exts\Builtin\Math\DFG': The system cannot find the path specified. (code 3 [0x3])
-[FABRIC:MT] [Math] Error(s) encountered, extension disabled
-[FABRIC:MT] [Math] Extension manifest is 'e:\zeuxis\stage\Windows\x86_64\Release\Exts\Builtin\Math\Math.fpm.json'
-[FABRIC:MT] [FabricOBJ] Error registering extension: unable to open directory 'e:\zeuxis\stage\Windows\x86_64\Release\Exts\Builtin\OBJ\DFG': The system cannot find the path specified. (code 3 [0x3])
-[FABRIC:MT] [FabricOBJ] Error(s) encountered, extension disabled
-[FABRIC:MT] [FabricOBJ] Extension manifest is 'e:\zeuxis\stage\Windows\x86_64\Release\Exts\Builtin\OBJ\FabricOBJ.fpm.json'
-[FABRIC:MT] [OpenImageIO] Error registering extension: unable to open directory 'e:\zeuxis\stage\Windows\x86_64\Release\Exts\Builtin\OpenImageIO\DFG': The system cannot find the path specified. (code 3 [0x3])
-[FABRIC:MT] [OpenImageIO] Error(s) encountered, extension disabled
-[FABRIC:MT] [OpenImageIO] Extension manifest is 'e:\zeuxis\stage\Windows\x86_64\Release\Exts\Builtin\OpenImageIO\OpenImageIO.fpm.json'
-[FABRIC:MT] [Parameters] Error registering extension: unable to open directory 'e:\zeuxis\stage\Windows\x86_64\Release\Exts\Builtin\Parameters\DFG': The system cannot find the path specified. (code 3 [0x3])
-[FABRIC:MT] [Parameters] Error(s) encountered, extension disabled
-[FABRIC:MT] [Parameters] Extension manifest is 'e:\zeuxis\stage\Windows\x86_64\Release\Exts\Builtin\Parameters\Parameters.fpm.json'
-[FABRIC:MT] [Singletons] Error registering extension: unable to open directory 'e:\zeuxis\stage\Windows\x86_64\Release\Exts\Builtin\Singletons\DFG': The system cannot find the path specified. (code 3 [0x3])
-[FABRIC:MT] [Singletons] Error(s) encountered, extension disabled
-[FABRIC:MT] [Singletons] Extension manifest is 'e:\zeuxis\stage\Windows\x86_64\Release\Exts\Builtin\Singletons\Singletons.fpm.json'
+[FABRIC:MT] Loading DFG presets from e:\exts\XsensMvn\stage\Presets\DFG
+[FABRIC:MT] Loading DFG presets from e:\exts\XsensMt\stage\Presets\DFG
+[FABRIC:MT] DFG preset directory 'e:\exts\XsensMt\stage\Presets\DFG': unable to open directory 'e:\exts\XsensMt\stage\Presets\DFG': The system cannot find the path specified. (code 3 [0x3])
+[FABRIC:MT] Loading DFG presets from e:\exts\RhinoFBXConverter\stage\Presets\DFG
 [FABRIC:MT] Registered extensions {Adaptors:1.0.0,Alembic:1.0.0,AlembicToSceneGraph:1.0.0,AlembicWrapper:1.3.0,Animation:1.1.0,Bullet:1.0.1,BulletHelpers:1.0.0,Characters:1.1.0,Containers:1.1.0,DFGHelpers,FabricInterfaces:1.0.1,FabricSynchronization:1.1.0,Fbx:1.1.0,FbxToSceneGraph:1.0.0,FbxWrapper,FileIO:1.2.0,Geometry:1.2.0,Images:1.0.2,Images2:1.0.0,InlineDrawing:1.2.0,JSON:1.0.0,Manipulation:1.1.0,Math:1.2.0,FabricOBJ:1.1.0,OGLWrappers:1.0.0,FabricOGL:1.0.0,OpenImageIO:1.0.2,OSOGL:1.1.0,Parameters:1.0.0,RTR2:1.0.0,SceneAssembly:1.0.0,SceneGraph:1.0.0,SceneGraphForCanvas:1.0.0,SceneGraphToRTR:1.0.0,SceneGraphWrappers:1.0.0,SceneHub:2.0.0,Singletons:1.1.0,FabricStatistics:1.1.0,Strokes:1.0.0,Util:1.1.0,ImageProcessing,RTR,RTRAdaptors} in directory: e:\zeuxis\stage\Windows\x86_64\Release\Exts
-[FABRIC:MT] Registered extensions {BadCode:2.1.0,BadInline:2.1.0,BadPrototype:2.1.0,BadVersion:2.1.0,CircularA:2.1.0,CircularB:2.1.0,FwdDeclare:2.1.0,FwdDeclNoDef:2.1.0,SetupCallback:2.1.0,UnitTest:2.1.0,VersionTest:1.0.0,VersionTest:1.1.1,VersionTest:1.2.1} in directory: e:\zeuxis\stage\Windows\x86_64\Release\Tests\Core\Exts
-[FABRIC:MT] Ignored extension directory 'e:\zeuxis\stage\Windows\x86_64\Release\Tests\Exts': unable to open directory 'e:\zeuxis\stage\Windows\x86_64\Release\Tests\Exts': The system cannot find the path specified. (code 3 [0x3])
+[FABRIC:MT] Registered extensions {BadCode:2.0.1,BadInline:2.0.1,BadPrototype:2.0.1,BadVersion:2.0.1,CircularA:2.0.1,CircularB:2.0.1,FwdDeclare:2.0.1,FwdDeclNoDef:2.0.1,SetupCallback:2.0.1,UnitTest:2.0.1,VersionTest:1.0.0,VersionTest:1.1.1,VersionTest:1.2.1} in directory: e:\zeuxis\stage\Windows\x86_64\Release\Tests\Core\Exts
 [FABRIC:MT] Registered extension {Midi:1.0.0} in directory: e:\exts\Midi\stage\Exts
 [FABRIC:MT] Registered extension {RazerHydra:1.0.0} in directory: e:\exts\RazerHydra\stage\Exts
 [FABRIC:MT] Registered extension {XBox:1.0.0} in directory: e:\exts\Xbox\stage\Exts
+[FABRIC:MT] Registered extension {LeapMotion:1.0.0} in directory: e:\exts\LeapMotion\stage\Exts
 [FABRIC:MT] Registered extension {Oculus:1.0.0} in directory: e:\exts\Oculus\stage\Exts
 [FABRIC:MT] Registered extension {OculusRTR:1.0.0} in directory: e:\exts\OculusRTR\stage\Exts
-[FABRIC:MT] Registered extension {Xsens:1.0.0} in directory: e:\exts\Xsens\stage\Exts
-[FABRIC:MT] Registered extension {RhinoFBXConverter:1.0.0} in directory: e:\exts\RhinoFBXConverter\src
+[FABRIC:MT] Registered extension {XsensMvn:1.0.0} in directory: e:\exts\XsensMvn\stage\Exts
+[FABRIC:MT] Ignored extension directory 'e:\exts\XsensMt\stage\Exts': unable to open directory 'e:\exts\XsensMt\stage\Exts': The system cannot find the path specified. (code 3 [0x3])
+[FABRIC:MT] Registered extension {RhinoFBXConverter:1.0.0} in directory: e:\exts\RhinoFBXConverter\stage\Exts
 [FABRIC:MT] Ignored extension {XBox:1.0.0} in directory: stage\Exts
 [FABRIC:MT] IRCache: Not pruning since last prune was less than 24 hours ago
-[FABRIC:MT] Loaded extension XBox in 84.762ms (first time)
-Registered function 'XBoxController.XBoxController', 'XBoxController.XBoxController'.
-Skipped 'function XBoxController?()', double declaration, found overload with more parameters.
-Registered function 'XBoxController.buttonDown', 'buttonDown'.
-Registered function 'XBoxController.buttonReleased', 'buttonReleased'.
-Registered function 'XBoxController.buttonTriggered', 'buttonTriggered'.
-Registered function 'XBoxController.construct', 'construct'.
-Registered function 'XBoxController.isConnected', 'isConnected'.
-Registered function 'XBoxController.setRumble', 'setRumble'.
-Registered function 'XBoxController.stickAngle', 'stickAngle'.
-Registered function 'XBoxController.stickDir', 'stickDir'.
-Registered function 'XBoxController.stickDirTriggered', 'stickDirTriggered'.
-Registered function 'XBoxController.stickLength', 'stickLength'.
-Registered function 'XBoxController.stickNormXY', 'stickNormXY'.
-Registered function 'XBoxController.stickXY', 'stickXY'.
-Registered function 'XBoxController.triggerDown', 'triggerDown'.
-Registered function 'XBoxController.triggerLength', 'triggerLength'.
-Registered function 'XBoxController.triggerReleased', 'triggerReleased'.
-Registered function 'XBoxController.triggerTriggered', 'triggerTriggered'.
-Registered function 'XBoxController.triggerValue', 'triggerValue'.
-Registered function 'XBoxController.update', 'update'.
-Skipped 'function XBoxController?()', double declaration, found overload with more parameters.
+[FABRIC:MT] Loaded extension XBox in 78.030ms (first time)
+registerFunction: thisType='XBoxController' func='function XBoxController?( in XBOX_GAMEPAD_DEVICE device )'
+  Added to bin[normal][XBoxController]
+registerFunction: thisType='XBoxController' func='function XBoxController?()'
+  Added to bin[normal][XBoxController]
+registerFunction: thisType='XBoxController' func='function Boolean XBoxController.buttonDown?( in XBOX_GAMEPAD_BUTTON button )'
+  Added to bin[normal][Boolean XBoxController.buttonDown]
+registerFunction: thisType='XBoxController' func='function Boolean XBoxController.buttonReleased?( in XBOX_GAMEPAD_BUTTON button )'
+  Added to bin[normal][Boolean XBoxController.buttonReleased]
+registerFunction: thisType='XBoxController' func='function Boolean XBoxController.buttonTriggered?( in XBOX_GAMEPAD_BUTTON button )'
+  Added to bin[normal][Boolean XBoxController.buttonTriggered]
+registerFunction: thisType='XBoxController' func='function XBoxController.construct!( in XBOX_GAMEPAD_DEVICE device )'
+  Added to bin[normal][XBoxController.construct]
+registerFunction: thisType='XBoxController' func='function Boolean XBoxController.isConnected?()'
+  Added to bin[normal][Boolean XBoxController.isConnected]
+registerFunction: thisType='XBoxController' func='function XBoxController.setRumble?( in Float32 left, in Float32 right )'
+  Added to bin[normal][XBoxController.setRumble]
+registerFunction: thisType='XBoxController' func='function Float32 XBoxController.stickAngle?( in XBOX_GAMEPAD_STICK stick )'
+  Added to bin[normal][Float32 XBoxController.stickAngle]
+registerFunction: thisType='XBoxController' func='function XBOX_GAMEPAD_STICKDIR XBoxController.stickDir?( in XBOX_GAMEPAD_STICK stick )'
+  Added to bin[normal][XBOX_GAMEPAD_STICKDIR XBoxController.stickDir]
+registerFunction: thisType='XBoxController' func='function Boolean XBoxController.stickDirTriggered?( in XBOX_GAMEPAD_STICK stick, in XBOX_GAMEPAD_STICKDIR dir )'
+  Added to bin[normal][Boolean XBoxController.stickDirTriggered]
+registerFunction: thisType='XBoxController' func='function Float32 XBoxController.stickLength?( in XBOX_GAMEPAD_STICK stick )'
+  Added to bin[normal][Float32 XBoxController.stickLength]
+registerFunction: thisType='XBoxController' func='function XBoxController.stickNormXY?( in XBOX_GAMEPAD_STICK stick, io Float32 outX, io Float32 outY )'
+  Added to bin[normal][XBoxController.stickNormXY]
+registerFunction: thisType='XBoxController' func='function XBoxController.stickXY?( in XBOX_GAMEPAD_STICK stick, io SInt32 outX, io SInt32 outY )'
+  Added to bin[normal][XBoxController.stickXY]
+registerFunction: thisType='XBoxController' func='function Boolean XBoxController.triggerDown?( in XBOX_GAMEPAD_TRIGGER trigger )'
+  Added to bin[normal][Boolean XBoxController.triggerDown]
+registerFunction: thisType='XBoxController' func='function Float32 XBoxController.triggerLength?( in XBOX_GAMEPAD_TRIGGER trigger )'
+  Added to bin[normal][Float32 XBoxController.triggerLength]
+registerFunction: thisType='XBoxController' func='function Boolean XBoxController.triggerReleased?( in XBOX_GAMEPAD_TRIGGER trigger )'
+  Added to bin[normal][Boolean XBoxController.triggerReleased]
+registerFunction: thisType='XBoxController' func='function Boolean XBoxController.triggerTriggered?( in XBOX_GAMEPAD_TRIGGER trigger )'
+  Added to bin[normal][Boolean XBoxController.triggerTriggered]
+registerFunction: thisType='XBoxController' func='function SInt32 XBoxController.triggerValue?( in XBOX_GAMEPAD_TRIGGER trigger )'
+  Added to bin[normal][SInt32 XBoxController.triggerValue]
+registerFunction: thisType='XBoxController' func='function XBoxController.update?()'
+  Added to bin[normal][XBoxController.update]
+registerFunction: thisType='XBoxController' func='function XBoxController.construct!( in XBOX_GAMEPAD_DEVICE device )'
+registerFunction: thisType='XBoxController' func='function XBoxController?()'
+registerFunction: thisType='XBoxController' func='function XBoxController?( in XBOX_GAMEPAD_DEVICE device )'
+registerFunction: thisType='XBoxController' func='function XBoxController.update?()'
+registerFunction: thisType='XBoxController' func='function Boolean XBoxController.isConnected?()'
+registerFunction: thisType='XBoxController' func='function Boolean XBoxController.buttonDown?( in XBOX_GAMEPAD_BUTTON button )'
+registerFunction: thisType='XBoxController' func='function Boolean XBoxController.buttonTriggered?( in XBOX_GAMEPAD_BUTTON button )'
+registerFunction: thisType='XBoxController' func='function Boolean XBoxController.buttonReleased?( in XBOX_GAMEPAD_BUTTON button )'
+registerFunction: thisType='XBoxController' func='function SInt32 XBoxController.triggerValue?( in XBOX_GAMEPAD_TRIGGER trigger )'
+registerFunction: thisType='XBoxController' func='function Float32 XBoxController.triggerLength?( in XBOX_GAMEPAD_TRIGGER trigger )'
+registerFunction: thisType='XBoxController' func='function Boolean XBoxController.triggerDown?( in XBOX_GAMEPAD_TRIGGER trigger )'
+registerFunction: thisType='XBoxController' func='function Boolean XBoxController.triggerTriggered?( in XBOX_GAMEPAD_TRIGGER trigger )'
+registerFunction: thisType='XBoxController' func='function Boolean XBoxController.triggerReleased?( in XBOX_GAMEPAD_TRIGGER trigger )'
+registerFunction: thisType='XBoxController' func='function XBoxController.setRumble?( in Float32 left, in Float32 right )'
+registerFunction: thisType='XBoxController' func='function XBoxController.stickXY?( in XBOX_GAMEPAD_STICK stick, io SInt32 outX, io SInt32 outY )'
+registerFunction: thisType='XBoxController' func='function XBoxController.stickNormXY?( in XBOX_GAMEPAD_STICK stick, io Float32 outX, io Float32 outY )'
+registerFunction: thisType='XBoxController' func='function Float32 XBoxController.stickLength?( in XBOX_GAMEPAD_STICK stick )'
+registerFunction: thisType='XBoxController' func='function Float32 XBoxController.stickAngle?( in XBOX_GAMEPAD_STICK stick )'
+registerFunction: thisType='XBoxController' func='function XBOX_GAMEPAD_STICKDIR XBoxController.stickDir?( in XBOX_GAMEPAD_STICK stick )'
+registerFunction: thisType='XBoxController' func='function Boolean XBoxController.stickDirTriggered?( in XBOX_GAMEPAD_STICK stick, in XBOX_GAMEPAD_STICKDIR dir )'
+processFunctions
+  bin[normal][XBoxController][1] (asArray=false)
+    thisType='XBoxController' code='function XBoxController?( in XBOX_GAMEPAD_DEVICE device )'
+  bin[normal][XBoxController][1] (asArray=true)
+    thisType='XBoxController' code='function XBoxController?( in XBOX_GAMEPAD_DEVICE device )'
+  bin[normal][Boolean XBoxController.buttonDown][1] (asArray=false)
+    thisType='XBoxController' code='function Boolean XBoxController.buttonDown?( in XBOX_GAMEPAD_BUTTON button )'
+  bin[normal][Boolean XBoxController.buttonDown][1] (asArray=true)
+    thisType='XBoxController' code='function Boolean XBoxController.buttonDown?( in XBOX_GAMEPAD_BUTTON button )'
+  bin[normal][Boolean XBoxController.buttonReleased][1] (asArray=false)
+    thisType='XBoxController' code='function Boolean XBoxController.buttonReleased?( in XBOX_GAMEPAD_BUTTON button )'
+  bin[normal][Boolean XBoxController.buttonReleased][1] (asArray=true)
+    thisType='XBoxController' code='function Boolean XBoxController.buttonReleased?( in XBOX_GAMEPAD_BUTTON button )'
+  bin[normal][Boolean XBoxController.buttonTriggered][1] (asArray=false)
+    thisType='XBoxController' code='function Boolean XBoxController.buttonTriggered?( in XBOX_GAMEPAD_BUTTON button )'
+  bin[normal][Boolean XBoxController.buttonTriggered][1] (asArray=true)
+    thisType='XBoxController' code='function Boolean XBoxController.buttonTriggered?( in XBOX_GAMEPAD_BUTTON button )'
+  bin[normal][XBoxController.construct][1] (asArray=false)
+    thisType='XBoxController' code='function XBoxController.construct!( in XBOX_GAMEPAD_DEVICE device )'
+  bin[normal][XBoxController.construct][1] (asArray=true)
+    thisType='XBoxController' code='function XBoxController.construct!( in XBOX_GAMEPAD_DEVICE device )'
+  bin[normal][Boolean XBoxController.isConnected][0] (asArray=false)
+    thisType='XBoxController' code='function Boolean XBoxController.isConnected?()'
+  bin[normal][Boolean XBoxController.isConnected][0] (asArray=true)
+    thisType='XBoxController' code='function Boolean XBoxController.isConnected?()'
+  bin[normal][XBoxController.setRumble][2] (asArray=false)
+    thisType='XBoxController' code='function XBoxController.setRumble?( in Float32 left, in Float32 right )'
+  bin[normal][XBoxController.setRumble][2] (asArray=true)
+    thisType='XBoxController' code='function XBoxController.setRumble?( in Float32 left, in Float32 right )'
+  bin[normal][Float32 XBoxController.stickAngle][1] (asArray=false)
+    thisType='XBoxController' code='function Float32 XBoxController.stickAngle?( in XBOX_GAMEPAD_STICK stick )'
+  bin[normal][Float32 XBoxController.stickAngle][1] (asArray=true)
+    thisType='XBoxController' code='function Float32 XBoxController.stickAngle?( in XBOX_GAMEPAD_STICK stick )'
+  bin[normal][XBOX_GAMEPAD_STICKDIR XBoxController.stickDir][1] (asArray=false)
+    thisType='XBoxController' code='function XBOX_GAMEPAD_STICKDIR XBoxController.stickDir?( in XBOX_GAMEPAD_STICK stick )'
+  bin[normal][XBOX_GAMEPAD_STICKDIR XBoxController.stickDir][1] (asArray=true)
+    thisType='XBoxController' code='function XBOX_GAMEPAD_STICKDIR XBoxController.stickDir?( in XBOX_GAMEPAD_STICK stick )'
+  bin[normal][Boolean XBoxController.stickDirTriggered][2] (asArray=false)
+    thisType='XBoxController' code='function Boolean XBoxController.stickDirTriggered?( in XBOX_GAMEPAD_STICK stick, in XBOX_GAMEPAD_STICKDIR dir )'
+  bin[normal][Boolean XBoxController.stickDirTriggered][2] (asArray=true)
+    thisType='XBoxController' code='function Boolean XBoxController.stickDirTriggered?( in XBOX_GAMEPAD_STICK stick, in XBOX_GAMEPAD_STICKDIR dir )'
+  bin[normal][Float32 XBoxController.stickLength][1] (asArray=false)
+    thisType='XBoxController' code='function Float32 XBoxController.stickLength?( in XBOX_GAMEPAD_STICK stick )'
+  bin[normal][Float32 XBoxController.stickLength][1] (asArray=true)
+    thisType='XBoxController' code='function Float32 XBoxController.stickLength?( in XBOX_GAMEPAD_STICK stick )'
+  bin[normal][XBoxController.stickNormXY][3] (asArray=false)
+    thisType='XBoxController' code='function XBoxController.stickNormXY?( in XBOX_GAMEPAD_STICK stick, io Float32 outX, io Float32 outY )'
+  bin[normal][XBoxController.stickNormXY][3] (asArray=true)
+    thisType='XBoxController' code='function XBoxController.stickNormXY?( in XBOX_GAMEPAD_STICK stick, io Float32 outX, io Float32 outY )'
+  bin[normal][XBoxController.stickXY][3] (asArray=false)
+    thisType='XBoxController' code='function XBoxController.stickXY?( in XBOX_GAMEPAD_STICK stick, io SInt32 outX, io SInt32 outY )'
+  bin[normal][XBoxController.stickXY][3] (asArray=true)
+    thisType='XBoxController' code='function XBoxController.stickXY?( in XBOX_GAMEPAD_STICK stick, io SInt32 outX, io SInt32 outY )'
+  bin[normal][Boolean XBoxController.triggerDown][1] (asArray=false)
+    thisType='XBoxController' code='function Boolean XBoxController.triggerDown?( in XBOX_GAMEPAD_TRIGGER trigger )'
+  bin[normal][Boolean XBoxController.triggerDown][1] (asArray=true)
+    thisType='XBoxController' code='function Boolean XBoxController.triggerDown?( in XBOX_GAMEPAD_TRIGGER trigger )'
+  bin[normal][Float32 XBoxController.triggerLength][1] (asArray=false)
+    thisType='XBoxController' code='function Float32 XBoxController.triggerLength?( in XBOX_GAMEPAD_TRIGGER trigger )'
+  bin[normal][Float32 XBoxController.triggerLength][1] (asArray=true)
+    thisType='XBoxController' code='function Float32 XBoxController.triggerLength?( in XBOX_GAMEPAD_TRIGGER trigger )'
+  bin[normal][Boolean XBoxController.triggerReleased][1] (asArray=false)
+    thisType='XBoxController' code='function Boolean XBoxController.triggerReleased?( in XBOX_GAMEPAD_TRIGGER trigger )'
+  bin[normal][Boolean XBoxController.triggerReleased][1] (asArray=true)
+    thisType='XBoxController' code='function Boolean XBoxController.triggerReleased?( in XBOX_GAMEPAD_TRIGGER trigger )'
+  bin[normal][Boolean XBoxController.triggerTriggered][1] (asArray=false)
+    thisType='XBoxController' code='function Boolean XBoxController.triggerTriggered?( in XBOX_GAMEPAD_TRIGGER trigger )'
+  bin[normal][Boolean XBoxController.triggerTriggered][1] (asArray=true)
+    thisType='XBoxController' code='function Boolean XBoxController.triggerTriggered?( in XBOX_GAMEPAD_TRIGGER trigger )'
+  bin[normal][SInt32 XBoxController.triggerValue][1] (asArray=false)
+    thisType='XBoxController' code='function SInt32 XBoxController.triggerValue?( in XBOX_GAMEPAD_TRIGGER trigger )'
+  bin[normal][SInt32 XBoxController.triggerValue][1] (asArray=true)
+    thisType='XBoxController' code='function SInt32 XBoxController.triggerValue?( in XBOX_GAMEPAD_TRIGGER trigger )'
+  bin[normal][XBoxController.update][0] (asArray=false)
+    thisType='XBoxController' code='function XBoxController.update?()'
+  bin[normal][XBoxController.update][0] (asArray=true)
+    thisType='XBoxController' code='function XBoxController.update?()'

@@ -2,7 +2,7 @@
 {
   "objectType" : "Func",
   "metadata" : {
-    "uiTooltip" : "* Query the magnitude of an analog stick.\n\n* This returns the normalized value of the magnitude of the stick.  That is,\n* if the stick is pushed all the way in any direction, it returns 1.0.\n\n* \\param device The device to check.\n* \\param stick The stick to check.\n* \\returns The magnitude of the stick (0 to 1).\n\n\n Supported by XBoxController"
+    "uiTooltip" : "* Query the magnitude of an analog stick.\n\n* This returns the normalized value of the magnitude of the stick.  That is,\n* if the stick is pushed all the way in any direction, it returns 1.0.\n\n* \\param device The device to check.\n* \\param stick The stick to check.\n* \\returns The magnitude of the stick (0 to 1).\n\nSupported types:\n  this: XBoxController\n  stick: XBOX_GAMEPAD_STICK\n  result: Float32\n"
     },
   "title" : "StickLength[]",
   "ports" : [

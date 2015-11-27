@@ -2,7 +2,7 @@
 {
   "objectType" : "Func",
   "metadata" : {
-    "uiTooltip" : "standard constructor given a device\n\n Supported by XBoxController"
+    "uiTooltip" : "standard constructor given a device\n\nSupported types:\n  device: XBOX_GAMEPAD_DEVICE\n  result: XBoxController\n"
     },
   "title" : "XBoxController",
   "ports" : [
